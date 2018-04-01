@@ -4,3 +4,9 @@
 	* 並列処理のテスト
 * test_sys_args.py
 	* コマンドライン引数のテスト
+
+[予定]
+* test_subprocess.py
+	* call, check_call, check_output, Popenの違いなど
+* test_bm.py
+	* ボルツマンマシンの実装例
