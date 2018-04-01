@@ -3,6 +3,7 @@ ref.: https://stats.stackexchange.com/questions/7257/learning-weights-in-a-boltz
 """
 import numpy as np
 
+
 def extract_patches(im,SZ,n):
     imsize,imsize=im.shape;
     X=np.zeros((n,SZ**2),dtype=np.int8);
@@ -12,6 +13,7 @@ def extract_patches(im,SZ,n):
         P=im[sty:sty+SZ, stx:stx+SZ];
         X[i]=2*P.flat[:]-1;
     return X.T
+
 
 def sample(T,b,n,num_init_samples):
     """
@@ -90,9 +92,8 @@ def run(im, T=None, b=None, display=True,N=4,num_trials=100,batch_size=100,num_i
 
         deltab=eta*(mu_data - mu_prior);
         b=b+deltab;
-
-
     return T, b
+    
 
 if __name__ == "__main__": 
     A = np.array([\
