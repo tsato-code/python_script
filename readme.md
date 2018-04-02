@@ -6,6 +6,8 @@
 	* 並列処理のテスト
 * test_os_walk.py
 	* ディレクトリとファイルの取得テスト
+* test_prim.py
+	* プリム法のテスト
 * test_sys_args.py
 	* コマンドライン引数のテスト
 * test_tempfile.py
