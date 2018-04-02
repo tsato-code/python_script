@@ -1,5 +1,7 @@
 # Pythonスクリプトのテスト集
 
+* test_argparse.py
+	* コマンドラインオプションとヘルプのテスト
 * test_multiprocessing.py
 	* 並列処理のテスト
 * test_sys_args.py
