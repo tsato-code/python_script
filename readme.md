@@ -4,6 +4,8 @@
 	* 並列処理のテスト
 * test_sys_args.py
 	* コマンドライン引数のテスト
+* test_tempfile.py
+	* 一時ファイルと一時ディレクトリのテスト
 
 [予定]
 * test_subprocess.py
