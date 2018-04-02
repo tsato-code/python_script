@@ -4,6 +4,8 @@
 	* コマンドラインオプションとヘルプのテスト
 * test_multiprocessing.py
 	* 並列処理のテスト
+* test_os_walk.py
+	* ディレクトリとファイルの取得テスト
 * test_sys_args.py
 	* コマンドライン引数のテスト
 * test_tempfile.py
