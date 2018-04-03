@@ -1,5 +1,7 @@
 # Pythonスクリプトのテスト集
 
+* kubo8.ipynb
+	* 久保のみどり本8章の勉強用pythonスクリプト
 * test_argparse.py
 	* コマンドラインオプションとヘルプのテスト
 * test_multiprocessing.py
