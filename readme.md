@@ -14,6 +14,8 @@
 	* コマンドライン引数のテスト
 * test_tempfile.py
 	* 一時ファイルと一時ディレクトリのテスト
+* test_time.py
+	* 時間を扱う関数のテスト
 
 [予定]
 * test_subprocess.py
