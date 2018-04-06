@@ -4,6 +4,8 @@
 	* 久保のみどり本8章の勉強用pythonスクリプト
 * test_argparse.py
 	* コマンドラインオプションとヘルプのテスト
+* test_glob.py
+	* ファイル取得のテスト
 * test_multiprocessing.py
 	* 並列処理のテスト
 * test_os_walk.py
