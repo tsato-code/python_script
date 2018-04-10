@@ -1,0 +1,14 @@
+2018-04-10
+- Dockerfileの作成
+- Dockerコンテナのubuntuでminicondaの利用
+- DockerコンテナからGPU利用
+- Vimの利用
+- pythonで部分空間法とスペクトル変換法
+- QGISの利用
+- ベイズ推論+pymc
+- 適当な時系列データセット
+- tqdmプログレスバー
+- 二次元等高線
+- 最急降下法
+- ニュートン法
+
