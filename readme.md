@@ -2,6 +2,8 @@
 
 * kubo8.ipynb
 	* 久保のみどり本8章の勉強用pythonスクリプト
+* rosenbrock.ipynb
+	* Rosenbrock関数の描画とニュートン法のテスト
 * test_argparse.py
 	* コマンドラインオプションとヘルプのテスト
 * test_glob.py
