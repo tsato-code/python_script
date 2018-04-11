@@ -6,6 +6,8 @@
 	* コマンドラインオプションとヘルプのテスト
 * test_glob.py
 	* ファイル取得のテスト
+* test_format.py
+	* 文字列フォーマットを利用した出力テスト
 * test_multiprocessing.py
 	* 並列処理のテスト
 * test_os_walk.py
@@ -18,6 +20,8 @@
 	* 一時ファイルと一時ディレクトリのテスト
 * test_time.py
 	* 時間を扱う関数のテスト
+* test_tqdm.py
+	* プログレスバーのテスト
 
 
 [予定]
