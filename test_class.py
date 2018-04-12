@@ -3,31 +3,36 @@ class Manga(object):
         self.title = title
         self.artist = artist
 
-    def print_title(self):
-    	print(self.title)
-
-    def print_artist(self):
-    	print(self.artist)
+    def print(self):
+    	print(self.title, '-', self.artist)
 
 
-m1 = Manga('Chihayafuru',
-           'Yuki Suetsugu')
-m2 = Manga('Case Closed', 
-           'Gosho Aoyama')
-m3 = Manga('Shogi no Watanabe-kun', 
-           'Megumi Ina')
+manga_list = []
+manga_list.append(Manga('Chihayafuru', 'Yuki Suetsugu'))
+manga_list.append(Manga('Case Closed', 'Gosho Aoyama'))
+manga_list.append(Manga('Shogi no Watanabe-kun', 'Megumi Ina'))
+manga_list.append(Manga('Magic Kaito', 'Gosho Aoyama'))
 
-for manga in [m1, m2, m3]:
-	manga.print_title()
-	manga.print_artist()
 
+print('\n* manga list *')
+for manga in manga_list:
+	manga.print()
+
+print('\n* Gosho Aoyama written *')
+manga_list_filter = filter(lambda manga: manga.artist == 'Gosho Aoyama', manga_list)
+for manga in manga_list_filter:
+    manga.print()
 
 """
 $ python test_class.py 
-Chihayafuru
-Yuki Suetsugu
-Case Closed
-Gosho Aoyama
-Shogi no Watanabe-kun
-Megumi Ina
+
+* manga list *
+Chihayafuru - Yuki Suetsugu
+Case Closed - Gosho Aoyama
+Shogi no Watanabe-kun - Megumi Ina
+Magic Kaito - Gosho Aoyama
+
+* Gosho Aoyama written *
+Case Closed - Gosho Aoyama
+Magic Kaito - Gosho Aoyama
 """
