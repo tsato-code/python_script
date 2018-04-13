@@ -1,10 +1,5 @@
 # Pythonスクリプト集
 
-* 統計+機械学習+MCMC
-	* [久保のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
-* 最適化
-	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
-	* [Prim法のテスト](./test_prim.py)
 * py-collection
 	* [コマンドラインオプションとヘルプのテスト](./test_argparse.py)
 	* [例外処理のテスト](./test_assert.py)
@@ -20,6 +15,11 @@
 	* [一時ファイルと一時ディレクトリのテスト](./test_tempfile.py)
 	* [時間を扱う関数のテスト](./test_time.py)
 	* [プログレスバーのテスト](./test_tqdm.py)
+* 最適化
+	* [Prim法のテスト](./test_prim.py)
+	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
+* 統計+機械学習+MCMC
+	* [久保のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
 * [予定]
 	* test_subprocess.py
 		* call, check_call, check_output, Popenの違いなど
