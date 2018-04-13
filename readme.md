@@ -12,7 +12,7 @@
 	* [文字列フォーマットを利用した出力テスト](./test_format.py)
 	* [ファイル取得のテスト](./test_glob.py)
 	* [lambda関数のテスト](./test_lambda.py)
-	* [MeCabのテスト](./test_mecab.py)
+	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [並列処理のテスト](test_multiprocessing.py)
 	* [ディレクトリとファイルの取得テスト](./test_os_walk.py)
 	* [コマンドライン引数のテスト](./test_sys_args.py)
