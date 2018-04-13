@@ -1,6 +1,6 @@
 # Pythonスクリプトのテスト集
 
-* kubo8.ipynb
+* [統計+MCMC](./kubo8.ipynb)
 	* 久保のみどり本8章の勉強用pythonスクリプト
 * rosenbrock.ipynb
 	* Rosenbrock関数の描画とニュートン法のテスト
