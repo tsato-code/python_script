@@ -1,4 +1,4 @@
-.csv
-.txt
-.ipynb_checkpoints
+*.csv
+*.txt
+.ipynb_checkpoints/
 
