@@ -7,6 +7,7 @@
 	* [Prim法のテスト](./test_prim.py)
 * py-collection
 	* [コマンドラインオプションとヘルプのテスト](./test_argparse.py)
+	* [例外処理のテスト](./test_assert.py)
 	* [クラスの定義とクラスのテスト](./test_class.py)
 	* [文字列フォーマットを利用した出力テスト](./test_format.py)
 	* [ファイル取得のテスト](./test_glob.py)
