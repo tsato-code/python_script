@@ -1,7 +1,7 @@
 # Pythonスクリプト集
 
 * 統計+MCMC
-	* [久保のみどり本8章の勉強用pythonスクリプト](./kub08.ipynb)
+	* [久保のみどり本8章の勉強用pythonスクリプト](./kubo08.ipynb)
 * 最適化
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 	* [Prim法のテスト](./test_prim.py)
