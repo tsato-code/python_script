@@ -6,12 +6,16 @@
 	* Rosenbrock関数の描画とニュートン法のテスト
 * test_argparse.py
 	* コマンドラインオプションとヘルプのテスト
+* test_class.py
+	* クラスの定義とクラスのテスト
 * test_glob.py
 	* ファイル取得のテスト
 * test_format.py
 	* 文字列フォーマットを利用した出力テスト
 * test_multiprocessing.py
 	* 並列処理のテスト
+* test_lambda.py
+	* lambda関数のテスト
 * test_os_walk.py
 	* ディレクトリとファイルの取得テスト
 * test_prim.py
