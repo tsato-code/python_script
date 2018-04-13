@@ -1,13 +1,9 @@
 2018-04-10
-- Dockerfileの作成
-- Dockerコンテナのubuntuでminicondaの利用
+- DockerコンテナのubuntuでAnacondaの利用
 - DockerコンテナからGPU利用
 - Vimの利用
 - pythonで部分空間法とスペクトル変換法
-- QGISの利用
 - ベイズ推論+pymc
-- 適当な時系列データセット
-- cmapの図
 - 最急降下法+準ニュートン法+ネルダーミード法+共役勾配法
 - 二値分類手法の比較
 - multinomial ligitのパラメータ推定
