@@ -14,7 +14,7 @@
 	* [時間を扱う関数のテスト](./test_time.py)
 	* [プログレスバーのテスト](./test_tqdm.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
-	* [マップクライアントライブラリfoliumのテスト](./test_folium.ipynb)
+	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
 * 最適化
 	* [Prim法のテスト](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
