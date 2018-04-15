@@ -19,7 +19,7 @@
 	* [Prim法のテスト](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
-	* [scikit-learnのデータセット](./sklearn_load_data)
+	* [scikit-learnのデータセット](./sklearn_load_data.ipynb)
 	* [久保先生のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
 * [予定]
 	* test_subprocess.py
