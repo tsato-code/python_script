@@ -9,3 +9,4 @@
 - multinomial ligitのパラメータ推定
 - 多変数Rosenbrock
 - スピングラス法 with python
+- kNN
