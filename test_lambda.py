@@ -17,11 +17,15 @@ print(r_square)
 r_even = list(map(lambda x: True if x%2==0 else False, r))
 print(r_even)
 
-
 a = [0, 1, 2, 3, 4]
 b = [10, 11, 12, 13, 14]
 c = list(map(lambda x, y: x*y, a, b))
 print(c)
+
+d = [0, 1, 2]
+e = [1, 0, 1, 0]
+f = list(map(lambda x: sum(map(lambda y: x*y, e)), d))
+print(f)
 
 
 # lambda + filter
@@ -42,6 +46,7 @@ $ python test_lambda.py
 [121, 484, 1089, 1936, 3025]
 [False, True, False, True, False]
 [0, 11, 24, 39, 56]
+[0, 2, 4]
 [(1, 2), (3, 4), (5, 6)]
 21
 """
