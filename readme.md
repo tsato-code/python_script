@@ -15,7 +15,7 @@
 	* [プログレスバーのテスト](./test_tqdm.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
-* 最適化
+* 最適化関連
 	* [Prim法のテスト](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
