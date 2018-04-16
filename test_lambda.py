@@ -15,6 +15,12 @@ r_int = list(map(lambda x: x**2, r))
 print(r_int)
 
 
+a = [0, 1, 2, 3, 4]
+b = [10, 11, 12, 13, 14]
+c = list(map(lambda x, y: x*y, a, b))
+print(c)
+
+
 # lambda + filter
 s = [(1,2), (2,3), (3,4), (4,5), (5,6)]
 s_filter = list(filter(lambda x: x[1]%2==0, s))
@@ -31,6 +37,7 @@ $ python test_lambda.py
 81
 [(5, 0), (7, 1), (10, 2), (3, 4)]
 [121, 484, 1089, 1936, 3025]
+[0, 11, 24, 39, 56]
 [(1, 2), (3, 4), (5, 6)]
 21
 """
