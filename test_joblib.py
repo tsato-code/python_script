@@ -11,10 +11,10 @@ def process(n):
 
 if __name__ == '__main__':
 	# ジョブの生成
-	# 並列計算
 	jobs = [delayed(process)(i) for i in range(10)]
+	# 並列計算
 	res = Parallel(n_jobs=-1, verbose=10)(jobs)
-	
+	# 標準出力
 	[print(r) for r in res]
 
 
