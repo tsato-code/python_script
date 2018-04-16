@@ -21,7 +21,7 @@
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
 	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
-	* [scikit-learnのデータセット](./sklearn_load_data.ipynb)
+	* [機械学習ライブラリscikit-learnのデータセット](./sklearn_load_data.ipynb)
 	* [久保先生のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
 * [予定]
 	* test_subprocess.py
