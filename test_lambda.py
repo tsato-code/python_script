@@ -11,8 +11,11 @@ print(t_sorted)
 
 # lambda + map
 r = [11, 22, 33, 44, 55]
-r_int = list(map(lambda x: x**2, r))
-print(r_int)
+r_square = list(map(lambda x: x**2, r))
+print(r_square)
+
+r_even = list(map(lambda x: True if x%2==0 else False, r))
+print(r_even)
 
 
 a = [0, 1, 2, 3, 4]
@@ -37,6 +40,7 @@ $ python test_lambda.py
 81
 [(5, 0), (7, 1), (10, 2), (3, 4)]
 [121, 484, 1089, 1936, 3025]
+[False, True, False, True, False]
 [0, 11, 24, 39, 56]
 [(1, 2), (3, 4), (5, 6)]
 21
