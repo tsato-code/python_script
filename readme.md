@@ -16,6 +16,8 @@
 	* [プログレスバーのテスト](./test_tqdm.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
+* shell-collection
+	* [Windows用バッチファイルのテスト](./test_bat.bat)
 * 最適化関連
 	* [Prim法のテスト](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
