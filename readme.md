@@ -1,4 +1,4 @@
-# Pythonスクリプト集
+# スクリプト集
 
 * py-collection
 	* [無名関数のテスト](./test_lambda.py)
