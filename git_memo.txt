@@ -3,7 +3,6 @@
 - リモートリポジトリのコピーコマンド調査。
 - ファイルやディレクトリの追加・変更をリポジトリに記録するにはコミットといい、コマンドを調査。
 - Git 管理下に置かれた作業中ディレクトリをワークツリーという。これをリポジトリに反映させるには、インデックスというところに置く。
-
 $ mkdir test_dir					# ディレクトリ作成
 $ cd test_dir						# ディレクトリ移動
 $ git init						# カレントディレクトリで Git リポジトリを新規作成
@@ -15,14 +14,16 @@ $ git log						# リポジトリの変更履歴確認
 $ git remote add origin \
 > https://github.com/tsato-code/python_codes.git 	# リモートリポジトリを追加登録
 $ git push -u origin master				# リポジトリをプッシュ（ここで GitHub アカウントの Username と Password を入力）
-
 $ git pull origin master				# リモートリポジトリの修正をローカルに反映
 $ rm -rf .git/						# ディレクトリを Git 管理から外す
 $ git reset HEAD sample.txt				# インデックスのファイルを取り消す
 
 2018-04-17
 - リモートリポジトリの取得。
-
 $ git config --global user.name tsato
 $ git config --global user.email xxx@example.com
 $ git clone http://github.com/tsato-code/python_codes.git
+
+2018-04-18
+- 無視されているファイルを強制追加。
+$ git add -f sample.txt

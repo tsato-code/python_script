@@ -10,3 +10,4 @@
 - 多変数Rosenbrock
 - スピングラス法 with python
 - kNN
+- 並列処理+プログレスバーの挙動確認
