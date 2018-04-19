@@ -34,21 +34,33 @@ elapsed = time.time() - start
 print('{} [sec]\n'.format(elapsed))
 
 
+print('Series plus Series')
+print(type(df.a))
+start = time.time()
+df.a + df.b
+elapsed = time.time() - start
+print('{} [sec]\n'.format(elapsed))
+
+
 """
 $ python compare_pandas_loop02.py
 DataFrame + iterrows
 <class 'pandas.core.frame.DataFrame'>
-75.88811087608337 [sec]
+74.14141321182251 [sec]
 
 DataFrame + apply
 <class 'pandas.core.frame.DataFrame'>
-17.910678386688232 [sec]
+17.67945694923401 [sec]
 
 Series + map
 よい実装が思いつかない
 
 ndarray + for
 <class 'numpy.ndarray'>
-0.17714309692382812 [sec]
+0.1718733310699463 [sec]
+
+Series plus Series
+<class 'pandas.core.series.Series'>
+0.0 [sec]
 
 """
