@@ -1,4 +1,4 @@
-2018-04-10
+### 2018-04-10
 - DockerコンテナのubuntuでAnacondaの利用
 - DockerコンテナからGPU利用
 - Vimの利用
@@ -12,3 +12,4 @@
 - kNN
 - 並列処理+プログレスバーの挙動確認
 - numpy, pandasのデータ型確認
+- line_profiler
