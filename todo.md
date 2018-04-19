@@ -13,3 +13,4 @@
 - 並列処理+プログレスバーの挙動確認
 - numpy, pandasのデータ型確認
 - line_profiler
+- デコレータ
