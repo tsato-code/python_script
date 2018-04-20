@@ -23,11 +23,11 @@
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
 	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
-	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
-	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
 	* [機械学習ライブラリscikit-learnのデータセット](./sklearn_load_data.ipynb)
 	* [久保先生のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
 * その他
+	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
+	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
 	* [平面上の点を線に射影するコード](./proj_point_to_line.ipynb)
 * [予定]
 	* test_subprocess.py
