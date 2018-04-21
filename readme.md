@@ -29,6 +29,7 @@
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
 	* [pandasのDataFrameの列に対する距離計算](./calc_pandas_dist.py)
+	* [pandasのDataFrameの列に対する距離計算に変数を用意したときとそうでないときの処理速比較テスト](./compare_pandas_var_use.py)
 	* [平面上の点を線に射影するコード](./proj_point_to_line.ipynb)
 * [予定]
 	* test_subprocess.py
