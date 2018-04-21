@@ -3,9 +3,11 @@ import numpy as np
 from tqdm import tqdm
 import time
 
+
 def var_use(x1, y1, x2, y2):
 	tmp = np.linalg.norm([x1-x2, y1-y2])
 	return tmp
+
 
 def var_unuse(x1, y1, x2, y2):
 	return np.linalg.norm([x1-x2, y1-y2])
@@ -26,3 +28,11 @@ start = time.time()
 [var_unuse(*abcd) for abcd in df.values]
 elapsed = time.time() - start
 print('var_unuse {} [sec]'.format(elapsed))
+
+
+
+"""
+$ python compare_pandas_var_use.py 
+var_use: 21.804782152175903 [sec]
+var_unuse 21.000695943832397 [sec]
+"""
