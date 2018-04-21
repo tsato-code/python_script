@@ -3,6 +3,7 @@
 * py-collection
 	* [無名関数のテスト](./test_lambda.py)
 	* [クラスの定義とクラスのテスト](./test_class.py)
+	* [クラスモジュールの呼出しテスト](./test_call_class.py)
 	* [コマンドラインオプションとヘルプのテスト](./test_argparse.py)
 	* [例外処理のテスト](./test_assert.py)
 	* [文字列フォーマットを利用した出力テスト](./test_format.py)
