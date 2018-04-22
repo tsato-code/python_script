@@ -11,10 +11,14 @@ def dist(x0, y0):
 dfA = pd.DataFrame([[np.random.rand(), np.random.rand()] for _ in range(10)], columns=list('xy'))
 dfB = pd.DataFrame([[np.random.rand(), np.random.rand()] for _ in range(100000)], columns=list('xy'))
 
+
 start = time.time()
-pd.DataFrame([dist(x0, y0) for x0, y0 in zip(dfA.x.values, tqdm(dfA.y.values))])
+dfC = pd.DataFrame([dist(x0, y0) for x0, y0 in zip(dfA.x.values, tqdm(dfA.y.values, leave=False))])
 elapsed = time.time() - start
-print('{} [sec]'.format(elapsed))
+
+
+print('\n{} [sec]'.format(elapsed))
+print(dfC.head())
 
 
 """

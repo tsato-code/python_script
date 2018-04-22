@@ -5,7 +5,9 @@ import time
 
 
 def var_use(x1, y1, x2, y2):
-	tmp = np.linalg.norm([x1-x2, y1-y2])
+	a = [x1, y1]
+	b = [x1, y2]
+	tmp = np.linalg.norm([a[0]-b[0], a[1]-b[1]])
 	return tmp
 
 
