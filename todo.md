@@ -14,3 +14,4 @@
 - numpy, pandasのデータ型確認
 - line_profiler
 - デコレータ
+- Numba
