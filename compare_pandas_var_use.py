@@ -35,6 +35,6 @@ print('var_unuse {} [sec]'.format(elapsed))
 
 """
 $ python compare_pandas_var_use.py 
-var_use: 21.804782152175903 [sec]
-var_unuse 21.000695943832397 [sec]
+var_use: 19.51082706451416 [sec]
+var_unuse 17.54906415939331 [sec]
 """
