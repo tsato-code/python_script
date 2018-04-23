@@ -16,6 +16,7 @@
 	* [時間を扱う関数のテスト](./test_time.py)
 	* [プログレスバーのテスト](./test_tqdm.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
+	* [自然言語処理ツールStanford CoreNLPのテスト](./test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
 * shell-collection
 	* [Windows用バッチファイルのテスト](./test_bat.bat)
