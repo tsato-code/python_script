@@ -1,5 +1,0 @@
-.gitignore
-*.csv
-*.txt
-.ipynb_checkpoints/
-__pycache__/
