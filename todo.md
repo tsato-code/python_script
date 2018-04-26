@@ -15,3 +15,4 @@
 - line_profiler
 - デコレータ
 - Numba
+- 決定木+回帰タスクの調査
