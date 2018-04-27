@@ -20,3 +20,9 @@
 	- モデル：ロジスティック回帰。
 	- 特徴：既存研究では道路形状や環境情報から道路の事故リスクを求めていたが、運転操作データを使った試みが新しい。
 	- 感想：特徴量を作るための分析が面白い。事故確率が高い交差点をランキングしたときの結果が気になる。
+
+## Random Forest
+
+1. [L. Breiman. Random Forest. Machine Learning 45, 5--32, 2001.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
+
+1. [A. Liaw and M. Wiener. Classification and Regression by randomForest. R news 2, 18--22, 2002.](https://www.researchgate.net/profile/Andy_Liaw/publication/228451484_Classification_and_Regression_by_RandomForest/links/53fb24cc0cf20a45497047ab/Classification-and-Regression-by-RandomForest.pdf)
