@@ -17,3 +17,4 @@
 - Numba
 - 決定木+回帰タスクの調査
 - WMD/EMDの調査
+- Julia for Mathematical Optimization
