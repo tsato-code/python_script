@@ -15,6 +15,7 @@
 	* [一時ファイルと一時ディレクトリのテスト](./test_tempfile.py)
 	* [時間を扱う関数のテスト](./test_time.py)
 	* [プログレスバーのテスト](./test_tqdm.py)
+	* [jitコンパイラのテスト](./test_numba_jit.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](./test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
@@ -30,8 +31,10 @@
 * その他
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
+	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その3）](./compare_pandas_loop03.py)
 	* [pandasのDataFrameの列に対する距離計算](./calc_pandas_dist.py)
 	* [pandasのDataFrameの列に対する距離計算に変数を用意したときとそうでないときの処理速比較テスト](./compare_pandas_var_use.py)
+	* [pandasのDataFrameの列に対する距離計算にnumpyの関数を使ったときとそうでないときの処理速度比較テスト](./compare_pandas_dist_numpy.py)
 	* [平面上の点を線に射影するコード](./proj_point_to_line.ipynb)
 * [予定]
 	* test_subprocess.py
