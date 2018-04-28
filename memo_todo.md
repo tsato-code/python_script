@@ -12,7 +12,6 @@
 - kNN
 - 並列処理+プログレスバーの挙動確認
 - line_profiler
-- デコレータ
 - 決定木+回帰タスクの調査
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
