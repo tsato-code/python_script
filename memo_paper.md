@@ -21,7 +21,9 @@
 	- 特徴：既存研究では道路形状や環境情報から道路の事故リスクを求めていたが、運転操作データを使った試みが新しい。
 	- 感想：特徴量を作るための分析が面白い。事故確率が高い交差点をランキングしたときの結果が気になる。
 
-## Random Forest
+## Tree Model
+
+1. [A. Karalic. Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92, 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878)
 
 1. [L. Breiman. Random Forest. Machine Learning 45, 5--32, 2001.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 
