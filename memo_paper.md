@@ -23,13 +23,15 @@
 
 ## Tree Model
 
-1. [Rebecca C. Steorts. Duke University Lecture Note: Data Mining and Machine Learning 2017. Tree Based Methods: Regression Trees](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
-
-1. [Rebecca C. Steorts. Duke University Lecture Note: Data Mining and Machine Learning 2017. Tree Based Methods: Bagging, Boosting, and
-Regression Trees](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
-
+1. [Rebecca C. Steorts. Tree Based Methods: Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning 2017.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
+	- データマイニングと機械学習の講義ノート。
+	- 回帰木の概要についてシンプルな説明。
+1. [Rebecca C. Steorts. Tree Based Methods: Bagging, Boosting, and
+Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning 2017.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
+1. [Mihaela van der Schaar. Classification and Regression Trees. Stanford University lecture Note: Statistical Machine Learning.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
+1. [W. Y. Loh. Classification and Regression Trees. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 1, 14-23, 2011.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
+	- 分類木と回帰木についての解説。
+	- 各モデルの様々なアルゴリズムを概観、比較実験など。
 1. [A. Karalic. Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92, 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878)
-
 1. [L. Breiman. Random Forest. Machine Learning 45, 5--32, 2001.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
-
 1. [A. Liaw and M. Wiener. Classification and Regression by randomForest. R news 2, 18--22, 2002.](https://www.researchgate.net/profile/Andy_Liaw/publication/228451484_Classification_and_Regression_by_RandomForest/links/53fb24cc0cf20a45497047ab/Classification-and-Regression-by-RandomForest.pdf)
