@@ -23,6 +23,11 @@
 
 ## Tree Model
 
+1. [Rebecca C. Steorts. Duke University Lecture Note: Data Mining and Machine Learning 2017. Tree Based Methods: Regression Trees](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
+
+1. [Rebecca C. Steorts. Duke University Lecture Note: Data Mining and Machine Learning 2017. Tree Based Methods: Bagging, Boosting, and
+Regression Trees](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
+
 1. [A. Karalic. Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92, 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878)
 
 1. [L. Breiman. Random Forest. Machine Learning 45, 5--32, 2001.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
