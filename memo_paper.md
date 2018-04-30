@@ -23,7 +23,7 @@
 
 ## Tree Model
 
-1. [Rebecca C. Steorts. Tree Based Methods: Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning 2017.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
+1. [R. C. Steorts. Tree Based Methods: Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning 2017.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
 	- データマイニングと機械学習の講義ノート。
 	- 回帰木の概要についてシンプルな説明。
 1. [Rebecca C. Steorts. Tree Based Methods: Bagging, Boosting, and
