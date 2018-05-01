@@ -88,13 +88,14 @@ if __name__ == '__main__':
 	p.print_mst()
 
 
-	# docstringの確認
+	""" docstringの確認
 	print("Prim.__doc__: {}".format(Prim.__doc__))
 	print("Prim.__init__.__doc__: {}".format(Prim.__init__.__doc__))
 	print("Prim.__repr__: {}".format(Prim.__repr__.__doc__))
 	print("Prim.replace_element.__doc__: {}".format(Prim.replace_element.__doc__))
 	print("Prim.exec.__doc__: {}".format(Prim.exec.__doc__))
 	print("Prim.print_mst.__doc__: {}".format(Prim.print_mst.__doc__))
+	"""
 
 
 """
@@ -103,25 +104,5 @@ status edges: [(1, 0, 2), (4, 0, 1), (3, 0, 5), (2, 1, 3), (7, 1, 4), (5, 4, 3),
 mst: [(0, -1), (0, 2), (0, 5), (3, 5), (1, 3), (4, 3)]
 mst size: 6
 mst weight: 13
-Prim.__doc__:  Prim法のクラス
-
-Prim.__init__.__doc__:  コンストラクタ
-
-    Args:
-        params (list(int)): 重み付き無向グラフ
-
-Prim.__repr__:  printしたときの挙動
-
-    Returns:
-        出力される文字列
-
-Prim.replace_element.__doc__:  heapqの実装が第一要素の第一成分によって管理されるので要素の成分を並べ替え
-
-Prim.exec.__doc__:  Prim法の実行
-
-    Args:
-        r (int): アルゴリズムを実行するときの始点
-
-Prim.print_mst.__doc__:  結果を出力
 
 """
