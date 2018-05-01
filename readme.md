@@ -16,7 +16,7 @@
 	* [時間を扱う関数のテスト](./test_time.py)
 	* [プログレスバーのテスト](./test_tqdm.py)
 	* [デコレータのテスト](./test_decorator.ipynb)
-	* [jitコンパイラのテスト](./test_numba_jit.py)
+	* [jitコンパイラライブラリNumbaのテスト](./test_numba_jit.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](./test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)

@@ -6,13 +6,12 @@
 - ベイズ推論+pymc
 - 最急降下法+準ニュートン法+ネルダーミード法+共役勾配法
 - 二値分類手法の比較
-- multinomial ligitのパラメータ推定
+- multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 - 多変数Rosenbrock
 - スピングラス法 with python
-- kNN
+- kNN + B&B
 - 並列処理+プログレスバーの挙動確認
 - line_profiler
 - 回帰木のimportance score
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
-- データ構造で高速化

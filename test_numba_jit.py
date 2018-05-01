@@ -6,7 +6,19 @@ from numba import jit
 
 df = pd.DataFrame((np.random.random(size=(100000000, 2))), columns=list('ab'))
 
+def calc(func):
+    import functools
+    import time
+    @functools.wraps(func)
+    def wrapper(*args,**kwargs):
+        start = time.time()
+        func(*args,**kwargs)
+        elapsed = time.time() - start
+        print('process time: {}[sec]'.format(elapsed))
+    return wrapper
 
+
+@calc
 @jit
 def add_jit(a, b):
 	a_val = a.values
@@ -18,14 +30,10 @@ def add_jit(a, b):
 	return c
 
 
-# add + jit
-start = time.time()
 c = add_jit(df.a, df.b)
-elapsed = time.time() - start
-print('{} [sec]'.format(elapsed))
 
 
 """
 $ python test_numba_jit.py
-7.037831544876099 [sec]
+process time: 6.7328290939331055[sec]
 """
