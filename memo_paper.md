@@ -32,6 +32,7 @@ Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning
 1. [W. Y. Loh. Classification and Regression Trees. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 1, 14-23, 2011.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
 	- 分類木と回帰木についての解説。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
-1. [A. Karalic. Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92, 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878)
+1.[J. Kazemitabar, A. Amini, A. Bloniarz, and A. S. Talwalkar. Variable Importance using Decision Trees. In Advances in Neural Information Processing Systems, 425--434, 2017.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
+1. [A. Karalic. Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92, 1992.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
 1. [L. Breiman. Random Forest. Machine Learning 45, 5--32, 2001.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [A. Liaw and M. Wiener. Classification and Regression by randomForest. R news 2, 18--22, 2002.](https://www.researchgate.net/profile/Andy_Liaw/publication/228451484_Classification_and_Regression_by_RandomForest/links/53fb24cc0cf20a45497047ab/Classification-and-Regression-by-RandomForest.pdf)

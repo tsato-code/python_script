@@ -12,7 +12,7 @@
 - kNN
 - 並列処理+プログレスバーの挙動確認
 - line_profiler
-- 回帰木のimportance
+- 回帰木のimportance score
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
 - データ構造で高速化
