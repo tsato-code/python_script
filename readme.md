@@ -23,7 +23,7 @@
 * shell-collection
 	* [Windows用バッチファイルのテスト](./test_bat.bat)
 * 最適化関連
-	* [Prim法のテスト](./test_prim.py)
+	* [Prim法クラスのテスト](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
 	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
