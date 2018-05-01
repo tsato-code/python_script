@@ -15,3 +15,4 @@
 - 回帰木のimportance score
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
+- R-tree
