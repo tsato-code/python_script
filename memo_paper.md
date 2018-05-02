@@ -34,19 +34,26 @@
 	- タスク：時系列空間データの局所的類似性抽出。
 	- データ：ユタ州ソルトレーク群の時系列空間データ。
 	- 手法：時系列データに対する幾何的性質を用いた新手法。具体的には、平面にプロットした複数の時系列データからポリゴン形状を抽出し、そのポリゴン情報から分類および可視化を行う。
-	- 特徴：時系列データを局所類似性で分類可能という。
+	- 特徴：時系列データを局所類似性で分類可能らしい。
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
 
 ## Tree Model
 
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
+	- タスク：回帰。
+	- データ：
+	- 手法：回帰木。
+	- 特徴：回帰木は、葉の領域に入る訓練データの目的変数の平均値を葉の値とする。提案手法は、葉で線形回帰を行う。local linear regressionというらしい。
+	- 感想：昔の論文は読みにくい。
 1. [Kazemitabar, J., Amini, A., Bloniarz, A. and Talwalkar, A. S. (2017). Variable Importance using Decision Trees. In Advances in Neural Information Processing Systems, 425--434.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
 1. [Liaw, A. and Wiener, M. (2002). Classification and Regression by randomForest. R news 2, 18--22.](https://www.researchgate.net/profile/Andy_Liaw/publication/228451484_Classification_and_Regression_by_RandomForest/links/53fb24cc0cf20a45497047ab/Classification-and-Regression-by-RandomForest.pdf)
 1. [Loh, W. Y. (2011). Classification and Regression Trees. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 1, 14-23.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
-	- 分類木と回帰木についての解説。
+	- 分類木と回帰木についての解説記事。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
 1. [Schaar, M. van der (2017). Classification and Regression Trees. Stanford University lecture Note: Statistical Machine Learning.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
+	- 統計的機械学習の講義スライド。
+	- 分類木と回帰木の詳しい計算手続きが、分枝の計算例とともに掲載されている。
 1. [Steorts, R. C. (2017). Tree Based Methods: Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
 	- データマイニングと機械学習の講義スライド。
 	- 回帰木の概要についてシンプルな説明。
@@ -62,6 +69,6 @@ Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
 1. [大沢裕. 地理情報システム特論第5回：空間データ構造. 埼玉大学講義資料.](http://www.mm.ics.saitama-u.ac.jp/lect/gis/)
 	- 空間データ構造の講義資料。
-	- R木とR^* 木について説明がある.
+	- R木とR^\*木について説明がある.
 1. [塚原拓人, 薫于洋, 陳漢雄, 古瀬一隆 (2017). 集約k近傍の効率的な検索方法. DEIM Forum 2017 C8-2.](http://db-event.jpn.org/deim2017/papers/155.pdf)
 1. [劉健全, 陳漢雄, 北川博之. (2012). 特化したR木空間索引を用いた効率的な逆最遠望検索. DEIM Forum 2012 D8-4.](http://db-event.jpn.org/deim2012/proceedings/final-pdf/d8-4.pdf)
