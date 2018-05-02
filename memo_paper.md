@@ -1,7 +1,8 @@
 # 論文メモ
 
-## 特徴量作成
+## 特徴量設計
 
+1. [Yokoyama, D. and Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1](http://db-event.jpn.org/deim2017/papers/372.pdf)
 	- タスク：事故発生したことがある交差点を判別。
 	- データ：ドラレコデータ、道路数値地図データ、雨量データ。
