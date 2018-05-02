@@ -88,16 +88,6 @@ if __name__ == '__main__':
 	p.print_mst()
 
 
-	""" docstringの確認
-	print("Prim.__doc__: {}".format(Prim.__doc__))
-	print("Prim.__init__.__doc__: {}".format(Prim.__init__.__doc__))
-	print("Prim.__repr__: {}".format(Prim.__repr__.__doc__))
-	print("Prim.replace_element.__doc__: {}".format(Prim.replace_element.__doc__))
-	print("Prim.exec.__doc__: {}".format(Prim.exec.__doc__))
-	print("Prim.print_mst.__doc__: {}".format(Prim.print_mst.__doc__))
-	"""
-
-
 """
 $ python test_prim.py
 status edges: [(1, 0, 2), (4, 0, 1), (3, 0, 5), (2, 1, 3), (7, 1, 4), (5, 4, 3), (2, 3, 5), (5, 2, 5)]
