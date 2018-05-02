@@ -43,28 +43,29 @@
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
 	- タスク：回帰。
 	- 手法：回帰木。
-	- 特徴：回帰木は、葉の領域に入る訓練データの目的変数の平均値を葉の値とする。提案手法は、葉で線形回帰を行う。local linear regressionというらしい。
+	- 特徴：既存の回帰木は、葉の領域に入る訓練データの目的変数の平均値を葉の値としていた。提案手法は、葉で線形回帰を行う。local linear regressionというらしい。
 	- データ：6つのデータセット。
 	- 感想：昔の論文は読みにくい。
-1. [Kazemitabar, J., Amini, A., Bloniarz, A. and Talwalkar, A. S. (2017). Variable Importance using Decision Trees. In Advances in Neural Information Processing Systems, 425--434.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
+1. [Kazemitabar, J., Amini, A., Bloniarz, A. and Talwalkar, A. S. (2017). Variable Importance using Decision Trees. In NIPS, 425--434.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
 1. [Loh, W. Y. (2011). Classification and Regression Trees. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 1, 14-23.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
 	- 分類木と回帰木についての解説記事。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
-1. [Schaar, M. van der (2017). Classification and Regression Trees. Stanford University lecture Note: Statistical Machine Learning.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
+1. [Schaar, M. van der (2017). Statistical Machine Learning, Classification and Regression Trees. University of Oxford Lecture Note.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
 	- 統計的機械学習の講義スライド。
 	- 分類木と回帰木の詳しい計算手続きが、分枝の計算例とともに掲載されている。
-1. [Steorts, R. C. (2017). Tree Based Methods: Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
+1. [Steorts, R. C. (2017). Data Mining and Machine Learning, Tree Based Methods: Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
 	- データマイニングと機械学習の講義スライド。
 	- 回帰木の概要についてシンプルな説明。
-1. [Steorts, R. C. (2017). Tree Based Methods: Bagging, Boosting, and
-Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
+1. [Steorts, R. C. (2017). Data Mining and Machine Learning, Tree Based Methods: Bagging, Boosting, and
+Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
 	- データマイニングと機械学習の講義スライド。
 	- Baggin, Boosting, Regression Treesについてボリュームある説明。
 	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
 
 ## Indexing
 
-1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. in SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
+1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
+1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
 1. [大沢裕. 地理情報システム特論第5回：空間データ構造. 埼玉大学講義資料.](http://www.mm.ics.saitama-u.ac.jp/lect/gis/)
 	- 空間データ構造の講義資料。

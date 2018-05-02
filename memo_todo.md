@@ -12,7 +12,8 @@
 - kNN + B&B
 - 並列処理+プログレスバーの挙動確認
 - line_profiler
-- 回帰木のimportance score
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
 - R-tree
+- decisiontreeregressorの性能がいまいち+RMSEがマイナス
+- subprocess
