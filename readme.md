@@ -27,8 +27,9 @@
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
 	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
-	* [機械学習ライブラリscikit-learnのデータセット](./sklearn_load_data.ipynb)
-	* [機械学習ライブラリscilit-learnのランダムフォレストのテスト](./test_randomforest.ipynb)
+	* [機械学習ライブラリscikit-learnのデータセット確認のテスト](./sklearn_load_data.ipynb)
+	* [機械学習ライブラリscikit-learnの決定木（回帰）のテスト](./test_decisiontreeregressor.ipynb)
+	* [機械学習ライブラリscikit-learnのランダムフォレスト（分類）のテスト](./test_randomforest.ipynb)
 	* [久保先生のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
 * その他
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
