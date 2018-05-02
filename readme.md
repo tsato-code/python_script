@@ -1,26 +1,26 @@
 # スクリプト集
 
-* py-collection
+* Python
 	* [無名関数のテスト](./test_lambda.py)
+	* [文字列フォーマットを利用した出力テスト](./test_format.py)
 	* [クラスの定義とクラスのテスト](./test_class.py)
 	* [クラスモジュールの呼出しテスト](./test_call_class.py)
-	* [コマンドラインオプションとヘルプのテスト](./test_argparse.py)
-	* [例外処理のテスト](./test_assert.py)
-	* [文字列フォーマットを利用した出力テスト](./test_format.py)
-	* [ファイル取得のテスト](./test_glob.py)
-	* [並列処理モジュールmultiprocessingのテスト](test_multiprocessing.py)
-	* [並列処理モジュールjoblibのテスト](./test_joblib.py)
-	* [ディレクトリとファイルの取得テスト](./test_os_walk.py)
-	* [コマンドライン引数のテスト](./test_sys_args.py)
-	* [一時ファイルと一時ディレクトリのテスト](./test_tempfile.py)
-	* [時間を扱う関数のテスト](./test_time.py)
-	* [プログレスバーのテスト](./test_tqdm.py)
 	* [デコレータのテスト](./test_decorator.ipynb)
+	* [例外処理のテスト](./test_assert.py)
+	* [argparseモジュールによるコマンドラインオプションとヘルプのテスト](./test_argparse.py)
+	* [globモジュールによるファイル取得のテスト](./test_glob.py)
+	* [multiprocessingモジュールによる並列処理のテスト](test_multiprocessing.py)
+	* [joblibモジュールによる並列処理のテスト](./test_joblib.py)
+	* [osモジュールによるディレクトリとファイルの取得テスト](./test_os_walk.py)
+	* [sysモジュールによるコマンドライン引数のテスト](./test_sys_args.py)
+	* [tempfileモジュールによる一時ファイルと一時ディレクトリのテスト](./test_tempfile.py)
+	* [timeモジュールによる時間を扱う関数のテスト](./test_time.py)
+	* [tqdmモジュールによるプログレスバーのテスト](./test_tqdm.py)
 	* [jitコンパイラライブラリNumbaのテスト](./test_numba_jit.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](./test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](./test_folium.ipynb)
-* shell-collection
+* Shell
 	* [Windows用バッチファイルのテスト](./test_bat.bat)
 * 最適化関連
 	* [Prim法クラスのテスト](./test_prim.py)

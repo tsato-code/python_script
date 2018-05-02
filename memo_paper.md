@@ -52,7 +52,9 @@
 	- 回帰木の概要についてシンプルな説明。
 1. [Steorts, R. C. (2017). Tree Based Methods: Bagging, Boosting, and
 Regression Trees. Duke University Lecture Note: Data Mining and Machine Learning.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
-
+	- データマイニングと機械学習の講義スライド。
+	- Baggin, Boosting, Regression Treesについてボリュームある説明。
+	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
 
 ## Indexing
 
