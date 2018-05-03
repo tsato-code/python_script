@@ -28,7 +28,7 @@
 	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
 	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
 
-## Time Series
+## 時系列分析
 
 1. [貞広幸雄. (2013). 時系列空間データの探索的解析手法. オペレーションズ・リサーチ 58, 18--23.](http://www.orsj.or.jp/archive2/or58-01/or58_1_18.pdf)
 	- タスク：時系列空間データの局所的類似性抽出。
@@ -37,7 +37,7 @@
 	- データ：ユタ州ソルトレーク群の時系列空間データ。
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
 
-## Tree Model
+## 木構造モデル
 
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
@@ -62,9 +62,11 @@ Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs4
 	- Baggin, Boosting, Regression Treesについてボリュームある説明。
 	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
 
-## Indexing
+## データ構造
 
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
+	- R-treeのテキスト。
+	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
 1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
