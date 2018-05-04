@@ -66,13 +66,13 @@ Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs4
 ## データ構造
 
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
-	- R-treeのテキスト。
+	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
 1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
 	- タスク：空間データのk近傍の索引化。
-	- 手法：既存の空間データ構造ANNを改善。
+	- 手法：既存の空間データ構造ANNを改善したもの。
 	- 特徴：木構造を利用。
 	- データ：一様分布データ、画像特徴量。
 	- 感想：条件1が成立する状況が不明。参考文献に上げられているVLDB Journalを要確認。
@@ -81,8 +81,8 @@ Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs4
 	- R木とR<sup>\*</sup>木について説明がある。
 1. [塚原拓人, 薫于洋, 陳漢雄, 古瀬一隆 (2017). 集約k近傍の効率的な検索方法. DEIM Forum 2017 C8-2.](http://db-event.jpn.org/deim2017/papers/155.pdf)
 	- タスク：集約k近傍検索。
-	- 手法：タスクの特殊ケースを扱うデータ構造を拡張。
+	- 手法：タスクの特殊ケースを扱うデータ構造を拡張したもの。
 	- 特徴：距離関数の性質を使って枝刈り、凸包+クラスタリングなどの幾何的性質を使ってクエリの前処理。
 	- データ：北アメリカの人工集落の緯度経度など。
-	- 感想：いかに枝刈りするか、無駄な計算をしないよな前処理など、随所に工夫がありおもしろい。実験結果がそれほどよく見えないのが残念。
+	- 感想：いかに枝刈りするか、無駄な計算をしないような前処理など、随所に工夫がありおもしろい。実験結果がそれほどよく見えないのが残念。
 1. [劉健全, 陳漢雄, 北川博之. (2012). 特化したR木空間索引を用いた効率的な逆最遠望検索. DEIM Forum 2012 D8-4.](http://db-event.jpn.org/deim2012/proceedings/final-pdf/d8-4.pdf)
