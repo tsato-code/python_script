@@ -40,6 +40,7 @@
 ## 木構造モデル
 
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
+1. [Chen, T., and Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
 	- タスク：回帰。
 	- 手法：回帰木。
@@ -72,6 +73,6 @@ Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs4
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
 1. [大沢裕. 地理情報システム特論第5回：空間データ構造. 埼玉大学講義資料.](http://www.mm.ics.saitama-u.ac.jp/lect/gis/)
 	- 空間データ構造の講義資料。
-	- R木とR^\*木について説明がある.
+	- R木とR<sup>\*</sup>木について説明がある.
 1. [塚原拓人, 薫于洋, 陳漢雄, 古瀬一隆 (2017). 集約k近傍の効率的な検索方法. DEIM Forum 2017 C8-2.](http://db-event.jpn.org/deim2017/papers/155.pdf)
 1. [劉健全, 陳漢雄, 北川博之. (2012). 特化したR木空間索引を用いた効率的な逆最遠望検索. DEIM Forum 2012 D8-4.](http://db-event.jpn.org/deim2012/proceedings/final-pdf/d8-4.pdf)
