@@ -39,3 +39,4 @@
 	* [pandasのDataFrameの列に対する距離計算に変数を用意したときとそうでないときの処理速比較テスト](./compare_pandas_var_use.py)
 	* [pandasのDataFrameの列に対する距離計算にnumpyの関数を使ったときとそうでないときの処理速度比較テスト](./compare_pandas_dist_numpy.py)
 	* [平面上の点を線に射影するコード](./proj_point_to_line.ipynb)
+	* [平面上の点を四分木で管理するコード](./test_quadtree.ipynb)

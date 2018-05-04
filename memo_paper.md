@@ -76,9 +76,6 @@ Regression Trees. Duke University Lecture Note.](http://www2.stat.duke.edu/~rcs4
 	- 特徴：木構造を利用。
 	- データ：一様分布データ、画像特徴量。
 	- 感想：条件1が成立する状況が不明。参考文献に上げられているVLDB Journalを要確認。
-1. [大沢裕. 地理情報システム特論第5回：空間データ構造. 埼玉大学講義資料.](http://www.mm.ics.saitama-u.ac.jp/lect/gis/)
-	- 空間データ構造の講義資料。
-	- R木とR<sup>\*</sup>木について説明がある。
 1. [塚原拓人, 薫于洋, 陳漢雄, 古瀬一隆 (2017). 集約k近傍の効率的な検索方法. DEIM Forum 2017 C8-2.](http://db-event.jpn.org/deim2017/papers/155.pdf)
 	- タスク：集約k近傍検索。
 	- 手法：タスクの特殊ケースを扱うデータ構造を拡張したもの。
