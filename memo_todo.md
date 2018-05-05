@@ -18,3 +18,4 @@
 - decisiontreeregressorの性能がいまいち+RMSEがマイナス
 - subprocess
 - pandas_profiling
+- KL-divergenceの計算
