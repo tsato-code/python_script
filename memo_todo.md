@@ -14,8 +14,9 @@
 - line_profiler
 - WMD/EMDの調査
 - Julia for Mathematical Optimization
-- R-tree
+- 空間データ構造 (B-Tree, B+-Tree, B*-Tree, R-Tree, R+-Tree, R*-Tree) の調査
 - decisiontreeregressorの性能がいまいち+RMSEがマイナス
 - subprocess
 - pandas_profiling
-- KL-divergenceの計算
+- matplotlibのカラーマップ
+- KL-divergenceとentropyの計算
