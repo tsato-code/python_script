@@ -3,6 +3,11 @@
 ## 特徴量設計
 
 1. [Yokoyama, D. and Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
+	- タスク：ドラレコデータから事故歴ありドライバの判別。
+	- 手法：サポールベクターマシン。
+	- 特徴：平均的ドライバーとの違いを表す説明変数を追加。エントロピーやKL-ダイバージェンスを利用。
+	- データ：ドライバー経歴、ドラレコデータ。
+	- 感想：KL-ダイバージェンスは調査が必要。
 1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1](http://db-event.jpn.org/deim2017/papers/372.pdf)
 	- タスク：事故発生したことがある交差点を判別。
 	- 手法：ロジスティック回帰。
@@ -66,6 +71,7 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 ## データ構造
 
 1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
+1. [Khan, M., Ding, Q., and Perrizo, W. (2002). K-Nearest Neighbor Classification on Spatial Data Streams Using P-Trees. In PAKDD 517--528.](https://pdfs.semanticscholar.org/0286/c5fee2dea935c601d55b44ef8cae965bbff7.pdf)
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
