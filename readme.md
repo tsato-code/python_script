@@ -26,6 +26,7 @@
 	* [Prim法クラス](./test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
+	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](./test_ent_kl.py)
 	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
 	* [機械学習ライブラリscikit-learnのデータセット確認のテスト](./sklearn_load_data.ipynb)
 	* [機械学習ライブラリscikit-learnの決定木（回帰）のテスト](./test_decisiontreeregressor.ipynb)
