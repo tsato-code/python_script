@@ -25,3 +25,17 @@ print(kl(p1, p1))
 print(kl(p1, p2))
 print(kl(p1, p3))
 print(kl(p2, p3))
+
+
+"""
+python test_ent_kl.py
+entropy
+1.0
+0.0
+0.08072690128286308
+kl divergence
+0.0
+inf
+2.3298915877990685
+0.01448501164950522
+"""
