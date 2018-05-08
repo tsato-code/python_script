@@ -31,7 +31,7 @@
 	* [機械学習ライブラリscikit-learnのデータセット確認のテスト](./sklearn_load_data.ipynb)
 	* [機械学習ライブラリscikit-learnの決定木（回帰）のテスト](./test_decisiontreeregressor.ipynb)
 	* [機械学習ライブラリscikit-learnのランダムフォレスト（分類）のテスト](./test_randomforest.ipynb)
-	* [久保先生のみどり本8章の勉強用pythonスクリプト](./kubo8.ipynb)
+	* [久保先生のみどり本8章のPython化](./kubo8.ipynb)
 * データ構造
 	* [QuadTree](./test_quadtree.ipynb)
 	* [R-Tree](./test_rtree.py)
