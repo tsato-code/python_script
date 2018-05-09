@@ -16,6 +16,7 @@
 	* [tempfileモジュールによる一時ファイルと一時ディレクトリのテスト](./test_tempfile.py)
 	* [timeモジュールによる時間を扱う関数のテスト](./test_time.py)
 	* [tqdmモジュールによるプログレスバーのテスト](./test_tqdm.py)
+	* [yamlモジュールによるYAML読み込みのテスト](./test_yaml.py)
 	* [jitコンパイラライブラリNumbaのテスト](./test_numba_jit.py)
 	* [形態素解析エンジンMeCabのテスト](./test_mecab.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](./test_corenlp.py)
@@ -27,10 +28,10 @@
 	* [Rosenbrock関数の描画とニュートン法のテスト](./rosenbrock.ipynb)
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](./test_ent_kl.py)
-	* [データ分析ライブラリpandasのテスト](./test_pandas.ipynb)
-	* [機械学習ライブラリscikit-learnのデータセット確認のテスト](./sklearn_load_data.ipynb)
-	* [機械学習ライブラリscikit-learnの決定木（回帰）のテスト](./test_decisiontreeregressor.ipynb)
-	* [機械学習ライブラリscikit-learnのランダムフォレスト（分類）のテスト](./test_randomforest.ipynb)
+	* [pandasコマンドのテスト](./test_pandas.ipynb)
+	* [scikit-learnのデータセット確認のテスト](./sklearn_load_data.ipynb)
+	* [scikit-learnの決定木（回帰）のテスト](./test_decisiontreeregressor.ipynb)
+	* [scikit-learnのランダムフォレスト（分類）のテスト](./test_randomforest.ipynb)
 	* [久保先生のみどり本8章のPython化](./kubo8.ipynb)
 * データ構造
 	* [QuadTree](./test_quadtree.ipynb)
