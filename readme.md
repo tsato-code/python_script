@@ -38,7 +38,7 @@
 * その他
 	* [再帰深さ上限の確認](./test_recursion.py)
 	* [論理演算の処理速度確認](./compare_logical_operator.py)
-	* [組み込み関数allの処理速度確認（その1）](./cpmpare_all01.py)
+	* [組み込み関数allの処理速度確認（その1）](./compare_all01.py)
 	* [組み込み関数allの処理速度確認（その2）](./compare_all02.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
