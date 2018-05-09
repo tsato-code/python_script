@@ -36,6 +36,8 @@
 	* [QuadTree](./test_quadtree.ipynb)
 	* [R-Tree](./test_rtree.py)
 * その他
+	* [組み込み関数allの処理速度確認（その1）](./cpmpare_all01.py)
+	* [組み込み関数allの処理速度確認（その2）](./compare_all02.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その1）](./compare_pandas_loop01.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その2）](./compare_pandas_loop02.py)
 	* [pandasのDataFrameの列に対するloop処理速度比較テスト（その3）](./compare_pandas_loop03.py)
