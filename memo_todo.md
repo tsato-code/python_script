@@ -8,12 +8,13 @@
 - 並列処理+プログレスバーの挙動確認
 
 ## 最適化関連
-- Julia for Mathematical Optimization
+- Julia for Mathematical Optimization => SCIP with JuMPの調査
 - 多変数Rosenbrock最適化
 - 最急降下法+準ニュートン法+共役勾配法
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
+- LDAのトピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
 - scikit-learnの`feature_extraction`と`feature_selection`
 - WMD/EMDの調査
