@@ -48,3 +48,8 @@ $ git add -f sample.txt
 $ git rm --cached sample.txt				# --cached オプションでファイルを残したまま管理対象から外す
 $ git rm sample.txt					# --cached なしでファイルごと削除
 ```
+
+
+### 2018-05-10
+
+- [学生のための卑近な git・GitHub 入門](https://qiita.com/showmeear/items/ee61984089445e52f794)
