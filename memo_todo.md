@@ -35,6 +35,7 @@
 	- R<sup>+</sup>-Tree
 	- R<sup>*</sup>-Tree
 ## その他
+- [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)
 - Vimコマンドの調査
 - DockerコンテナのubuntuでAnacondaの利用
 - DockerコンテナからGPU利用
