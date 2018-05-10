@@ -27,7 +27,7 @@
 - kNNの実装
 
 ## データ構造関連
-- 空間データ構造 (B-Tree, B+-Tree, B*-Tree, R-Tree, R+-Tree, R*-Tree) の調査
+- 空間データ構造の調査
 	- B-tree
 	- B<sup>+</sup>-Tree
 	- B<sup>*</sup>-Tree
