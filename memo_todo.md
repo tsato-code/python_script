@@ -3,7 +3,6 @@
 # Python関連
 - subprocess
 - line_profiler
-- matplotlibのカラーマップ
 - pandas_profiling
 - 並列処理+プログレスバーの挙動確認
 
