@@ -13,7 +13,7 @@
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
-- カーネル密度推定
+- カーネル密度推定'kernel_density'
 - BallTreeの`DeprecationWarning`
 - LDAのトピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
