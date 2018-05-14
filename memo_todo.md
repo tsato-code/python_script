@@ -7,6 +7,8 @@
 - 並列処理+プログレスバーの挙動確認
 
 ## 最適化関連
+- ナップサック問題に対する分枝限定法を実装
+- ナップサック問題に対する動的計画法の実装（lru_cacheが使える？）
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
 - 多変数Rosenbrock最適化
 - 最急降下法+準ニュートン法+共役勾配法
