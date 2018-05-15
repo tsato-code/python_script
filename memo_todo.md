@@ -3,7 +3,6 @@
 ## Python関連
 - subprocess
 - line_profiler
-- pandas_profiling
 - 並列処理+プログレスバーの挙動確認
 
 ## 最適化関連
