@@ -19,6 +19,7 @@
 	* [yamlモジュールによるYAML読み込みのテスト](pythonscript/test_yaml.py)
 	* [jitコンパイラライブラリNumbaのテスト](pythonscript/test_numba_jit.py)
 	* [形態素解析エンジンMeCabのテスト](pythonscript/test_mecab.py)
+	* [形態素解析器Janomeのテスト](pythonscript/test_janome.py)
 	* [係り受け解析エンジンCaboChaのテスト](pythonscript/test_cabocha.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](pythonscript/test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](pythonscript/test_folium.ipynb)
