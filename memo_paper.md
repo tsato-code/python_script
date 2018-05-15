@@ -41,6 +41,9 @@
 	- データ：ユタ州ソルトレーク群の時系列空間データ。
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
 
+## 画像処理
+1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
+
 ## 木構造モデル
 
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
