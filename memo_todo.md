@@ -29,7 +29,7 @@
 
 ## データ構造関連
 - 空間データ構造の調査
-	- B-tree
+	- B-tree(search, inseart, delete)
 	- B<sup>+</sup>-Tree
 	- B<sup>*</sup>-Tree
 	- R-Tree
