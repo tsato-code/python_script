@@ -29,7 +29,7 @@
 * 最適化関連
 	* [Prim法クラス](optimization/test_prim.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](optimization/rosenbrock.ipynb)
-	* [pulpによるナップサック問題の求解](optimization_knapsack.py)
+	* [pulpによるナップサック問題の求解](optimization/knapsack.py)
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [pandasコマンドのテスト](machinelearning/test_pandas.ipynb)
