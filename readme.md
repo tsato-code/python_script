@@ -16,6 +16,7 @@
 	* [tempfileモジュールによる一時ファイルと一時ディレクトリのテスト](pythonscript/test_tempfile.py)
 	* [timeモジュールによる時間を扱う関数のテスト](pythonscript/test_time.py)
 	* [tqdmモジュールによるプログレスバーのテスト](pythonscript/test_tqdm.py)
+	* [line_profilerモジュールによるプロファイリングのテスト](pythonscript/test_line_profiler.py)
 	* [yamlモジュールによるYAML読み込みのテスト](pythonscript/test_yaml.py)
 	* [jitコンパイラライブラリNumbaのテスト](pythonscript/test_numba_jit.py)
 	* [形態素解析器MeCabのテスト](pythonscript/test_mecab.py)
