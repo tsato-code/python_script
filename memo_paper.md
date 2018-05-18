@@ -40,6 +40,7 @@
 	- 特徴：時系列データを局所類似性で分類可能らしい。
 	- データ：ユタ州ソルトレーク群の時系列空間データ。
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
+1. [Bacci, S., Pandolfi, S., and Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
@@ -99,6 +100,3 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 	- データ：北アメリカの人工集落の緯度経度など。
 	- 感想：いかに枝刈りするか、無駄な計算をしないような前処理など、随所に工夫がありおもしろい。実験結果がそれほどよく見えないのが残念。
 1. [劉健全, 陳漢雄, 北川博之. (2012). 特化したR木空間索引を用いた効率的な逆最遠望検索. DEIM Forum 2012 D8-4.](http://db-event.jpn.org/deim2012/proceedings/final-pdf/d8-4.pdf)
-
-## データ解析と機械学習
-1. [Bacci, S., Pandolfi, S., and Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
