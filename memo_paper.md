@@ -33,7 +33,7 @@
 	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
 
 ## 可視化
-1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9(Nov), 2579-2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
+1. [Maaten, L. V. D., and Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 	- t-SNE
 
 ## 時系列分析
@@ -84,7 +84,7 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
-1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15(1), 3221-3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
+1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15, 3221--3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
 	- t-SNEの高速化のために四分木や
 1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [Yao, Y. (2017). Advanced Techniques for High Dimensional Data, The R-tree. University of Queensland Lecture Slide.](http://www.cse.cuhk.edu.hk/~taoyf/course/infs4205/www/index.html)
