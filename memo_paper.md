@@ -32,8 +32,11 @@
 	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
 	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
 
-## 時系列分析
+## 可視化
+1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9(Nov), 2579-2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
+	- t-SNE
 
+## 時系列分析
 1. [貞広幸雄. (2013). 時系列空間データの探索的解析手法. オペレーションズ・リサーチ 58, 18--23.](http://www.orsj.or.jp/archive2/or58-01/or58_1_18.pdf)
 	- タスク：時系列空間データの局所的類似性抽出。
 	- 手法：時系列データに対する幾何的性質を用いた新手法。具体的には、平面にプロットした複数の時系列データからポリゴン形状を抽出し、そのポリゴン情報から分類および可視化を行う。
@@ -46,7 +49,6 @@
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
 
 ## 木構造モデル
-
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., and Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
@@ -72,7 +74,6 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
 
 ## データ構造
-
 1. [Bury, M., Schwiegelshohn, C., and Sorella, M. (2016). Efficient Similarity Search in Dynamic Data Streams. arXiv preprint arXiv:1605.03949.](https://arxiv.org/abs/1605.03949)
 1. [Charikar, M. S. (2002). Similarity estimation techniques from rounding algorithms. In Proceedings of the thiry-fourth annual ACM symposium on Theory of computing, 380--388. ACM.](http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf)
 1. [Fagin, R., Kumar, R., and Sivakumar, D. (2003, June). Efficient similarity search and classification via rank aggregation. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data, 301-312. ACM.](https://s3.amazonaws.com/academia.edu.documents/34071215/rank-aggregation.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1526142136&Signature=qPX4aYR5Y2B21fmfb8qNts08OwI%3D&response-content-disposition=inline%3B%20filename%3DEfficient_similarity_search_and_classifi.pdf)
@@ -83,6 +84,8 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
+1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15(1), 3221-3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
+	- t-SNEの高速化のために四分木や
 1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [Yao, Y. (2017). Advanced Techniques for High Dimensional Data, The R-tree. University of Queensland Lecture Slide.](http://www.cse.cuhk.edu.hk/~taoyf/course/infs4205/www/index.html)
 	- 高次元データに対するテクニック集。
