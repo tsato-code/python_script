@@ -12,6 +12,7 @@
 	* [multiprocessingモジュールによる並列処理のテスト](pythonscript/test_multiprocessing.py)
 	* [joblibモジュールによる並列処理のテスト](pythonscript/test_joblib.py)
 	* [osモジュールによるディレクトリとファイルの取得テスト](pythonscript/test_os_walk.py)
+	* [reモジュールによる正規表現のテスト](pythonscript/test_re.py)
 	* [sysモジュールによるコマンドライン引数のテスト](pythonscript/test_sys_args.py)
 	* [tempfileモジュールによる一時ファイルと一時ディレクトリのテスト](pythonscript/test_tempfile.py)
 	* [timeモジュールによる時間を扱う関数のテスト](pythonscript/test_time.py)
