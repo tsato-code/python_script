@@ -37,6 +37,7 @@
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
 	* [scikit-learnの決定木（回帰）のテスト](machinelearning/test_decisiontreeregressor.ipynb)
 	* [scikit-learnのランダムフォレスト（分類）のテスト](machinelearning/test_randomforest.ipynb)
+	* [scikit-learnのt-SNEのテスト](machinelearning/test_tsne.ipynb)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 * データ構造
