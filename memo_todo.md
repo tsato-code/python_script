@@ -14,18 +14,17 @@
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
-- カーネル密度推定'kernel_density'
-- BallTreeの`DeprecationWarning`
+- カーネル密度推定 `kernel_density`
+- BallTreeの `DeprecationWarning`
 - LDAのトピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
-- scikit-learnの`feature_extraction`と`feature_selection`
+- scikit-learnの `feature_extraction` と `feature_selection`
 - WMD/EMDの調査
 - 部分空間法とスペクトル変換法の調査
 - ベイズ推論 + pymc
 - 二値分類手法の比較
 - スピングラス法の調査
 - kNNの実装
-- t-SNEの使い方
 
 ## データ構造関連
 - 空間データ構造の調査
