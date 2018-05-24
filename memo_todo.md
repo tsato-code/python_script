@@ -28,7 +28,7 @@
 
 ## データ構造関連
 - 空間データ構造の調査
-	- B-tree(search, inseart, delete)
+	- 二分探索木の計算
 	- B<sup>+</sup>-Tree
 	- B<sup>*</sup>-Tree
 	- R-Tree

@@ -33,7 +33,7 @@
 	* [pulpによるナップサック問題の求解](optimization/test_pulp.py)
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
-	* [pandasコマンドのテスト](machinelearning/test_pandas.ipynb)
+	* [pandasのテスト](machinelearning/test_pandas.ipynb)
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
 	* [scikit-learnの決定木（回帰）のテスト](machinelearning/test_decisiontreeregressor.ipynb)
 	* [scikit-learnのランダムフォレスト（分類）のテスト](machinelearning/test_randomforest.ipynb)
@@ -41,6 +41,7 @@
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 * データ構造
+	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [QuadTree](datastructure/test_quadtree.ipynb)
 	* [R-Tree](datastructure/test_rtree.py)
 * その他
