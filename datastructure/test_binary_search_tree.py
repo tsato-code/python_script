@@ -1,28 +1,9 @@
 class Node:
-    def __init__(self, x):
-        self.data  = x
+    def __init__(self, key):
+        self.key  = key
         self.left  = None
         self.right = None
-        
-            
-def search(node, x):
-    while node:
-        if node.data == x: return True
-        if x < node.data:
-            node = node.left
-        else:
-            node = node.right
-    return False
-
-
-def insert(node, x):
-    if node is None:return Node(x)
-    elif x == node.data: return node
-    elif x < node.data:
-        node.left = insert(node.left, x)
-    else:
-        node.right = insert(node.right, x)
-    return node
+        self.parent = None
 
 
 def delete(node, x):
@@ -69,40 +50,69 @@ def traverse(node):
         yield node.data
         for x in traverse(node.right):
             yield x
-    
-    
+
+def search(node, x):
+    while node:
+        if node.data == x: return True
+        if x < node.data:
+            node = node.left
+        else:
+            node = node.right
+    return False
+
+
 class BinaryTree:
     def __init__(self):
         self.root = None
 
     # 探索
-    def search(self, x):
-        return search(self.root, x)
+    def search(self, k):
+        return _search(self.root, k)
+        
 
-    # 挿入
-    def insert(self, x):
-        self.root = insert(self.root, x)
+    def _search(x, k):
+        if x == None or k == x.key:
+            return x
+        if k < x.key:
+            return self._search(x.left, k)
+        else:
+            return self._search(x.right. k)
 
-    # 削除
-    def delete(self, x):
-        self.root = delete(self.root, x)
 
-    # 巡回
-    def traverse(self):
-        for x in traverse(self.root):
-            yield x
+    def minimum(self):
+        x = self.root
+        while x.left != None:
+            x = x.left
+        return x
+
+
+    def maximum(self)
+        x = self.root
+        while x.right != None:
+            x = x.right
+        return x
+
+
+    def _successor(x):
+        if x.right != None:
+            return self.minimum(x.right)
+        y = x.parent
+        while y != None and x == y.right:
+            x = yy = y.parent
+        return y
+
     
-    # 出力
-    def printTree(self):
-        if(self.root != None):
-            self._printTree(self.root)
+    # 中間順木巡回
+    def inoder_walk(self):
+        if self.root != None:
+            self._inorder_walk(self.root)
+
     
-    
-    def _printTree(self, node):
+    def _inorder_walk(self, node):
         if(node != None):
-            self._printTree(node.left)
-            print(str(node.data) + ' ')
-            self._printTree(node.right)
+            self._inorder_walk(node.left)
+            print(str(node.data))
+            self._inorder_walk(node.right)
 
 
 # テスト
@@ -112,7 +122,7 @@ if __name__ == '__main__':
     data = [random.randint(0, 100) for x in range(10)]
     print(data)
     print(tree)
-    for x in data: tree.insert(x)
+    for k in data: tree.insert(k)
     print(tree)
     tree.printTree()
     
