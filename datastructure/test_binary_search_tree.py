@@ -65,43 +65,7 @@ class BinaryTree:
     def __init__(self):
         self.root = None
 
-    # 探索
-    def search(self, k):
-        return _search(self.root, k)
-        
 
-    def _search(x, k):
-        if x == None or k == x.key:
-            return x
-        if k < x.key:
-            return self._search(x.left, k)
-        else:
-            return self._search(x.right. k)
-
-
-    def minimum(self):
-        x = self.root
-        while x.left != None:
-            x = x.left
-        return x
-
-
-    def maximum(self)
-        x = self.root
-        while x.right != None:
-            x = x.right
-        return x
-
-
-    def _successor(x):
-        if x.right != None:
-            return self.minimum(x.right)
-        y = x.parent
-        while y != None and x == y.right:
-            x = yy = y.parent
-        return y
-
-    
     # 中間順木巡回
     def inoder_walk(self):
         if self.root != None:
@@ -113,6 +77,64 @@ class BinaryTree:
             self._inorder_walk(node.left)
             print(str(node.data))
             self._inorder_walk(node.right)
+
+
+    # 探索
+    def search(self, k):
+        return _search(self.root, k)
+        
+
+    def _search(x, k):
+        if x is None or k == x.key:
+            return x
+        if k < x.key:
+            return self._search(x.left, k)
+        else:
+            return self._search(x.right. k)
+
+
+    def minimum(self):
+        x = self.root
+        while x.left is not None:
+            x = x.left
+        return x
+
+
+    def maximum(self)
+        x = self.root
+        while x.right is not None:
+            x = x.right
+        return x
+
+
+    def _successor(x):
+        if x.right != None:
+            return self.minimum(x.right)
+        y = x.parent
+        while y is not None and x == y.right:
+            x = y
+            y = y.parent
+        return y
+
+
+    def insert(self, z):
+    	y = None
+    	x = self.root
+    	while x is not None:
+    		y = x
+    		if z.key < x.key:
+    			x = x.right
+    		else:
+    			x = x.right
+    	x.parent = y
+    	if y is None:
+    		self.root = z
+    	elif z.key < y.key:
+    		y.left = z
+    	else:
+    		y.right = z
+
+
 
 
 # テスト
