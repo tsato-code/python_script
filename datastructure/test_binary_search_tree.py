@@ -6,151 +6,195 @@ class Node:
         self.parent = None
 
 
-def delete(node, x):
-    if node:
-        if x == node.data:
-            if node.left is None:
-                return node.right
-            elif node.right is None:
-                return node.left
-            else:
-                node.data = search_min(node.right)
-                node.right = delete_min(node.right)
-        elif x < node.data:
-            node.left = delete(node.left, x)
-        else:
-            node.right = delete(node.right, x)
-    return node
-
-
-# 最小値を探す
-def search_min(node):
-    if node.left is None: return node.data
-    return search_min(node.left)
-
-
-# 最小値を削除する
-def delete_min(node):
-    if node.left is None: return node.right
-    node.left = delete_min(node.left)
-    return node
-
-# 高階関数バージョン
-def traverse_h(func, node):
-    if node:
-        traverse_h(func, node.left)
-        func(node.data)
-        traverse_h(func, node.right)
-
-# ジェネレータバージョン
-def traverse(node):
-    if node:
-        for x in traverse(node.left):
-            yield x
-        yield node.data
-        for x in traverse(node.right):
-            yield x
-
-def search(node, x):
-    while node:
-        if node.data == x: return True
-        if x < node.data:
-            node = node.left
-        else:
-            node = node.right
-    return False
+    def __repr__(self):
+        return "<Node {}>".format(self.key)
 
 
 class BinaryTree:
+    # コンストラクタ
     def __init__(self):
         self.root = None
 
 
+    def __repr__(self):
+        return "<Binary Search Tree {}>".format(self.root)
+
+
     # 中間順木巡回
-    def inoder_walk(self):
+    def inorder_walk(self):
         if self.root != None:
             self._inorder_walk(self.root)
 
     
-    def _inorder_walk(self, node):
-        if(node != None):
-            self._inorder_walk(node.left)
-            print(str(node.data))
-            self._inorder_walk(node.right)
+    def _inorder_walk(self, x):
+        if x != None:
+            self._inorder_walk(x.left)
+            print(x.key)
+            self._inorder_walk(x.right)
 
 
     # 探索
-    def search(self, k):
-        return _search(self.root, k)
-        
-
-    def _search(x, k):
+    def search(self, x, k):
         if x is None or k == x.key:
             return x
         if k < x.key:
-            return self._search(x.left, k)
+            return self.search(x.left, k)
         else:
-            return self._search(x.right. k)
+            return self.search(x.right, k)
 
 
-    def minimum(self):
-        x = self.root
+    # 最小値
+    def minimum(self, x):
         while x.left is not None:
             x = x.left
         return x
 
-
-    def maximum(self)
-        x = self.root
+    # 最大値
+    def maximum(self, x):
         while x.right is not None:
             x = x.right
         return x
 
 
-    def _successor(x):
-        if x.right != None:
-            return self.minimum(x.right)
-        y = x.parent
-        while y is not None and x == y.right:
-            x = y
-            y = y.parent
-        return y
-
-
+    # 挿入
     def insert(self, z):
-    	y = None
-    	x = self.root
-    	while x is not None:
-    		y = x
-    		if z.key < x.key:
-    			x = x.right
-    		else:
-    			x = x.right
-    	x.parent = y
-    	if y is None:
-    		self.root = z
-    	elif z.key < y.key:
-    		y.left = z
-    	else:
-    		y.right = z
+        z = Node(z)
+        y = None
+        x = self.root
+        while x is not None:
+            y = x
+            if z.key < x.key:
+                x = x.left
+            else:
+                x = x.right
+        z.parent = y
+        if y is None:
+            self.root = z
+        elif z.key < y.key:
+            y.left = z
+        else:
+            y.right = z
 
 
+    # 移植
+    def _transplant(self, u, v):
+        if u.parent == None:
+            self.root = v
+        elif u == u.parent.left:
+            u.parent.left = v
+        else:
+            u.parent.right = v
+        if v != None:
+            v.parent = u.parent
 
 
-# テスト
+    # 削除
+    def delete(self, key):
+        z = self.search(self.root, key)
+        if z.left == None:
+            self._transplant(z, z.right)
+        elif z.right == None:
+            self._transplant(z, z.left)
+        else:
+            y = self.minimum(z.right)
+            if y.parent != z:
+                self._transplant(y, y.right)
+                y.right = z.right
+                y.right.parent = y
+            self._transplant(z, y)
+            y.left = z.left
+            y.left.parent = y
+
+
 if __name__ == '__main__':
+
+    # データ作成
     import random
-    tree = BinaryTree()
     data = [random.randint(0, 100) for x in range(10)]
     print(data)
-    print(tree)
+
+    # 2分探索木作成
+    tree = BinaryTree()
+
+    # insert
     for k in data: tree.insert(k)
-    print(tree)
-    tree.printTree()
-    
-    for x in data:
-        print('search', x, tree.search(x))
-        print('delete', x)
-        tree.delete(x)
-        print('search', x, tree.search(x))
-        print(tree)
+
+    # 出力
+    tree.inorder_walk()
+
+    # 消去
+    for k in data:
+        print('* '*10)
+        tree.delete(k)
+        tree.inorder_walk()
+
+
+"""
+$ python test_binary_search_tree.py 
+[46, 94, 85, 85, 1, 27, 75, 25, 81, 15]
+1
+15
+25
+27
+46
+75
+81
+85
+85
+94
+* * * * * * * * * * 
+1
+15
+25
+27
+75
+81
+85
+85
+94
+* * * * * * * * * * 
+1
+15
+25
+27
+75
+81
+85
+85
+* * * * * * * * * * 
+1
+15
+25
+27
+75
+81
+85
+* * * * * * * * * * 
+1
+15
+25
+27
+75
+81
+* * * * * * * * * * 
+15
+25
+27
+75
+81
+* * * * * * * * * * 
+15
+25
+75
+81
+* * * * * * * * * * 
+15
+25
+81
+* * * * * * * * * * 
+15
+81
+* * * * * * * * * * 
+15
+* * * * * * * * * * 
+"""
