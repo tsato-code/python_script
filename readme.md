@@ -42,8 +42,9 @@
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
-	* [QuadTree](datastructure/test_quadtree.ipynb)
+	* [B-Tree](datastructure/test_b_tree.py)
 	* [R-Tree](datastructure/test_rtree.py)
+	* [QuadTree](datastructure/test_quadtree.ipynb)
 * その他
 	* [再帰深さ上限の確認](misc/test_recursion.py)
 	* [論理演算の処理速度確認](misc/compare_logical_operator.py)
