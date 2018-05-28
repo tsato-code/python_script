@@ -8,7 +8,7 @@ class Node(object):
 
     def __repr__(self):
         return "<Node: (n, keys, leaf, c) = ({}, {}, {}, {})>".format(self.n, self.keys, self.leaf, self.c)
-
+        # return "Node: (n, keys, leaf, c) =\n{}, {}, {}, {}".format(self.n, self.keys, self.leaf, '\n'.join([child.__repr__() for child in self.c]))
 
 class B_Tree(object):
 	def __init__(self, t):
@@ -107,7 +107,7 @@ if __name__ == '__main__':
 
 	# データ作成
     import random
-    data = [random.randint(0, 100)-50 for x in range(10)]
+    data = [random.randint(0, 100) for x in range(15)]
     print(data)
 
     # 2分探索木作成
