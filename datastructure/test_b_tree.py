@@ -1,8 +1,3 @@
-"""
-1. 同じ値のキーが複数あるとdeleteできないバグ
-2. マージ操作の関数化
-3. 存在しないキーのdelete
-"""
 class Node(object):
     def __init__(self, t):
         self.n  = None
@@ -123,14 +118,20 @@ class B_Tree(object):
 		return x.keys[0]
 
 
-	def delete(self, x, k):
+	def delete(self, k):
+		self._delete(self.root, k)
+		if self.root.n == 0 and self.root.c != []: 	# 2018-05-30 根が空かつ子が非空
+			self.root = self.root.c[0]
+
+
+	def _delete(self, x, k):
 		if k in x.keys:
 			# xが葉のとき
 			if x.leaf:
 				x.keys.remove(k)
 				x.n -= 1
 
-			# xが中間ノードのとき
+			# xが葉でないとき
 			else:
 				i = x.keys.index(k)
 				y = x.c[i]
@@ -141,7 +142,7 @@ class B_Tree(object):
 					# yから最大値k1を探す
 					k1 = self._max_key(y)
 					# 再帰的にk1を削除
-					self.delete(y, k1)
+					self._delete(y, k1)
 					# kをk1に張替え
 					x.keys[i] = k1
 
@@ -150,7 +151,7 @@ class B_Tree(object):
 					# zから最小値を探す
 					k2 = self._min_key(z)
 					# 再帰的にk2を削除
-					self.delete(z, k2)
+					self._delete(z, k2)
 					# kをk2に張替え
 					x.keys[i] = k2
 
@@ -161,10 +162,11 @@ class B_Tree(object):
 					y.keys += z.keys
 					y.c += z.c
 					y.n = 2*self.t - 1
-					# キーと子の消去
 					x.c.pop(i+1)
 					x.n -= 1
-		else:
+					self._delete(x.c[i], k)
+
+		elif not x.leaf:
 			i = 0
 			while i < x.n and k > x.keys[i]:
 				i += 1
@@ -172,20 +174,22 @@ class B_Tree(object):
 				if 0 < i: y = x.c[i-1]
 				if i < x.n: z = x.c[i+1]
 
-				# 3a 左右どちらかの子のキーがt個なら移送
+				# 3a 左右どちらかの子のキーがt個以上なら移送
 				if 0 < i and y.n >= self.t:
-					k1 = self._max_key(y)
-					self.delete(y, k1)
-					k0 = x.keys[i-1]
-					self._insert(x.c[i], k0)
-					x.keys[i-1] = k1
+					# 2018-05-31
+					x.c[i].keys.insert(0, x.keys.pop(i-1))
+					x.keys.insert(i-1, y.keys.pop(-1))
+					if not y.leaf: x.c[i].c.insert(0, y.c.pop(-1))
+					y.n -= 1
+					x.c[i].n += 1
 
 				elif i < x.n and z.n >= self.t:
-					k2 = self._min_key(z)
-					self.delete(z, k2)
-					k0 = x.keys[i]
-					self._insert(x.c[i], k0)
-					x.keys[i] = k2
+					# 2018-05-31
+					x.c[i].keys.append(x.keys.pop(i))
+					x.keys.insert(i, z.keys.pop(0))
+					if not z.leaf: x.c[i].c.append(z.c.pop(0))
+					z.n -= 1
+					x.c[i].n += 1
 				
 				# 3b 左右どちらかの子のキーがt-1個ならマージ
 				elif i < x.n and z.n == self.t-1:
@@ -196,6 +200,7 @@ class B_Tree(object):
 					x.c[i].n = 2*self.t - 1
 					x.c.pop(i+1)
 					x.n -= 1
+
 				elif 0 < i and y.n == self.t-1:
 					# yとマージ
 					y.keys.append(x.keys.pop(i-1))
@@ -205,7 +210,7 @@ class B_Tree(object):
 					x.c.pop(i)
 					x.n -= 1
 					i -= 1
-			self.delete(x.c[i], k)
+			self._delete(x.c[i], k)
 
 
 	def show(self):
@@ -224,15 +229,14 @@ class B_Tree(object):
 			self._inorder_walk(x.c[-1])
 
 
-
 if __name__ == '__main__':
 
 	# データ作成
     import random
-    data = [random.randint(0, 100) for x in range(15)]
+    data = [random.randint(0, 100) for x in range(10)]
     print(data)
 
-    # 2分探索木作成
+    # create B-Tree
     tree = B_Tree(t=2)
 
     # insert
@@ -252,280 +256,156 @@ if __name__ == '__main__':
     # delete
     for k in data:
 	    print('\ndelete: {}'.format(k))
-	    tree.delete(tree.root, k)
+	    tree.delete(k)
 	    print('\n{}'.format(tree.root))
 
 
 """
-$ python datastructure/test_b_tree.py 
-[86, 54, 46, 34, 37, 70, 6, 58, 74, 62, 20, 36, 62, 74, 34]
+$ python test_b_tree2.py 
+[84, 86, 68, 68, 60, 29, 48, 8, 5, 45]
+
+insert 84
+
+<Node: (n, keys, leaf) = (1, [84], True)>
 
 insert 86
 
+<Node: (n, keys, leaf) = (2, [84, 86], True)>
+
+insert 68
+
+<Node: (n, keys, leaf) = (3, [68, 84, 86], True)>
+
+insert 68
+
+<Node: (n, keys, leaf) = (1, [84], False)>
+<Node: (n, keys, leaf) = (2, [68, 68], True)>
 <Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 54
+insert 60
 
-<Node: (n, keys, leaf) = (2, [54, 86], True)>
-
-insert 46
-
-<Node: (n, keys, leaf) = (3, [46, 54, 86], True)>
-
-insert 34
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (2, [34, 46], True)>
+<Node: (n, keys, leaf) = (1, [84], False)>
+<Node: (n, keys, leaf) = (3, [60, 68, 68], True)>
 <Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 37
+insert 29
 
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (3, [34, 37, 46], True)>
+<Node: (n, keys, leaf) = (2, [68, 84], False)>
+<Node: (n, keys, leaf) = (2, [29, 60], True)>
+<Node: (n, keys, leaf) = (1, [68], True)>
 <Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 70
+insert 48
 
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (3, [34, 37, 46], True)>
-<Node: (n, keys, leaf) = (2, [70, 86], True)>
+<Node: (n, keys, leaf) = (2, [68, 84], False)>
+<Node: (n, keys, leaf) = (3, [29, 48, 60], True)>
+<Node: (n, keys, leaf) = (1, [68], True)>
+<Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 6
+insert 8
 
-<Node: (n, keys, leaf) = (2, [37, 54], False)>
-<Node: (n, keys, leaf) = (2, [6, 34], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (2, [70, 86], True)>
+<Node: (n, keys, leaf) = (3, [48, 68, 84], False)>
+<Node: (n, keys, leaf) = (2, [8, 29], True)>
+<Node: (n, keys, leaf) = (1, [60], True)>
+<Node: (n, keys, leaf) = (1, [68], True)>
+<Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 58
+insert 5
 
-<Node: (n, keys, leaf) = (2, [37, 54], False)>
-<Node: (n, keys, leaf) = (2, [6, 34], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (3, [58, 70, 86], True)>
+<Node: (n, keys, leaf) = (1, [68], False)>
+<Node: (n, keys, leaf) = (1, [48], False)>
+<Node: (n, keys, leaf) = (3, [5, 8, 29], True)>
+<Node: (n, keys, leaf) = (1, [60], True)>
+<Node: (n, keys, leaf) = (1, [84], False)>
+<Node: (n, keys, leaf) = (1, [68], True)>
+<Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 74
+insert 45
 
-<Node: (n, keys, leaf) = (3, [37, 54, 70], False)>
-<Node: (n, keys, leaf) = (2, [6, 34], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [58], True)>
-<Node: (n, keys, leaf) = (2, [74, 86], True)>
+<Node: (n, keys, leaf) = (1, [68], False)>
+<Node: (n, keys, leaf) = (2, [8, 48], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [29, 45], True)>
+<Node: (n, keys, leaf) = (1, [60], True)>
+<Node: (n, keys, leaf) = (1, [84], False)>
+<Node: (n, keys, leaf) = (1, [68], True)>
+<Node: (n, keys, leaf) = (1, [86], True)>
 
-insert 62
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (1, [37], False)>
-<Node: (n, keys, leaf) = (2, [6, 34], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (2, [58, 62], True)>
-<Node: (n, keys, leaf) = (2, [74, 86], True)>
-
-insert 20
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (1, [37], False)>
-<Node: (n, keys, leaf) = (3, [6, 20, 34], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (2, [58, 62], True)>
-<Node: (n, keys, leaf) = (2, [74, 86], True)>
-
-insert 36
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (2, [20, 37], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (2, [34, 36], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (2, [58, 62], True)>
-<Node: (n, keys, leaf) = (2, [74, 86], True)>
-
-insert 62
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (2, [20, 37], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (2, [34, 36], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (3, [58, 62, 62], True)>
-<Node: (n, keys, leaf) = (2, [74, 86], True)>
-
-insert 74
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (2, [20, 37], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (2, [34, 36], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (3, [58, 62, 62], True)>
-<Node: (n, keys, leaf) = (3, [74, 74, 86], True)>
-
-insert 34
-
-<Node: (n, keys, leaf) = (1, [54], False)>
-<Node: (n, keys, leaf) = (2, [20, 37], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (3, [34, 34, 36], True)>
-<Node: (n, keys, leaf) = (1, [46], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (3, [58, 62, 62], True)>
-<Node: (n, keys, leaf) = (3, [74, 74, 86], True)>
-
-search: 86
-(<Node: (n, keys, leaf) = (3, [74, 74, 86], True)>, 2)
-6
-20
-34
-34
-36
-37
-46
-54
-58
-62
-62
-70
-74
-74
+search: 84
+(<Node: (n, keys, leaf) = (1, [84], False)>
+<Node: (n, keys, leaf) = (1, [68], True)>
+<Node: (n, keys, leaf) = (1, [86], True)>, 0)
+5
+8
+29
+45
+48
+60
+68
+68
+84
 86
+
+delete: 84
+
+<Node: (n, keys, leaf) = (1, [48], False)>
+<Node: (n, keys, leaf) = (1, [8], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [29, 45], True)>
+<Node: (n, keys, leaf) = (1, [68], False)>
+<Node: (n, keys, leaf) = (1, [60], True)>
+<Node: (n, keys, leaf) = (2, [68, 86], True)>
 
 delete: 86
 
-<Node: (n, keys, leaf) = (1, [46], False)>
-<Node: (n, keys, leaf) = (2, [20, 36], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (2, [34, 34], True)>
-<Node: (n, keys, leaf) = (1, [37], True)>
-<Node: (n, keys, leaf) = (2, [62, 70], False)>
-<Node: (n, keys, leaf) = (2, [54, 58], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (3, [8, 48, 68], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [29, 45], True)>
+<Node: (n, keys, leaf) = (1, [60], True)>
+<Node: (n, keys, leaf) = (1, [68], True)>
 
-delete: 54
+delete: 68
 
-<Node: (n, keys, leaf) = (1, [46], False)>
-<Node: (n, keys, leaf) = (2, [20, 36], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (2, [34, 34], True)>
-<Node: (n, keys, leaf) = (1, [37], True)>
-<Node: (n, keys, leaf) = (2, [62, 70], False)>
-<Node: (n, keys, leaf) = (1, [58], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (2, [8, 48], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [29, 45], True)>
+<Node: (n, keys, leaf) = (2, [60, 68], True)>
 
-delete: 46
+delete: 68
 
-<Node: (n, keys, leaf) = (1, [37], False)>
-<Node: (n, keys, leaf) = (2, [20, 34], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (1, [36], True)>
-<Node: (n, keys, leaf) = (2, [62, 70], False)>
-<Node: (n, keys, leaf) = (1, [58], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (2, [8, 48], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [29, 45], True)>
+<Node: (n, keys, leaf) = (1, [60], True)>
 
-delete: 34
+delete: 60
 
-<Node: (n, keys, leaf) = (1, [37], False)>
-<Node: (n, keys, leaf) = (1, [20], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (3, [34, 34, 36], True)>
-<Node: (n, keys, leaf) = (2, [62, 70], False)>
-<Node: (n, keys, leaf) = (1, [58], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (2, [8, 45], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (1, [29], True)>
+<Node: (n, keys, leaf) = (1, [48], True)>
 
-delete: 37
+delete: 29
 
-<Node: (n, keys, leaf) = (1, [58], False)>
-<Node: (n, keys, leaf) = (1, [20], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (3, [34, 34, 36], True)>
-<Node: (n, keys, leaf) = (1, [70], False)>
-<Node: (n, keys, leaf) = (2, [62, 62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (1, [8], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (2, [45, 48], True)>
 
-delete: 70
+delete: 48
 
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (3, [20, 58, 62], False)>
-<Node: (n, keys, leaf) = (1, [6], True)>
-<Node: (n, keys, leaf) = (3, [34, 34, 36], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (1, [8], False)>
+<Node: (n, keys, leaf) = (1, [5], True)>
+<Node: (n, keys, leaf) = (1, [45], True)>
 
-delete: 6
+delete: 8
 
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (3, [34, 58, 62], False)>
-<Node: (n, keys, leaf) = (1, [20], True)>
-<Node: (n, keys, leaf) = (2, [34, 36], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (2, [5, 45], True)>
 
-delete: 58
+delete: 5
 
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (3, [34, 36, 62], False)>
-<Node: (n, keys, leaf) = (1, [20], True)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (2, [74, 74], True)>
+<Node: (n, keys, leaf) = (1, [45], True)>
 
-delete: 74
+delete: 45
 
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (3, [34, 36, 62], False)>
-<Node: (n, keys, leaf) = (1, [20], True)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-<Node: (n, keys, leaf) = (1, [74], True)>
-
-delete: 62
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (2, [34, 36], False)>
-<Node: (n, keys, leaf) = (1, [20], True)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (3, [62, 62, 74], True)>
-
-delete: 20
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (1, [36], False)>
-<Node: (n, keys, leaf) = (2, [34, 34], True)>
-<Node: (n, keys, leaf) = (3, [62, 62, 74], True)>
-
-delete: 36
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (1, [34], False)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (3, [62, 62, 74], True)>
-
-delete: 62
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (1, [34], False)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (2, [62, 74], True)>
-
-delete: 74
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (1, [34], False)>
-<Node: (n, keys, leaf) = (1, [34], True)>
-<Node: (n, keys, leaf) = (1, [62], True)>
-
-delete: 34
-
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (0, [], False)>
-<Node: (n, keys, leaf) = (3, [34, 34, 62], True)>
+<Node: (n, keys, leaf) = (0, [], True)>
 """
