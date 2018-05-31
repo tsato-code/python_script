@@ -35,6 +35,7 @@
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
+	* [pandasのDataFrameでcolormapのテスト](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
 	* [scikit-learnの決定木（回帰）のテスト](machinelearning/test_decisiontreeregressor.ipynb)
 	* [scikit-learnのランダムフォレスト（分類）のテスト](machinelearning/test_randomforest.ipynb)
