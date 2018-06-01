@@ -14,3 +14,11 @@ start = datetime.datetime.strptime(in_datetime, '%Y/%m/%d %H:%M:%S')
 end = start + datetime.timedelta(hours=8) 
 print("START {}".format( start.time() ))
 print("  END {}".format( end.time() ))
+
+
+"""
+$ python test_datetime_day_of_week.py
+date 2018-06-01 (Fri)
+START 22:50:31
+  END 06:50:31
+"""
