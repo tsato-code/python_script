@@ -16,7 +16,7 @@
 	* [sysモジュールによるコマンドライン引数のテスト](pythonscript/test_sys_args.py)
 	* [tempfileモジュールによる一時ファイルと一時ディレクトリのテスト](pythonscript/test_tempfile.py)
 	* [timeモジュールによる時間を扱う関数のテスト](pythonscript/test_time.py)
-	* [datetimeモジュールによる日付から曜日取得のテスト](pyscript/test_datetime_to_day_of_week.py)
+	* [datetimeモジュールによる日付から曜日取得のテスト](pyscript/test_datetime_day_of_week.py)
 	* [tqdmモジュールによるプログレスバーのテスト](pythonscript/test_tqdm.py)
 	* [line_profilerモジュールによるプロファイリングのテスト](pythonscript/test_line_profiler.py)
 	* [yamlモジュールによるYAML読み込みのテスト](pythonscript/test_yaml.py)
