@@ -47,7 +47,7 @@
 
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
-
+	- EMD
 ## 木構造モデル
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., and Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)

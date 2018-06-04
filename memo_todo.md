@@ -19,7 +19,6 @@
 - LDAのトピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
 - scikit-learnの `feature_extraction` と `feature_selection`
-- WMD/EMDの調査
 - 部分空間法とスペクトル変換法の調査
 - ベイズ推論 + pymc
 - 二値分類手法の比較
@@ -32,5 +31,6 @@
 	- R-Tree
 	- Kd-Tree
 ## その他
+- Spyderのデバッガ機能
 - 論文ストックの消化
 - [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)
