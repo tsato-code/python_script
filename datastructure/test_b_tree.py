@@ -233,11 +233,11 @@ if __name__ == '__main__':
 
 	# データ作成
     import random
-    data = [random.randint(0, 100) for x in range(10)]
+    data = [random.randint(0, 100) for x in range(10**2)]
     print(data)
 
     # create B-Tree
-    tree = B_Tree(t=2)
+    tree = B_Tree(t=5)
 
     # insert
     for k in data:
