@@ -15,10 +15,10 @@ def levenshtein(s, t):
 			dist[i, j] = min(dist[i-1, j]+1, dist[i, j-1]+1, dist[i-1, j-1]+c)
 	return dist[-1, -1]
 
-if __name__ == '__main__':
 
-	s = 'October'
-	t = 'November'
+if __name__ == '__main__':
+	s = 'moment'
+	t = 'momentum'
 	d = levenshtein(s, t)
 	print(d)
 
