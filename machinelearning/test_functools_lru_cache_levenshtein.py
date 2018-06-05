@@ -11,8 +11,8 @@ def levenshtein(s, t):
 	dist = np.zeros((size_s, size_t))
 
 	# 初期化
-	for i in range(0, size_s): dist[i, 0] = i
-	for j in range(0, size_t): dist[0, j] = j
+	dist[:, 0] = range(size_s)
+	dist[0, :] = range(size_t)
 
 	for i in range(1, size_s):
 		for j in range(1, size_t):
@@ -30,5 +30,5 @@ if __name__ == '__main__':
 
 """
 $ python test_functools_lru_cache_levenshtein.py
-5.0
+2.0
 """

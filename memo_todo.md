@@ -5,14 +5,16 @@
 - 並列処理+プログレスバーの挙動確認
 
 ## 最適化関連
+- 輸送問題に対するアルゴリズム
 - ナップサック問題に対する分枝限定法を実装
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
+- Jupyter NotebookからJuMP
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
 - カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
-- LDAのトピック可視化
+- LDAのnotebook修正 + トピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
 - scikit-learnの `feature_extraction` と `feature_selection`
 - 部分空間法とスペクトル変換法の調査
