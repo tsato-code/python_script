@@ -2,7 +2,7 @@ from functools import lru_cache
 import numpy  as np
 
 
-#@lru_cache(maxsize=None)
+@lru_cache(maxsize=None)
 def knapsack_dp(upper_w):
 	N = len(value)
 
