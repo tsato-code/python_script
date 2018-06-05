@@ -1,4 +1,4 @@
-# TODOリスト 2018年5月
+# TODOリスト 2018年6月
 
 ## Python関連
 - subprocess
@@ -7,8 +7,6 @@
 ## 最適化関連
 - ナップサック問題に対する分枝限定法を実装
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
-- 多変数Rosenbrock最適化
-- 最急降下法+準ニュートン法+共役勾配法
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
