@@ -30,6 +30,7 @@
 	* [Windows用バッチファイルのテスト](shellscript/test_bat.bat)
 * 最適化関連
 	* [Prim法クラス](optimization/test_prim.py)
+	* [ナップサック問題に対する動的計画のテスト](optimization/test_functools_lru_cache_knapsack.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](optimization/rosenbrock.ipynb)
 	* [pulpによるナップサック問題の求解](optimization/test_pulp.py)
 * 統計+機械学習+MCMC

@@ -7,7 +7,6 @@
 ## 最適化関連
 - ナップサック問題に対する分枝限定法を実装
 - ナップサック問題に対する動的計画法の実装（lru_cacheが使える？）
-- ルーベンシュタイン距離+動的計画
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
 - 多変数Rosenbrock最適化
 - 最急降下法+準ニュートン法+共役勾配法
@@ -33,4 +32,5 @@
 ## その他
 - Spyderのデバッガ機能
 - 論文ストックの消化
+- functools.lru_cacheがLevenshtein距離の動的計画だと効果を実感できるのに対して、ナップサック問題の動的計画だとあまり効果を実感できない件
 - [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)

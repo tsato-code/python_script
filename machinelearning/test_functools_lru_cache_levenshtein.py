@@ -6,9 +6,14 @@ import numpy  as np
 def levenshtein(s, t):
 	size_s = 1 + len(s)
 	size_t = 1 + len(t)
+
+	# DP テーブル
 	dist = np.zeros((size_s, size_t))
+
+	# 初期化
 	for i in range(0, size_s): dist[i, 0] = i
 	for j in range(0, size_t): dist[0, j] = j
+
 	for i in range(1, size_s):
 		for j in range(1, size_t):
 			c = 0 if s[i-1] == t[j-1] else 1
