@@ -61,3 +61,4 @@
 	* [pandasのDataFrame列に対する距離計算(2): 変数に値を保存しながら計算したときの処理時間](misc/compare_pandas_var_use.py)
 	* [pandasのDataFrame列に対する距離計算(3): numpyのnorm関数の処理時間](misc/compare_pandas_dist_numpy.py)
 	* [平面上の点を線に射影するコード](misc/proj_point_to_line.ipynb)
+	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)

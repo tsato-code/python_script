@@ -32,5 +32,4 @@
 - Spyderのデバッガ機能
 - 論文ストックの消化
 - functools.lru_cacheがhashableでない引数を扱えない件
-- functools.lru_cacheがLevenshtein距離の動的計画だと効果を実感できるのに対して、ナップサック問題の動的計画だとあまり効果を実感できない件
 - [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)
