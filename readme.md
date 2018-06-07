@@ -36,7 +36,7 @@
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
-	* [1次元ホテリング法](machinelearning/ide2_Hotelling's_T-squared)
+	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
 	* [pandasのDataFrameでcolormapのテスト（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
