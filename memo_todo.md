@@ -5,7 +5,6 @@
 - 並列処理+プログレスバーの挙動確認
 
 ## 最適化関連
-- 輸送問題に対するアルゴリズム
 - ナップサック問題に対する分枝限定法を実装
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
 - Jupyter NotebookからJuMP
