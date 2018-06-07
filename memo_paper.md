@@ -7,6 +7,7 @@
 	- 特徴：平均的なドライバーとの違いを表す説明変数を作成。エントロピーやKL-ダイバージェンスを利用。
 	- データ：ドライバー経歴、ドラレコデータ、道路情報データ。
 	- 感想：KL-ダイバージェンスは調査が必要。
+1. [芦田優太, 西岡到. (2015). 路側データから生成した交通流モデルによる高速道路の交通状況予測. 研究報告高度交通システムとスマートコミュニティ (ITS), 16, 1--6.](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=146271&item_no=1&page_id=13&block_id=8)
 1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
 	- タスク：商品レビューの時系列的な変化を解析。
 	- 手法：k-means++、SOM。
