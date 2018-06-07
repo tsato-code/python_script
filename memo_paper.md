@@ -64,7 +64,12 @@
 	- 特徴：Tweetの単語共起情報からトピック作成にマイクロクラスタリング利用、Tweetの盛り上がり検出にKleinbergのバースト検知手法、Tweetの要約にナップサック制約付き最大被覆問題の貪欲解法を利用。
 	- データ：宇宙兄弟に関するTweet約28万件、TV番組「宇宙兄弟」の台詞。
 	- 感想：数理モデルを使いこなしている感じがよい。
-
+1. [坪内孝太, 下坂正倫, 小西達也, 丸山三喜也, 山下達雄. (2017). 乗換案内データを用いた未来の混雑予測の研究. JSAI 2017, 4I1-4in1.](http://dbsj.org/wp-content/uploads/journal/vol11/no1/dbsj-journal-11-01-061.pdf)
+	- タスク：位置に関する予定情報から異常予測。
+	- 手法：ARのようなもの、対数線形ランクポアソン回帰による都市動態推定手法。
+	- 特徴：通常時と予測値の乖離度で異常を定義している。
+	- データ：Yahoo! Japan経路検索ログ。
+	- 感想：
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
 	- Earth Mover's Distance
