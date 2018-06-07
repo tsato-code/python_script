@@ -36,7 +36,6 @@
 * 統計+機械学習+MCMC
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
-	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
 	* [pandasのDataFrameでcolormapのテスト（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
@@ -45,6 +44,8 @@
 	* [scikit-learnのt-SNEのテスト](machinelearning/test_tsne.ipynb)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
+	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
+	* [カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
