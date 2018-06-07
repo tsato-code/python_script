@@ -7,6 +7,12 @@
 	- 特徴：平均的なドライバーとの違いを表す説明変数を作成。エントロピーやKL-ダイバージェンスを利用。
 	- データ：ドライバー経歴、ドラレコデータ、道路情報データ。
 	- 感想：KL-ダイバージェンスは調査が必要。
+1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
+	- タスク：商品レビューの時系列的な変化を解析。
+	- 手法：k-means++、SOM。
+	- 特徴：説明変数の作成に、TF-IDF、word2vecによる単語ベクトル化、時系列情報、属性情報など164次元を利用している。
+	- データ：楽天市場「みんなのレビュー、口コミ情報」
+	- 感想：結果の評価を主観に頼っているが、それでよいのかどうか。
 1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1](http://db-event.jpn.org/deim2017/papers/372.pdf)
 	- タスク：事故発生したことがある交差点を判別。
 	- 手法：ロジスティック回帰。
@@ -45,9 +51,24 @@
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
 1. [Bacci, S., Pandolfi, S., and Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 
+## 異常検知
+1. [切通恵介, 泉谷知範. (2017). 機械学習を用いた工場機器の故障予測. DEIM Forum 2017 H2-1.](http://db-event.jpn.org/deim2017/papers/200.pdf)
+	- タスク：センサーデータから工場機器の故障予測。
+	- 手法：ロジスティック回帰、SVM、ニューラルネット。
+	- 特徴：異常検知タスクの正常データを適当にサンプリングして、各サンプル数で精度比較している。
+	- データ：24種のセンサーデータ、説明変数の次元は240～2880。
+	- 感想：取得したデータをそのまま使うのではなく、クラスごとのサンプル数偏りにアプローチしている点が面白い。
+1. [中原孝信, 前川浩基, 羽室行信. (2013). テレビ番組視聴時におけるTwitter投稿からのトピック検知. オペレーションズ・リサーチ 58, 442--448.](http://www.orsj.or.jp/archive2/or58-08/or58_8_442.pdf)
+	- タスク：特定のTV番組を視聴中にその番組に関するTwitter投稿をするソーシャルビューイングの内容を要約。
+	- 手法：マイクロクラスタリング、Kleinbergのバースト検知手法、ナップサック制約付き最大被覆問題の貪欲解放。
+	- 特徴：Tweetの単語共起情報からトピック作成にマイクロクラスタリング利用、Tweetの盛り上がり検出にKleinbergのバースト検知手法、Tweetの要約にナップサック制約付き最大被覆問題の貪欲解法を利用。
+	- データ：宇宙兄弟に関するTweet約28万件、TV番組「宇宙兄弟」の台詞。
+	- 感想：数理モデルを使いこなしている感じがよい。
+
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
-	- EMD
+	- Earth Mover's Distance
+
 ## 木構造モデル
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., and Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
