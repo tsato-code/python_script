@@ -11,6 +11,7 @@
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 
 ## 統計・機械学習関連
+- 尤度比検定
 - One class SVM （外れ値検出手法）
 - カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
