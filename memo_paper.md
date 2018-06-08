@@ -3,6 +3,11 @@
 ## 特徴量設計
 1. [Chawla, S., Zheng, Y., and Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](https://ieeexplore.ieee.org/abstract/document/6413908/)
 1. [Pang, L. X., Chawla, S., Liu, W., and Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
+	- タスク：タクシーGPSデータから北京市の恒常的な外れ値と新規出現の外れ値を検出。
+	- 手法：尤度比検定。
+	- 特徴：upper-bounding strategyとやらを使っている。
+	- データ：人工データ、北京市タクシーのGPSデータ。
+	- シンプルだがおもしろい。もう一回読む。
 1. [Yokoyama, D. and Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポールベクターマシン。
