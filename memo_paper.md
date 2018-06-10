@@ -124,6 +124,10 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
+1. [Toma. L. (2016). Algorithms in GIS. Bowdoin College Lecture Slide.](http://www.bowdoin.edu/~ltoma/teaching/cs3225-GIS/fall16/syllabus.html)
+	- Quad Treeなど。
+1. [Kingsford. S. Bioinformatics Lectures. Carnegie Mellon University Lecture Slide.](http://kingsfordlab.cbd.cmu.edu/bioinformatics-lectures/)
+	- QuadTree, Kd-Treeなど。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
 1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15, 3221--3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
 	- t-SNEの高速化のために四分木や
