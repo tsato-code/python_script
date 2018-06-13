@@ -13,6 +13,7 @@
 
 ## 統計・機械学習関連
 - 尤度比検定
+- 角度データ (directional statistics) のクラスタリング
 - One class SVM （外れ値検出手法）
 - カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
@@ -27,7 +28,7 @@
 
 ## データ構造関連
 - 空間データ構造の調査
-	- QuadTreeの削除操作
+	- QuadTree
 	- R-Tree
 	- Kd-Tree
 ## その他

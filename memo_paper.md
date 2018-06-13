@@ -19,7 +19,7 @@
 	- 手法：ルールベース+重回帰。
 	- 特徴：時間帯、曜日、天候状況で分類→交通状況で予測モデル作成。
 	- データ：アジア圏の路側データ。
-	- 感想：データの出典が不明。関連研究のVARMA（ベクトル事故回帰移動平均モデル）が気になる。
+	- 感想：データの出典が不明。関連研究のVARMA（ベクトル自己回帰移動平均モデル）が気になる。
 1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
 	- タスク：商品レビューの時系列的な変化を解析。
 	- 手法：k-means++、SOM。
@@ -130,7 +130,7 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 	- QuadTree, Kd-Treeなど。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
 1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15, 3221--3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
-	- t-SNEの高速化のために四分木や
+	- t-SNEの高速化のために、微分するときの距離を近似する方法として四分木を利用している。
 1. [Yianilos, P. N. (1993). Data Structures and Algorithms for Nearest Neighbor Search in General Metric Spaces. In SODA 93, 311--321.](http://pnylab.com/papers/vptree/vptree.pdf)
 1. [Yao, Y. (2017). Advanced Techniques for High Dimensional Data, The R-tree. University of Queensland Lecture Slide.](http://www.cse.cuhk.edu.hk/~taoyf/course/infs4205/www/index.html)
 	- 高次元データに対するテクニック集。
