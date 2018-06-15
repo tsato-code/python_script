@@ -32,6 +32,7 @@
 	- R-Tree
 	- Kd-Tree
 - AESA/LAESA
+- ボロノイ図のデータ構造
 
 ## その他
 - Spyderのデバッガ機能

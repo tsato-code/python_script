@@ -65,6 +65,8 @@
 1. [Bacci, S., Pandolfi, S., and Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 
 ## 異常検知
+1. [Gupta, M. Gao, Jing. Aggarwal, C. and Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
+1. [Kinoshita, A., Takasu, A., and Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
 1. [切通恵介, 泉谷知範. (2017). 機械学習を用いた工場機器の故障予測. DEIM Forum 2017 H2-1.](http://db-event.jpn.org/deim2017/papers/200.pdf)
 	- タスク：センサーデータから工場機器の故障予測。
 	- 手法：ロジスティック回帰、SVM、ニューラルネット。
@@ -84,6 +86,7 @@
 	- 特徴：Tweetの単語共起情報からトピック作成にマイクロクラスタリング利用、Tweetの盛り上がり検出にKleinbergのバースト検知手法、Tweetの要約にナップサック制約付き最大被覆問題の貪欲解法を利用。
 	- データ：宇宙兄弟に関するTweet約28万件、TV番組「宇宙兄弟」の台詞。
 	- 感想：数理モデルを使いこなしている感じがよい。
+1. [山本敬介. (2013). 混合分布による道路状態推定. 東京大学大学院情報理工学系研究科修士論文, 2013.](http://repository-old.dl.itc.u-tokyo.ac.jp/dspace/bitstream/2261/54210/1/48116445.pdf)
 
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., and Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
@@ -120,14 +123,14 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 1. [Fagin, R., Kumar, R., and Sivakumar, D. (2003, June). Efficient similarity search and classification via rank aggregation. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data, 301-312. ACM.](https://s3.amazonaws.com/academia.edu.documents/34071215/rank-aggregation.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1526142136&Signature=qPX4aYR5Y2B21fmfb8qNts08OwI%3D&response-content-disposition=inline%3B%20filename%3DEfficient_similarity_search_and_classifi.pdf)
 1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
 1. [Khan, M., Ding, Q., and Perrizo, W. (2002). K-Nearest Neighbor Classification on Spatial Data Streams Using P-Trees. In PAKDD 517--528.](https://pdfs.semanticscholar.org/0286/c5fee2dea935c601d55b44ef8cae965bbff7.pdf)
+1. [Kingsford. S. Bioinformatics Lectures. Carnegie Mellon University Lecture Slide.](http://kingsfordlab.cbd.cmu.edu/bioinformatics-lectures/)
+	- QuadTree, Kd-Treeなど。
 1. [Kunze, M. and Weske, M. (2010). Metric Trees for Efficient Similarity Search in Large Process Model Repositories. In International Conference on Business Process Management. 535-546. Springer, Berlin, Heidelberg.](https://link.springer.com/chapter/10.1007/978-3-642-20511-8_49)
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Toma. L. (2016). Algorithms in GIS. Bowdoin College Lecture Slide.](http://www.bowdoin.edu/~ltoma/teaching/cs3225-GIS/fall16/syllabus.html)
 	- Quad Treeなど。
-1. [Kingsford. S. Bioinformatics Lectures. Carnegie Mellon University Lecture Slide.](http://kingsfordlab.cbd.cmu.edu/bioinformatics-lectures/)
-	- QuadTree, Kd-Treeなど。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
 1. [Van Der Maaten, L. (2014). Accelerating t-SNE using tree-based algorithms. Journal of machine learning research, 15, 3221--3245.](http://www.jmlr.org/papers/volume15/vandermaaten14a/vandermaaten14a.pdf)
 	- t-SNEの高速化のために、微分するときの距離を近似する方法として四分木を利用している。
