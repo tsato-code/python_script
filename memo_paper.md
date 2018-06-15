@@ -105,6 +105,7 @@
 1. [Loh, W. Y. (2011). Classification and Regression Trees. Wiley Interdisciplinary Reviews: Data Mining and Knowledge Discovery, 1, 14-23.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
 	- 分類木と回帰木についての解説記事。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
+1. [Papadias, D., Zhang, J., Mamoulis, N., and Tao, Y. (2003). Query processing in spatial network databases. VLDB 2003, 802--813.](http://repository.ust.hk/ir/bitstream/1783.1-157/1/VLDB03SNDB.pdf)
 1. [Schaar, M. van der (2017). Statistical Machine Learning, Classification and Regression Trees. University of Oxford Lecture Note.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
 	- 統計的機械学習の講義スライド。
 	- 分類木と回帰木の詳しい計算手続きが、分枝の計算例とともに掲載されている。
@@ -129,6 +130,7 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
+1. [Shi, J., Mamoulis, N., Wu, D., & Cheung, D. W. (2014). Density-based place clustering in geo-social networks. SIGMOD 2014, 99--110.](https://i.cs.hku.hk/~nikos/sigmod14.pdf)
 1. [Toma. L. (2016). Algorithms in GIS. Bowdoin College Lecture Slide.](http://www.bowdoin.edu/~ltoma/teaching/cs3225-GIS/fall16/syllabus.html)
 	- Quad Treeなど。
 1. [Turney, P. D., and Pantel, P. (2010). From frequency to meaning: Vector space models of semantics. Journal of artificial intelligence research, 37, 141--188.](https://www.jair.org/index.php/jair/article/view/10640)
