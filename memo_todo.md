@@ -31,6 +31,8 @@
 	- QuadTree
 	- R-Tree
 	- Kd-Tree
+- AESA/LAESA
+
 ## その他
 - Spyderのデバッガ機能
 - 論文ストックの消化
