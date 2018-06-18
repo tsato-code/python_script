@@ -36,6 +36,7 @@
 
 ## その他
 - 微分方程式の気分
+- カーネルの気分
 - Spyderのデバッガ機能
 - 論文ストックの消化
 - functools.lru_cacheがhashableでない引数を扱えない件
