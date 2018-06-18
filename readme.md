@@ -54,6 +54,7 @@
 * その他
 	* [再帰深さ上限の確認](misc/test_recursion.py)
 	* [論理演算の処理速度確認](misc/compare_logical_operator.py)
+	* [pandasのDataFrame複数列に対するソート](misc/test_df_sort.ipynb)
 	* [組み込み関数allの処理速度確認(1): allがリスト内要素をどの順で評価しているか](misc/compare_all01.py)
 	* [組み込み関数allの処理速度確認(2): allと自作関数にかかる時間](misc/compare_all02.py)
 	* [pandasのDataFrame列に対するloop(1): iterrows, apply, map, ndarray型変換](misc/compare_pandas_loop01.py)
