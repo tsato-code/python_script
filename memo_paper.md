@@ -106,11 +106,13 @@
 
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., & Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
-	- Earth Mover's Distance
+	- Earth Mover's Distance.
+	- 画像のEMD計算実験、ビンの輸送コストの設定、三角不等式の証明、下界値の導出など。
 1. [Boykov, Y. Y., & Jolly, M. P. (2001). Interactive graph cuts for optimal boundary and region segmentation of objects in ND images. ICCV 2001. 105--112.](http://www.csd.uwo.ca/~yuri/Papers/iccv01.pdf)
+	- 画像の領域分割に対するグラフカット。
 
 ## 木構造モデル
-1. [Breiman, L. (2001). R&om Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
+1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
 	- タスク：回帰。
@@ -118,7 +120,7 @@
 	- 特徴：既存の回帰木は、葉の領域に入る訓練データの目的変数の平均値を葉の値としていた。提案手法は、葉で線形回帰を行う。local linear regressionというらしい。
 	- データ：6つのデータセット。
 	- 感想：昔の論文は読みにくい。
-1. [Kazemitabar, J., Amini, A., Bloniarz, A. & Talwalkar, A. S. (2017). Variable Importance using Decision Trees. In NIPS, 425--434.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
+1. [Kazemitabar, J., Amini, A., Bloniarz, A. & Talwalkar, A. S. (2017). Variable Importance using Decision Trees. In NIPS 2017, 425--434.](http://papers.nips.cc/paper/6646-variable-importance-using-decision-trees)
 1. [Loh, W. Y. (2011). Classification & Regression Trees. Wiley Interdisciplinary Reviews: Data Mining & Knowledge Discovery, 1, 14-23.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
 	- 分類木と回帰木についての解説記事。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
