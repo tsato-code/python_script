@@ -5,7 +5,12 @@
 1. [中桐裕子, 栗田治. (2004). 社会的なブームの微分方程式モデル. 日本オペレーションズ・リサーチ学会和文論文誌 47, 83--105.](http://www.orsj.or.jp/~archive/pdf/j_mag/Vol.47_J_083.pdf)
 
 ## 特徴量設計
-1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](https://ieeexplore.ieee.org/abstract/document/6413908/)
+1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.711.7560&rep=rep1&type=pdf)
+	- タスク：北京市の交通データから道路リンクの異常を検出、潜在的なOD流を予測。
+	- 手法：主成分分析、線形計画法。
+	- 特徴：ネットワークフローの問題と異常検知を同時に考えている。
+	- データ：北京市タクシーGPS。
+	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
 1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポールベクターマシン。
@@ -24,13 +29,13 @@
 	- 特徴：説明変数の作成に、TF-IDF、word2vecによる単語ベクトル化、時系列情報、属性情報など164次元を利用している。
 	- データ：楽天市場「みんなのレビュー、口コミ情報」
 	- 感想：結果の評価を主観に頼っているが、それでよいのかどうか。
-1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1](http://db-event.jpn.org/deim2017/papers/372.pdf)
+1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1.](http://db-event.jpn.org/deim2017/papers/372.pdf)
 	- タスク：事故発生したことがある交差点を判別。
 	- 手法：ロジスティック回帰。
 	- 特徴：既存研究では道路形状や環境情報から道路の事故リスクを求めていたが、運転操作データを使った試みが新しい。
 	- データ：ドラレコデータ、道路数値地図データ、雨量データ。
 	- 感想：特徴量を作るための分析が面白い。事故確率が高い交差点をランキングしたときの結果が気になる。
-1. [横山大作，伊藤正彦，豊田正史 (2015)．ドライブレコーダを利用した運転者ごとの挙動傾向把握の試み．DEIM Forum 2015 D2-3．](http://db-event.jpn.org/deim2015/paper/308.pdf)
+1. [横山大作，伊藤正彦，豊田正史 (2015)．ドライブレコーダを利用した運転者ごとの挙動傾向把握の試み．DEIM Forum 2015 D2-3.](http://db-event.jpn.org/deim2015/paper/308.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポートベクターマシン。
 	- 特徴：ドライバーの運転安全性の指標（特徴量）を作成。一次元連続分布を離散化し、離散確率分布としてモデル化。確率に対する情報量を用いて、外れ値を強調する特徴量を作成。事故歴ありのドライバを再現率70%、適合率61%の性能で判別。
