@@ -69,6 +69,8 @@
 
 ## 異常検知
 1. [Gupta, M. Gao, Jing. Aggarwal, C. & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
+	- 外れ値検出のスライド資料。
+	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
 1. [Pang, L. X., Chawla, S., Liu, W., & Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
 	- タスク：タクシーGPSデータから北京市の恒常的な外れ値と新規出現の外れ値を検出。
