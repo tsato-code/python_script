@@ -1,8 +1,8 @@
 # 文献メモ
 
-## 微分方程式モデル
-1. [中桐裕子, 栗田治. (2002). 狂牛病の微分方程式モデル. オペレーションズ・リサーチ 40, 666--674.](http://orsj.or.jp/~archive/pdf/bul/Vol.47_10_666.pdf)
-1. [中桐裕子, 栗田治. (2004). 社会的なブームの微分方程式モデル. 日本オペレーションズ・リサーチ学会和文論文誌 47, 83--105.](http://www.orsj.or.jp/~archive/pdf/j_mag/Vol.47_J_083.pdf)
+## 可視化
+1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
+	- t-SNE.
 
 ## 特徴量設計
 1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.711.7560&rep=rep1&type=pdf)
@@ -41,7 +41,7 @@
 	- 特徴：ドライバーの運転安全性の指標（特徴量）を作成。一次元連続分布を離散化し、離散確率分布としてモデル化。確率に対する情報量を用いて、外れ値を強調する特徴量を作成。事故歴ありのドライバを再現率70%、適合率61%の性能で判別。
 	- データ：ドラレコデータ（GPS軌跡、速度、加速度）、ドライバーの事故歴。
 	- 感想：特徴量の作り方が面白い。
-1. [横山大作，豊田正史 (2016)．事故防止に向けたドライブレコーダデータからの運転挙動分析．DEIM Forum 2016 H8-5．](http://db-event.jpn.org/deim2016/papers/390.pdf)
+1. [横山大作，豊田正史 (2016)．事故防止に向けたドライブレコーダデータからの運転挙動分析．DEIM Forum 2016 H8-5.](http://db-event.jpn.org/deim2016/papers/390.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポートベクトルマシン。
 	- 特徴：ドライバーごとの運転動作分布、運転環境などから特徴量を設計。事故歴ありのドライバを最大で、再現率83%、適合率81%の性能で判別。
@@ -53,10 +53,6 @@
 	- 特徴：これまで、平均値、分散値、最大値および最小値、FFTパワースペクトルが波形データの特徴量として利用されていたが、新たに波形ピーク高さと幅を特徴量として利用。
 	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
 	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
-
-## 可視化
-1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
-	- t-SNE
 
 ## 時系列分析
 1. [貞広幸雄. (2013). 時系列空間データの探索的解析手法. オペレーションズ・リサーチ 58, 18--23.](http://www.orsj.or.jp/archive2/or58-01/or58_1_18.pdf)
@@ -110,6 +106,10 @@
 	- 画像のEMD計算実験、ビンの輸送コストの設定、三角不等式の証明、下界値の導出など。
 1. [Boykov, Y. Y., & Jolly, M. P. (2001). Interactive graph cuts for optimal boundary and region segmentation of objects in ND images. ICCV 2001. 105--112.](http://www.csd.uwo.ca/~yuri/Papers/iccv01.pdf)
 	- 画像の領域分割に対するグラフカット。
+
+## 微分方程式モデル
+1. [中桐裕子, 栗田治. (2002). 狂牛病の微分方程式モデル. オペレーションズ・リサーチ 40, 666--674.](http://orsj.or.jp/~archive/pdf/bul/Vol.47_10_666.pdf)
+1. [中桐裕子, 栗田治. (2004). 社会的なブームの微分方程式モデル. 日本オペレーションズ・リサーチ学会和文論文誌 47, 83--105.](http://www.orsj.or.jp/~archive/pdf/j_mag/Vol.47_J_083.pdf)
 
 ## 木構造モデル
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
