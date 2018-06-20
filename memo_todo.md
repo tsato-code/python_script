@@ -14,7 +14,6 @@
 ## 統計・機械学習関連
 - 尤度比検定
 - 角度データ (directional statistics) のクラスタリング
-- One class SVM （外れ値検出手法）
 - カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
 - LDAのnotebook修正 + トピック可視化
@@ -32,12 +31,10 @@
 	- R-Tree
 	- Kd-Tree
 - AESA/LAESA
+- 線分ボロノイ図のアルゴリズム
 - ボロノイ図のデータ構造
 
 ## その他
-- 微分方程式の気分
 - カーネルの気分
-- Spyderのデバッガ機能
-- 論文ストックの消化
 - functools.lru_cacheがhashableでない引数を扱えない件
-- [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)
+- [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)でオブジェクト指向
