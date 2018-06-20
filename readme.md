@@ -46,6 +46,9 @@
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
+* 幾何計算
+	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
+	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgemetry/test_scipy_spatial.ipynb)
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
@@ -63,5 +66,4 @@
 	* [pandasのDataFrame列に対する距離計算(1): 距離関数の定義](misc/calc_pandas_dist.py)
 	* [pandasのDataFrame列に対する距離計算(2): 変数に値を保存しながら計算したときの処理時間](misc/compare_pandas_var_use.py)
 	* [pandasのDataFrame列に対する距離計算(3): numpyのnorm関数の処理時間](misc/compare_pandas_dist_numpy.py)
-	* [平面上の点を線に射影するコード](misc/proj_point_to_line.ipynb)
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
