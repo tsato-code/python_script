@@ -71,9 +71,9 @@
 1. [Pang, L. X., Chawla, S., Liu, W., & Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
 	- タスク：タクシーGPSデータから北京市の恒常的な外れ値と新規出現の外れ値を検出。
 	- 手法：尤度比検定。
-	- 特徴：upper-bounding strategyとやらを使っている。
+	- 特徴：upper-bounding strategyとやらを使って限定操作を行い、異常度の高い上位k個の領域を計算している。
 	- データ：人工データ、北京市タクシーのGPSデータ。
-	- シンプルだがおもしろい。もう一回読む。
+	- シンプルだがおもしろい。[関連スライド](https://pdfs.semanticscholar.org/db55/8e1bfb8feaae50919a2952979a894669e486.pdf)もある。
 1. [切通恵介, 泉谷知範. (2017). 機械学習を用いた工場機器の故障予測. DEIM Forum 2017 H2-1.](http://db-event.jpn.org/deim2017/papers/200.pdf)
 	- タスク：センサーデータから工場機器の故障予測。
 	- 手法：ロジスティック回帰、SVM、ニューラルネット。
@@ -134,7 +134,6 @@
 1. [Loh, W. Y. (2011). Classification & Regression Trees. Wiley Interdisciplinary Reviews: Data Mining & Knowledge Discovery, 1, 14-23.](https://onlinelibrary.wiley.com/doi/abs/10.1002/widm.8)
 	- 分類木と回帰木についての解説記事。
 	- 各モデルの様々なアルゴリズムを概観、比較実験など。
-1. [Papadias, D., Zhang, J., Mamoulis, N., & Tao, Y. (2003). Query processing in spatial network databases. VLDB 2003, 802--813.](http://repository.ust.hk/ir/bitstream/1783.1-157/1/VLDB03SNDB.pdf)
 1. [Schaar, M. van der (2017). Statistical Machine Learning, Classification and Regression Trees. University of Oxford Lecture Note.](http://www.stats.ox.ac.uk/~flaxman/HT17_lecture13.pdf)
 	- 統計的機械学習の講義スライド。
 	- 分類木と回帰木の詳しい計算手続きが、分枝の計算例とともに掲載されている。
@@ -159,6 +158,7 @@ Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs
 1. [Manolopoulos, Y., Nanopoulos, A., Papadopoulos, A. N., Theodoridis, Y. (2005).  R-trees: Theory and Applications. Springer-Verlag London.](http://delab.csd.auth.gr/rtrees/)
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
+1. [Papadias, D., Zhang, J., Mamoulis, N., & Tao, Y. (2003). Query processing in spatial network databases. VLDB 2003, 802--813.](http://repository.ust.hk/ir/bitstream/1783.1-157/1/VLDB03SNDB.pdf)
 1. [Shi, J., Mamoulis, N., Wu, D., & Cheung, D. W. (2014). Density-based place clustering in geo-social networks. SIGMOD 2014, 99--110.](https://i.cs.hku.hk/~nikos/sigmod14.pdf)
 1. [Toma. L. (2016). Algorithms in GIS. Bowdoin College Lecture Slide.](http://www.bowdoin.edu/~ltoma/teaching/cs3225-GIS/fall16/syllabus.html)
 	- Quad Treeなど。
