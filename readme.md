@@ -48,7 +48,7 @@
 	* [カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
 * 計算幾何
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
-	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgemetry/test_scipy_spatial.ipynb)
+	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
