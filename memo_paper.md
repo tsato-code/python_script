@@ -4,67 +4,42 @@
 1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 	- t-SNE.
 
-## 特徴量設計
-1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.711.7560&rep=rep1&type=pdf)
-	- タスク：北京市の交通データから道路リンクの異常を検出、潜在的なOD流を予測。
-	- 手法：主成分分析、線形計画法。
-	- 特徴：ネットワークフローの問題と異常検知を同時に考えている。
-	- データ：北京市タクシーGPS。
-	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
-1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
-	- タスク：ドラレコデータから事故歴ありドライバの判別。
-	- 手法：サポールベクターマシン。
-	- 特徴：平均的なドライバーとの違いを表す説明変数を作成。エントロピーやKL-ダイバージェンスを利用。
-	- データ：ドライバー経歴、ドラレコデータ、道路情報データ。
-	- 感想：KL-ダイバージェンスは調査が必要。
+## 都市計算
+1. [Urban Computing | Microsoft](https://www.microsoft.com/en-us/research/project/urban-computing/)
+	- 都市データの解析。主に北京。
+	- たとえば、gps trajectoryなど。
+
+## ルールベース
 1. [芦田優太, 西岡到. (2015). 路側データから生成した交通流モデルによる高速道路の交通状況予測. 研究報告高度交通システムとスマートコミュニティ (ITS), 16, 1--6.](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=146271&item_no=1&page_id=13&block_id=8)
 	- タスク：路側データから学習した道路交通流モデルを用いて高速道路における交通状況予測。
 	- 手法：ルールベース+重回帰。
 	- 特徴：時間帯、曜日、天候状況で分類→交通状況で予測モデル作成。
 	- データ：アジア圏の路側データ。
 	- 感想：データの出典が不明。関連研究のVARMA（ベクトル自己回帰移動平均モデル）が気になる。
+
+## 時系列分析
+1. [Bacci, S., Pandolfi, S., & Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
 	- タスク：商品レビューの時系列的な変化を解析。
 	- 手法：k-means++、SOM。
 	- 特徴：説明変数の作成に、TF-IDF、word2vecによる単語ベクトル化、時系列情報、属性情報など164次元を利用している。
 	- データ：楽天市場「みんなのレビュー、口コミ情報」
 	- 感想：結果の評価を主観に頼っているが、それでよいのかどうか。
-1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1.](http://db-event.jpn.org/deim2017/papers/372.pdf)
-	- タスク：事故発生したことがある交差点を判別。
-	- 手法：ロジスティック回帰。
-	- 特徴：既存研究では道路形状や環境情報から道路の事故リスクを求めていたが、運転操作データを使った試みが新しい。
-	- データ：ドラレコデータ、道路数値地図データ、雨量データ。
-	- 感想：特徴量を作るための分析が面白い。事故確率が高い交差点をランキングしたときの結果が気になる。
-1. [横山大作，伊藤正彦，豊田正史 (2015)．ドライブレコーダを利用した運転者ごとの挙動傾向把握の試み．DEIM Forum 2015 D2-3.](http://db-event.jpn.org/deim2015/paper/308.pdf)
-	- タスク：ドラレコデータから事故歴ありドライバの判別。
-	- 手法：サポートベクターマシン。
-	- 特徴：ドライバーの運転安全性の指標（特徴量）を作成。一次元連続分布を離散化し、離散確率分布としてモデル化。確率に対する情報量を用いて、外れ値を強調する特徴量を作成。事故歴ありのドライバを再現率70%、適合率61%の性能で判別。
-	- データ：ドラレコデータ（GPS軌跡、速度、加速度）、ドライバーの事故歴。
-	- 感想：特徴量の作り方が面白い。
-1. [横山大作，豊田正史 (2016)．事故防止に向けたドライブレコーダデータからの運転挙動分析．DEIM Forum 2016 H8-5.](http://db-event.jpn.org/deim2016/papers/390.pdf)
-	- タスク：ドラレコデータから事故歴ありドライバの判別。
-	- 手法：サポートベクトルマシン。
-	- 特徴：ドライバーごとの運転動作分布、運転環境などから特徴量を設計。事故歴ありのドライバを最大で、再現率83%、適合率81%の性能で判別。
-	- データ：ドラレコデータ（GPS軌跡、速度、加速度、ブレーキ動作、停止動作、ハンドル動作、右左折動作）、ドライバーの運転経歴データ（運転経歴、事故経歴）、道路データ（道路幅、一方通行、中央分離帯の有無）。
-	- 感想：特徴量の作り方が面白い。
-1. [村尾和哉, クリストフファンラールホーフェン, 寺尾努, 西尾章治郎. (2010). センサのピークを用いた状況認識手法. 情報処理学会論文誌 51, 1067--1077.](https://www.eti.uni-siegen.de/ubicomp/papers/ess_ipsj2010.pdf)
-	- タスク：信号データを圧縮した特徴量の作成。
-	- 手法：特徴量の評価のためクラスタリングおよびサポートベクトルマシンを利用。
-	- 特徴：これまで、平均値、分散値、最大値および最小値、FFTパワースペクトルが波形データの特徴量として利用されていたが、新たに波形ピーク高さと幅を特徴量として利用。
-	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
-	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
-
-## 時系列分析
 1. [貞広幸雄. (2013). 時系列空間データの探索的解析手法. オペレーションズ・リサーチ 58, 18--23.](http://www.orsj.or.jp/archive2/or58-01/or58_1_18.pdf)
 	- タスク：時系列空間データの局所的類似性抽出。
 	- 手法：時系列データに対する幾何的性質を用いた新手法。具体的には、平面にプロットした複数の時系列データからポリゴン形状を抽出し、そのポリゴン情報から分類および可視化を行う。
 	- 特徴：時系列データを局所類似性で分類可能らしい。
 	- データ：ユタ州ソルトレーク群の時系列空間データ。
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
-1. [Bacci, S., Pandolfi, S., & Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 
 ## 異常検知
-1. [Gupta, M. Gao, Jing. Aggarwal, C. & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
+1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.711.7560&rep=rep1&type=pdf)
+	- タスク：北京市の交通データから道路リンクの異常を検出、潜在的なOD流を予測。
+	- 手法：主成分分析、線形計画法。
+	- 特徴：ネットワークフローの問題と異常検知を同時に考えている。
+	- データ：北京市タクシーGPS。
+	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
+1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
 	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
@@ -74,6 +49,12 @@
 	- 特徴：upper-bounding strategyとやらを使って限定操作を行い、異常度の高い上位k個の領域を計算している。
 	- データ：人工データ、北京市タクシーのGPSデータ。
 	- シンプルだがおもしろい。[関連スライド](https://pdfs.semanticscholar.org/db55/8e1bfb8feaae50919a2952979a894669e486.pdf)もある。
+1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
+	- タスク：ドラレコデータから事故歴ありドライバの判別。
+	- 手法：サポールベクターマシン。
+	- 特徴：平均的なドライバーとの違いを表す説明変数を作成。エントロピーやKL-ダイバージェンスを利用。
+	- データ：ドライバー経歴、ドラレコデータ、道路情報データ。
+	- 感想：KL-ダイバージェンスは調査が必要。
 1. [切通恵介, 泉谷知範. (2017). 機械学習を用いた工場機器の故障予測. DEIM Forum 2017 H2-1.](http://db-event.jpn.org/deim2017/papers/200.pdf)
 	- タスク：センサーデータから工場機器の故障予測。
 	- 手法：ロジスティック回帰、SVM、ニューラルネット。
@@ -92,13 +73,37 @@
 	- 特徴：通常時と予測値の乖離度で異常を定義している。
 	- データ：Yahoo! Japan経路検索ログ、2016年12月のコミケ。
 	- 感想：「人の流れ」について「平常時と異常時」の考え方を導入しているところが面白い。
+1. [豊田正史，横山大作，伊藤正彦 (2017)．運転状況を考慮したドライブレコーダデータからの潜在リスク交差点検知手法． DEIM Forum 2017 A5-1.](http://db-event.jpn.org/deim2017/papers/372.pdf)
+	- タスク：事故発生したことがある交差点を判別。
+	- 手法：ロジスティック回帰。
+	- 特徴：既存研究では道路形状や環境情報から道路の事故リスクを求めていたが、運転操作データを使った試みが新しい。
+	- データ：ドラレコデータ、道路数値地図データ、雨量データ。
+	- 感想：特徴量を作るための分析が面白い。事故確率が高い交差点をランキングしたときの結果が気になる。
 1. [中原孝信, 前川浩基, 羽室行信. (2013). テレビ番組視聴時におけるTwitter投稿からのトピック検知. オペレーションズ・リサーチ 58, 442--448.](http://www.orsj.or.jp/archive2/or58-08/or58_8_442.pdf)
 	- タスク：特定のTV番組を視聴中にその番組に関するTwitter投稿をするソーシャルビューイングの内容を要約。
 	- 手法：マイクロクラスタリング、Kleinbergのバースト検知手法、ナップサック制約付き最大被覆問題の貪欲解放。
 	- 特徴：Tweetの単語共起情報からトピック作成にマイクロクラスタリング利用、Tweetの盛り上がり検出にKleinbergのバースト検知手法、Tweetの要約にナップサック制約付き最大被覆問題の貪欲解法を利用。
 	- データ：宇宙兄弟に関するTweet約28万件、TV番組「宇宙兄弟」の台詞。
 	- 感想：数理モデルを使いこなしている感じがよい。
+1. [村尾和哉, クリストフファンラールホーフェン, 寺尾努, 西尾章治郎. (2010). センサのピークを用いた状況認識手法. 情報処理学会論文誌 51, 1067--1077.](https://www.eti.uni-siegen.de/ubicomp/papers/ess_ipsj2010.pdf)
+	- タスク：信号データを圧縮した特徴量の作成。
+	- 手法：特徴量の評価のためクラスタリングおよびサポートベクトルマシンを利用。
+	- 特徴：これまで、平均値、分散値、最大値および最小値、FFTパワースペクトルが波形データの特徴量として利用されていたが、新たに波形ピーク高さと幅を特徴量として利用。
+	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
+	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
 1. [山本敬介. (2013). 混合分布による道路状態推定. 東京大学大学院情報理工学系研究科修士論文, 2013.](http://repository-old.dl.itc.u-tokyo.ac.jp/dspace/bitstream/2261/54210/1/48116445.pdf)
+1. [横山大作，伊藤正彦，豊田正史 (2015)．ドライブレコーダを利用した運転者ごとの挙動傾向把握の試み．DEIM Forum 2015 D2-3.](http://db-event.jpn.org/deim2015/paper/308.pdf)
+	- タスク：ドラレコデータから事故歴ありドライバの判別。
+	- 手法：サポートベクターマシン。
+	- 特徴：ドライバーの運転安全性の指標（特徴量）を作成。一次元連続分布を離散化し、離散確率分布としてモデル化。確率に対する情報量を用いて、外れ値を強調する特徴量を作成。事故歴ありのドライバを再現率70%、適合率61%の性能で判別。
+	- データ：ドラレコデータ（GPS軌跡、速度、加速度）、ドライバーの事故歴。
+	- 感想：特徴量の作り方が面白い。
+1. [横山大作，豊田正史 (2016)．事故防止に向けたドライブレコーダデータからの運転挙動分析．DEIM Forum 2016 H8-5.](http://db-event.jpn.org/deim2016/papers/390.pdf)
+	- タスク：ドラレコデータから事故歴ありドライバの判別。
+	- 手法：サポートベクトルマシン。
+	- 特徴：ドライバーごとの運転動作分布、運転環境などから特徴量を設計。事故歴ありのドライバを最大で、再現率83%、適合率81%の性能で判別。
+	- データ：ドラレコデータ（GPS軌跡、速度、加速度、ブレーキ動作、停止動作、ハンドル動作、右左折動作）、ドライバーの運転経歴データ（運転経歴、事故経歴）、道路データ（道路幅、一方通行、中央分離帯の有無）。
+	- 感想：特徴量の作り方が面白い。
 
 ## 画像処理
 1. [Rubner, Y., Tomasi, C., & Guibas, L. J. (2000). The earth mover's distance as a metric for image retrieval. International journal of computer vision, 40, 99--121.](http://robotics.stanford.edu/~rubner/papers/rubnerIjcv00.pdf)
@@ -140,8 +145,7 @@
 1. [Steorts, R. C. (2017). Data Mining and Machine Learning, Tree Based Methods: Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-regression.pdf)
 	- データマイニングと機械学習の講義スライド。
 	- 回帰木の概要についてシンプルな説明。
-1. [Steorts, R. C. (2017). Data Mining and Machine Learning, Tree Based Methods: Bagging, Boosting, and
-Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
+1. [Steorts, R. C. (2017). Data Mining and Machine Learning, Tree Based Methods: Bagging, Boosting, and Regression Trees. Duke University Lecture Slide.](http://www2.stat.duke.edu/~rcs46/lectures_2017/08-trees/08-tree-advanced.pdf)
 	- データマイニングと機械学習の講義スライド。
 	- Baggin, Boosting, Regression Treesについてボリュームある説明。
 	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
