@@ -33,7 +33,7 @@
 	* [ナップサック問題に対する動的計画のテスト](optimization/test_functools_lru_cache_knapsack.py)
 	* [Rosenbrock関数の描画とニュートン法のテスト](optimization/rosenbrock.ipynb)
 	* [pulpによるナップサック問題の求解](optimization/test_pulp.py)
-* 統計+機械学習+MCMC
+* 統計+機械学習
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
