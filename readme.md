@@ -46,6 +46,7 @@
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
+	* [avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
 * 計算幾何
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
 	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
