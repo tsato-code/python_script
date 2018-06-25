@@ -53,6 +53,7 @@
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
+	* [k-d tree](datastructure/test_kd_tree.py)
 	* [R-Tree](datastructure/test_rtree.py)
 	* [QuadTree](datastructure/test_quadtree.ipynb)
 * その他
