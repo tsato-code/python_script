@@ -2,6 +2,7 @@
 1. Kd_tree.search関数内で使うregionの実装をどうするか検討中
 2. Kd_tree.search関数内で使うreport_subtreeをどうするか検討中
 3. Kd_tree.search関数内で使うintersectをどうするか
+4. Kd_tree.build関数内で使う中央値探索は、Introduction to Algorithmsの10章線形中央値探索を使って高速化
 """
 
 import numpy as np
@@ -54,7 +55,7 @@ class Kd_tree(object):
     
     
 
-    def search(self, v, R, found=Non):
+    def search(self, v, R, found=None):
         """ search K-d tree """
         if found==None: found = []
         if v.is_leaf():

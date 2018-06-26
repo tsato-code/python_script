@@ -158,6 +158,8 @@
 1. [Charikar, M. S. (2002). Similarity estimation techniques from rounding algorithms. In Proceedings of the thiry-fourth annual ACM symposium on Theory of computing, 380--388. ACM.](http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf)
 1. [Fagin, R., Kumar, R., & Sivakumar, D. (2003, June). Efficient similarity search and classification via rank aggregation. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data, 301-312. ACM.](https://s3.amazonaws.com/academia.edu.documents/34071215/rank-aggregation.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1526142136&Signature=qPX4aYR5Y2B21fmfb8qNts08OwI%3D&response-content-disposition=inline%3B%20filename%3DEfficient_similarity_search_and_classifi.pdf)
 1. [Guttman, A. (1984). R-trees: A dynamic index structure for Spatial Searching. In SIGMOD, 47--57.](https://klevas.mif.vu.lt/~algis/DSA/guttman.pdf)
+1. [Liu, T., Moore, A. W., & Gray, A. (2006). New algorithms for efficient high-dimensional nonparametric classification. Journal of Machine Learning Research, 7, 1135--1158.](http://www.jmlr.org/papers/volume7/liu06a/liu06a.pdf)
+	- ball treeを使った新しいクラスタリング手法。
 1. [Khan, M., Ding, Q., & Perrizo, W. (2002). K-Nearest Neighbor Classification on Spatial Data Streams Using P-Trees. In PAKDD 517--528.](https://pdfs.semanticscholar.org/0286/c5fee2dea935c601d55b44ef8cae965bbff7.pdf)
 1. [Kingsford. S. Bioinformatics Lectures. Carnegie Mellon University Lecture Slide.](http://kingsfordlab.cbd.cmu.edu/bioinformatics-lectures/)
 	- QuadTree, Kd-Treeなど。
@@ -166,6 +168,8 @@
 	- 空間データ構造R-treeのテキスト。
 	- 1章(Introduction)と2章(Dynamic Version of R-trees)はリンク先からダウンロードできる。
 1. [Papadias, D., Zhang, J., Mamoulis, N., & Tao, Y. (2003). Query processing in spatial network databases. VLDB 2003, 802--813.](http://repository.ust.hk/ir/bitstream/1783.1-157/1/VLDB03SNDB.pdf)
+1. [Sand, P., & Moore, A. W. (2001). Repairing faulty mixture models using density estimation. In ICML 457--464.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.20.7585&rep=rep1&type=pdf)
+	- k-d木を使って密度推定。
 1. [Shi, J., Mamoulis, N., Wu, D., & Cheung, D. W. (2014). Density-based place clustering in geo-social networks. SIGMOD 2014, 99--110.](https://i.cs.hku.hk/~nikos/sigmod14.pdf)
 1. [Toma. L. (2016). Algorithms in GIS. Bowdoin College Lecture Slide.](http://www.bowdoin.edu/~ltoma/teaching/cs3225-GIS/fall16/syllabus.html)
 	- Quad Treeなど。
@@ -176,6 +180,8 @@
 1. [Yao, Y. (2017). Advanced Techniques for High Dimensional Data, The R-tree. University of Queensland Lecture Slide.](http://www.cse.cuhk.edu.hk/~taoyf/course/infs4205/www/index.html)
 	- 高次元データに対するテクニック集。
 	- R-Treeの擬似コードがある。
+1. [Zhou, K., Hou, Q., Wang, R., & Guo, B. (2008). Real-time kd-tree construction on graphics hardware. ACM Transactions on Graphics, 27, 126.](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2008-52.pdf)
+	- k-d木とGPU。
 1. [岩崎雅二郎 (2011). 木構造型インデックスを用いた近似k最近傍グラフによる近傍検索. 情報処理学会論文誌 52, 817--828.](https://ci.nii.ac.jp/naid/110008507921/)
 	- タスク：空間データのk近傍の索引化。
 	- 手法：既存の空間データ構造ANNを改善したもの。
