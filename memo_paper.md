@@ -3,6 +3,9 @@
 ## 可視化
 1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
 	- t-SNE.
+1. [Shubham BarudwaleWEST NILE- ML+ Data Visualisation + Data Analysis](https://www.kaggle.com/barudwale20/west-nile-ml-data-visualisation-data-analysis)
+	- Kaggle のカーネル。
+	- 緯度経度のヒートマップ作成。
 
 ## 都市計算
 1. [Urban Computing | Microsoft](https://www.microsoft.com/en-us/research/project/urban-computing/)

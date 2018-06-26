@@ -53,7 +53,7 @@ class Kd_tree(object):
         return v
     
     
-    
+
     def search(self, v, R, found=Non):
         """ search K-d tree """
         if found==None: found = []
@@ -61,7 +61,7 @@ class Kd_tree(object):
             if v.contain(R):
                 found.append(v.data)
             elif region(v.left) in R:  # debug 要修正 
-                self.report_subtree(v.left)
+                self.report_subtree(v.left, found)
             elif self.intersect(regin(v.left), R):
                 self.search(v.right, R, found)
             if region(v.right) in R:
@@ -74,7 +74,8 @@ class Kd_tree(object):
     def intersect(self):
         pass
     
-    def report_subtree(self):
+    def report_subtree(self, v, found):
+        # subtree v に含まれる点をすべて found に追加
         pass
         
 
