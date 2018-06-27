@@ -9,10 +9,13 @@ import numpy as np
 
 
 class Kd_Node(object):
-    def __init__(self, data=None, left=None, right=None):
-        self.data = data
+    def __init__(self, depth=None, cutval=None, area=Rectangle(), left=None, right=None, data=None,):
+        self.depth = depth
+        self.culval = cutval
+        self.area = area
         self.left = left
         self.right = right
+        self.data = data
 
 
     def __repr__(self):
@@ -30,6 +33,23 @@ class Kd_Node(object):
         return R[0] <= self.data[0] <= R[1] and R[2] <= self.data[1] <= R[3]
 
 
+class Rectangle2d:
+    def __init__(self, x_b=float('inf'), x_t=float('inf'), y_b=float('inf'), y_t=float('inf')):
+        """ create rectangule """
+        self.x_b = x_b
+        self.x_t = x_t
+        self.y_b = y_b
+        self.y_t = y_t
+    
+
+    def __repr__(self):
+        return "<Rectangle {}, {}, {}, {}>".format(self.x_b, self.x_t, self.y_b, self.y_t)
+
+
+    def contains(self, p):
+        return self.x_b <= p[0] <= self.x_t and self.y_b <- p[1] <= self.y_t
+
+
 class Kd_tree(object):
     def __init__(self, points):
         self.root = self.build(points)
@@ -38,7 +58,7 @@ class Kd_tree(object):
     def build(self, points, depth=0):
         """ build a K-d tree """
         if len(points) == 1:
-            v = Kd_Node(points[0])
+            v = Kd_Node(depth=depth, data=points[0])
             return v
         elif depth%2 == 0:
             sort_index = np.argsort(points[:, 0])

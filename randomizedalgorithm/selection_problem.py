@@ -32,11 +32,11 @@ def randomized_select(arr, p, r, i):
 		return randomized_select(arr, q+1, r, i-k)
 
 
-
-arr = [2,8,7,1,3,5,6,4]
-p = 0
-r = 7
-print(arr)
-res = randomized_select(arr, p, r, 5)
-print(arr)
-print(res)
+if __name__ == '__main__':
+	arr = [2,8,7,1,3,5,6,4]
+	p = 0
+	r = 7
+	print(arr)
+	res = randomized_select(arr, p, r, 5)
+	print(arr)
+	print(res)
