@@ -21,6 +21,8 @@
 	- 感想：データの出典が不明。関連研究のVARMA（ベクトル自己回帰移動平均モデル）が気になる。
 
 ## 時系列分析
+1. [Aghabozorgi, S., Shirkhorshidi, A. S., & Wah, T. Y. (2015). Time-series clustering–A decade review. Information Systems 53, 16--38.](http://repository.um.edu.my/101412/1/ali-1.pdf)
+	- 系列データのクラスタリングサーベイ。
 1. [Bacci, S., Pandolfi, S., & Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
 1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
 	- タスク：商品レビューの時系列的な変化を解析。
