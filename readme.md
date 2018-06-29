@@ -51,7 +51,7 @@
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
 	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
 * 乱択アルゴリズム
-	* [選択問題に対する乱択アルゴリズム](randomizedalgorithm/selection_problem.py)
+	* [選択アルゴリズム（k 番目の要素の選択）](randomizedalgorithm/selection_algorithm.py)
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
