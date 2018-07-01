@@ -6,9 +6,12 @@
    →複雑なのでpointsを前処理的に各座標成分でソートしておく
 
 5. cutval不要→depthとdata1点から切除平面を求める
+6. 境界を等式付き不等号とするか当敷なしとするか、特に矩形同士の交差、包含判定
+7. テスト
 """
 
 import numpy as np
+import copy
 
 
 class Kd_Node(object):
@@ -32,11 +35,11 @@ class Kd_Node(object):
     
     
     def is_contained(self, R):
-        return R.x_b <= self.data[0] <= R.x_t and R.y_b <= self.data[1] <= R.y_t
+        return R.x_b <= self.data[0] < R.x_t and R.y_b <= self.data[1] < R.y_t
 
 
 class Rectangle2d(object):
-    def __init__(self, x_b=float('inf'), x_t=float('inf'), y_b=float('inf'), y_t=float('inf')):
+    def __init__(self, x_b=-float('inf'), x_t=float('inf'), y_b=-float('inf'), y_t=float('inf')):
         """ create rectangule """
         self.x_b = x_b
         self.x_t = x_t
@@ -48,18 +51,15 @@ class Rectangle2d(object):
         return "<Rectangle {}, {}, {}, {}>".format(self.x_b, self.x_t, self.y_b, self.y_t)
 
 
-    def contains(self, p):
-        return self.x_b <= p[0] <= self.x_t and self.y_b <- p[1] <= self.y_t
+    # def contain_p(self, p):
+    #     return self.x_b <= p[0] < self.x_t and self.y_b <= p[1] < self.y_t
     
     
-    def intersects(self, R):
+    def intersect_R(self, R):
         return not (self.x_t < R.x_b or self.y_t < R.y_b or R.x_t < self.x_b or R.y_t < self.y_b)
     
-    def left_cut(self, depth, cutval):
-        # debug
-        # 共通集合となる矩形を返す関数
-        # =====
-        return self
+    def is_contained_R(self, R):
+        return R.x_b <= self.x_b and R.y_b <= self.y_t and self.x_b <= R.x_t and self.y_b <= R.y_t
 
 
 class Kd_tree(object):
@@ -85,36 +85,51 @@ class Kd_tree(object):
         cutval = points[axis-1][depth%2]  # 配列は0番から始まるのでマイナス1
         v = Kd_Node(depth=depth, cutval=cutval, left=left, right=right)
         return v
-    
-    
+
+
+    def prep(self, v=None):
+        """ preprocessing a K-d tree """
+        if v == None:
+            v = self.root
+            v.R = Rectangle2d()
+        if not v.is_leaf():
+            v.left.R = copy.deepcopy(v.R)
+            v.right.R = copy.deepcopy(v.R)
+            if v.depth%2 == 0:
+                v.left.R.x_t = v.cutval
+                v.right.R.x_b = v.cutval
+            else:
+                v.left.R.y_t = v.cutval
+                v.right.R.y_b = v.cutval
+            self.prep(v.left)
+            self.prep(v.right)
+
+
 
     def search(self, v, R, found=[]):
         """ search K-d tree """
         if v.is_leaf():
-            if R.contains(v):
+            if v.is_contained(R):
                 found.append(v.data)
         else:
-            v_R = Rectangle2d()
-            v_left_R = None # debug 共通集合となる矩形
-            v_right_R =  None # debug 共通集合となる矩形
-            if region(v.left) in R:  # debug 要修正 
+            if v.left.R.is_contained_R(R):  # debug 要修正 
                 self.report_subtree(v.left, found)
-            elif self.intersect(regin(v.left), R):
-                self.search(v.right, R, found)
-            if region(v.right) in R:
-                self.report_subtree(v.right)
-            elif self.intersect(region(v.right), R):
+            elif v.left.R.intersect_R(R):
+                self.search(v.left, R, found)
+            if v.right.R.is_contained_R(R):
+                self.report_subtree(v.right, found)
+            elif v.right.R.intersect_R(R):
                 self.search(v.right, R, found)
         return found
-    
-    
-    def intersect(self):
-        pass
-    
+
     
     def report_subtree(self, v, found):
         # subtree v に含まれる点をすべて found に追加
-        pass
+        if v.is_leaf():
+            found.append(v.data)
+        else:
+            self.report_subtree(v.left, found)
+            self.report_subtree(v.right, found)
     
     
     def view(self):
@@ -123,6 +138,31 @@ class Kd_tree(object):
 
 #if __name__ == '__main__':
 dataset = np.random.random((10, 2))
+# dataset = np.array([[2,5], [4,1], [1,3]])
 print(dataset)
+
+print('* build *')
 t = Kd_tree(dataset)
+t.prep()
 print(t.root)
+
+print('* search *')
+R = Rectangle2d(.0, .2, .0, .2)
+founds = t.search(t.root, R)
+print(founds)
+
+"""
+print(t.root.R)
+print(t.root.left.R)
+print(t.root.right.R)
+print(t.root.left.left.R)
+print(t.root.left.right.R)
+print('* '*20)
+a = Rectangle2d()
+print(a)
+a.x_b = 10
+a.x_t = 20
+a.y_t = 5
+a.y_b = 1
+print(a)
+"""
