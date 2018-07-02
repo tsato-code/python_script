@@ -2,7 +2,7 @@
 
 ## 可視化
 1. [Maaten, L. V. D., & Hinton, G. (2008). Visualizing data using t-SNE. Journal of machine learning research, 9, 2579--2605.](http://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)
-	- t-SNE.
+	- t-SNEの提案。
 1. [Shubham BarudwaleWEST NILE- ML+ Data Visualisation + Data Analysis](https://www.kaggle.com/barudwale20/west-nile-ml-data-visualisation-data-analysis)
 	- Kaggle のカーネル。
 	- 緯度経度のヒートマップ作成。
@@ -156,6 +156,8 @@
 	- 木構造の利点のひとつは解釈性であるが、Random Forestのように木がたくさんあると、解釈しにくい。解釈のためのひとつの方法としてvariable importanceを考える。これは回帰であればRSSを用い、分類であればGini indexを使う。
 
 ## データ構造
+1. [Bentley, J. L. (1975). Multidimensional Binary Search Trees Used for Associative Searching. Communications of the ACM, 18, 509--517.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.160.335&rep=rep1&type=pdf)
+	- k-d木の提案。
 1. [Bury, M., Schwiegelshohn, C., & Sorella, M. (2016). Efficient Similarity Search in Dynamic Data Streams. arXiv preprint arXiv:1605.03949.](https://arxiv.org/abs/1605.03949)
 1. [Charikar, M. S. (2002). Similarity estimation techniques from rounding algorithms. In Proceedings of the thiry-fourth annual ACM symposium on Theory of computing, 380--388. ACM.](http://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.pdf)
 1. [Fagin, R., Kumar, R., & Sivakumar, D. (2003, June). Efficient similarity search and classification via rank aggregation. In Proceedings of the 2003 ACM SIGMOD international conference on Management of data, 301-312. ACM.](https://s3.amazonaws.com/academia.edu.documents/34071215/rank-aggregation.pdf?AWSAccessKeyId=AKIAIWOWYYGZ2Y53UL3A&Expires=1526142136&Signature=qPX4aYR5Y2B21fmfb8qNts08OwI%3D&response-content-disposition=inline%3B%20filename%3DEfficient_similarity_search_and_classifi.pdf)
