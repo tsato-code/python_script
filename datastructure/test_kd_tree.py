@@ -1,13 +1,9 @@
 """ PythonによるK-d tree実装
-1. Kd_tree.search関数内で使うregionの実装をどうするか検討中
-2. Kd_tree.search関数内で使うreport_subtreeをどうするか検討中
-3. Kd_tree.search関数内で使うintersectをどうするか
-4. Kd_tree.build関数内で使う中央値探索は、Introduction to Algorithmsの10章線形中央値探索を使って高速化
+- Kd_tree.build関数内で使う中央値探索は、Introduction to Algorithmsの10章線形中央値探索を使って高速化
    →複雑なのでpointsを前処理的に各座標成分でソートしておく
-
-5. cutval不要→depthとdata1点から切除平面を求める
-6. 境界を等式付き不等号とするか当敷なしとするか、特に矩形同士の交差、包含判定
-7. テスト
+- 境界を等式付き不等号とするか当敷なしとするか、特に矩形同士の交差、包含判定
+- テスト
+- 2d可視化
 """
 
 import numpy as np
@@ -50,13 +46,10 @@ class Rectangle2d(object):
     def __repr__(self):
         return "<Rectangle {}, {}, {}, {}>".format(self.x_b, self.x_t, self.y_b, self.y_t)
 
-
-    # def contain_p(self, p):
-    #     return self.x_b <= p[0] < self.x_t and self.y_b <= p[1] < self.y_t
-    
-    
+   
     def intersect_R(self, R):
         return not (self.x_t < R.x_b or self.y_t < R.y_b or R.x_t < self.x_b or R.y_t < self.y_b)
+
     
     def is_contained_R(self, R):
         return R.x_b <= self.x_b and R.y_b <= self.y_t and self.x_b <= R.x_t and self.y_b <= R.y_t
@@ -69,7 +62,7 @@ class Kd_tree(object):
     
     
     def build(self, points, depth=0):
-        """ build a K-d tree """
+        """ build """
         if len(points) == 1:
             return Kd_Node(depth=depth, data=points[0])
         elif depth%2 == 0:
@@ -88,7 +81,7 @@ class Kd_tree(object):
 
 
     def prep(self, v=None):
-        """ preprocessing a K-d tree """
+        """ preprocessing """
         if v == None:
             v = self.root
             v.R = Rectangle2d()
@@ -107,12 +100,12 @@ class Kd_tree(object):
 
 
     def search(self, v, R, found=[]):
-        """ search K-d tree """
+        """ search """
         if v.is_leaf():
             if v.is_contained(R):
                 found.append(v.data)
         else:
-            if v.left.R.is_contained_R(R):  # debug 要修正 
+            if v.left.R.is_contained_R(R):
                 self.report_subtree(v.left, found)
             elif v.left.R.intersect_R(R):
                 self.search(v.left, R, found)
@@ -124,7 +117,6 @@ class Kd_tree(object):
 
     
     def report_subtree(self, v, found):
-        # subtree v に含まれる点をすべて found に追加
         if v.is_leaf():
             found.append(v.data)
         else:
@@ -150,19 +142,3 @@ print('* search *')
 R = Rectangle2d(.0, .2, .0, .2)
 founds = t.search(t.root, R)
 print(founds)
-
-"""
-print(t.root.R)
-print(t.root.left.R)
-print(t.root.right.R)
-print(t.root.left.left.R)
-print(t.root.left.right.R)
-print('* '*20)
-a = Rectangle2d()
-print(a)
-a.x_b = 10
-a.x_t = 20
-a.y_t = 5
-a.y_b = 1
-print(a)
-"""
