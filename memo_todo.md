@@ -1,4 +1,4 @@
-# TODOリスト 2018年6月
+# TODOリスト 2018年7月
 
 ## Python関連
 - subprocess
@@ -13,7 +13,6 @@
 
 ## 統計・機械学習関連
 - 尤度比検定
-- 角度データ (directional statistics) のクラスタリング
 - カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
 - LDAのnotebook修正 + トピック可視化
@@ -29,7 +28,7 @@
 - 空間データ構造の調査
 	- QuadTree
 	- R-Tree
-	- Kd-Treeの実装（平衡木維持、挿入、削除）
+	- Kd-Treeの実装（2次元可視化、prepのプライベートメソッド）
 - AESA/LAESA
 - 線分ボロノイ図のアルゴリズム
 - ボロノイ図のデータ構造
