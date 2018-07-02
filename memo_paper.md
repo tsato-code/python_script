@@ -134,6 +134,8 @@
 ## 木構造モデル
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
+1. [Fogarty, J. (2007). Data Structures. Washington University Lecture Slides.](https://courses.cs.washington.edu/courses/cse326/07au/lectures/calendar_au07.htm)
+	- k-d木やQuadTreeなど、データ構造の講義スライド。
 1. [Karalic, A. (1992). Linear Regression in Regression Tree Leaves. Proceedings of ECAI-92.](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.35.2878) 
 	- タスク：回帰。
 	- 手法：回帰木。
