@@ -1,9 +1,12 @@
 """ PythonによるK-d tree実装
+- コード整理
+- prep()プライベートメソッド化
+- テスト
+- 2d可視化
 - Kd_tree.build関数内で使う中央値探索は、Introduction to Algorithmsの10章線形中央値探索を使って高速化
    →複雑なのでpointsを前処理的に各座標成分でソートしておく
 - 境界を等式付き不等号とするか当敷なしとするか、特に矩形同士の交差、包含判定
-- テスト
-- 2d可視化
+- 一般のk次元
 """
 
 import numpy as np
@@ -59,7 +62,7 @@ class Kd_tree(object):
     def __init__(self, points):
         """ constructor """
         self.root = self.build(points)
-    
+
     
     def build(self, points, depth=0):
         """ build """
@@ -77,10 +80,11 @@ class Kd_tree(object):
         right = self.build(points2, depth+1)
         cutval = points[axis-1][depth%2]  # 配列は0番から始まるのでマイナス1
         v = Kd_Node(depth=depth, cutval=cutval, left=left, right=right)
+
         return v
 
 
-    def prep(self, v=None):
+    def _prep(self, v=None):
         """ preprocessing """
         if v == None:
             v = self.root
@@ -94,8 +98,8 @@ class Kd_tree(object):
             else:
                 v.left.R.y_t = v.cutval
                 v.right.R.y_b = v.cutval
-            self.prep(v.left)
-            self.prep(v.right)
+            self._prep(v.left)
+            self._prep(v.right)
 
 
 
@@ -135,10 +139,13 @@ print(dataset)
 
 print('* build *')
 t = Kd_tree(dataset)
-t.prep()
+t._prep()
 print(t.root)
 
 print('* search *')
 R = Rectangle2d(.0, .2, .0, .2)
 founds = t.search(t.root, R)
 print(founds)
+
+print('* recalculation *')
+print([p for p in dataset if R.x_b<=p[0]<=R.x_t and R.y_b<=p[1]<=R.y_t])
