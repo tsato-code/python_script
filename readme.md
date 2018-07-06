@@ -39,6 +39,7 @@
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
 	* [pandasのDataFrameでcolormapのテスト（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認のテスト](machinelearning/sklearn_load_data.ipynb)
+	* [scikit-learnのk-meansのテスト](machinelearning/sklearn_kmeans.ipynb)
 	* [scikit-learnの決定木（回帰）のテスト](machinelearning/test_decisiontreeregressor.ipynb)
 	* [scikit-learnのランダムフォレスト（分類）のテスト](machinelearning/test_randomforest.ipynb)
 	* [scikit-learnのt-SNEのテスト](machinelearning/test_tsne.ipynb)
