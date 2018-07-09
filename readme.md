@@ -73,3 +73,4 @@
 	* [pandasのDataFrame列に対する距離計算(3): numpyのnorm関数の処理時間](misc/compare_pandas_dist_numpy.py)
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
+	* [複数画像を1枚の画像に収める](misc/plot_subplot.ipynb)
