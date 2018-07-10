@@ -47,7 +47,9 @@
 1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
 	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
+1. [Kim, J., & Grauman, K. (2009). Observe locally, infer globally: a space-time MRF for detecting abnormal activities with incremental updates. In CVPR 2009. 2921--2928E.](http://www.cs.utexas.edu/users/ai-lab/pubs/kim_grauman_cvpr2009.pdf)
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
+1. [Laxhammar, R., Falkman, G., & Sviestins, E. (2009). Anomaly detection in sea traffic-a comparison of the gaussian mixture model and the kernel density estimator. In Information Fusion, 2009. 756--763.](http://fusion.isif.org/proceedings/fusion09CD/data/papers/0327.pdf)
 1. [Liu, H., Shah, S., & Jiang, W. (2004). On-line outlier detection and data cleaning. Computers & chemical engineering, 28, 1635--1647.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.605.6319&rep=rep1&type=pdf)
 	- 前処理、外れ値検出、時系列データ。
 1. [Pang, L. X., Chawla, S., Liu, W., & Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
@@ -56,6 +58,7 @@
 	- 特徴：upper-bounding strategyとやらを使って限定操作を行い、異常度の高い上位k個の領域を計算している。
 	- データ：人工データ、北京市タクシーのGPSデータ。
 	- シンプルだがおもしろい。[関連スライド](https://pdfs.semanticscholar.org/db55/8e1bfb8feaae50919a2952979a894669e486.pdf)もある。
+1. [Yamanishi, K., Takeuchi, J. I., Williams, G., & Milne, P. (2004). On-line unsupervised outlier detection using finite mixtures with discounting learning algorithms. Data Mining and Knowledge Discovery, 8(3), 275--300.](ftp://ftp.cse.buffalo.edu/users/azhang/disc/disc01/cd1/out/papers/kdd/p320-yamanishi.pdf)
 1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポールベクターマシン。
