@@ -50,6 +50,11 @@
 1. [Kim, J., & Grauman, K. (2009). Observe locally, infer globally: a space-time MRF for detecting abnormal activities with incremental updates. In CVPR 2009. 2921--2928E.](http://www.cs.utexas.edu/users/ai-lab/pubs/kim_grauman_cvpr2009.pdf)
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
 1. [Laxhammar, R., Falkman, G., & Sviestins, E. (2009). Anomaly detection in sea traffic-a comparison of the gaussian mixture model and the kernel density estimator. In Information Fusion, 2009. 756--763.](http://fusion.isif.org/proceedings/fusion09CD/data/papers/0327.pdf)
+	- タスク：海上交通データに対する異常検知手法の比較。
+	- 手法：混合正規分布、カーネル密度推定（Parzen Windows method）。
+	- 特徴：海運データに適用したことと著者らは主張している。
+	- データ： Automatic Identification System (AIS) data. 
+	- 感想：前処理を丁寧に書いている。たとえば、時々刻々と採取される船舶位置と速度のデータについて、情報量を損なうことなくサンプリングするなどの工夫がある。
 1. [Liu, H., Shah, S., & Jiang, W. (2004). On-line outlier detection and data cleaning. Computers & chemical engineering, 28, 1635--1647.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.605.6319&rep=rep1&type=pdf)
 	- 前処理、外れ値検出、時系列データ。
 1. [Pang, L. X., Chawla, S., Liu, W., & Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
