@@ -142,6 +142,8 @@
 	- 感想：微分方程式のモデル表現力と解析が気になる。実は、これよりもモデル表現力が高く、解析しやすいモデル枠組みが存在するのではないだろうか。
 
 ## 木構造モデル
+1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
+	- MIP の探索木のサイズを推定。
 1. [Breiman, L. (2001). Random Forest. Machine Learning 45, 5--32.](https://link.springer.com/article/10.1023%2FA%3A1010933404324)
 1. [Chen, T., & Guestrin, C. (2016). XGBoost: A Scalable Tree Boosting System. In KDD '16 785--794.](https://dl.acm.org/citation.cfm?id=2939785)
 1. [Fogarty, J. (2007). Data Structures. Washington University Lecture Slides.](https://courses.cs.washington.edu/courses/cse326/07au/lectures/calendar_au07.htm)
