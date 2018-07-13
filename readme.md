@@ -20,6 +20,7 @@
 	* [tqdmモジュールによるプログレスバーのテスト](pythonscript/test_tqdm.py)
 	* [line_profilerモジュールによるプロファイリングのテスト](pythonscript/test_line_profiler.py)
 	* [yamlモジュールによるYAML読み込みのテスト](pythonscript/test_yaml.py)
+	* [scipyモジュールによるmatデータの変換](pythonscript/mat_to_csv.py)
 	* [jitコンパイラライブラリNumbaのテスト](pythonscript/test_numba_jit.py)
 	* [形態素解析器MeCabのテスト](pythonscript/test_mecab.py)
 	* [形態素解析器Janomeのテスト](pythonscript/test_janome.py)
@@ -46,11 +47,12 @@
 	* [scikit-learnの混合正規分布の推定1（正規分布の合成データ）](machinelearning/test_gmm1.ipynb)
 	* [scikit-learnの混合正規分布の推定2（分類用データセット）](machinelearning/test_gmm2.ipynb)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
-	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
+	* [*gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
-	* [カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
-	* [avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
+	* [*カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
+	* [*kNNによる局所外れ値度](machinelearning/outlier_detection_knn.ipynb)
+	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
 * 計算幾何
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
 	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
@@ -59,7 +61,7 @@
 * データ構造
 	* [2分探索木](datastructure/test_binary_search_tree.py)
 	* [B-Tree](datastructure/test_b_tree.py)
-	* [k-d tree](datastructure/test_kd_tree.py)
+	* [*k-d tree](datastructure/test_kd_tree.py)
 	* [R-Tree](datastructure/test_rtree.py)
 	* [QuadTree](datastructure/test_quadtree.ipynb)
 * その他
