@@ -53,6 +53,7 @@
 	* [*カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
 	* [*kNNによる局所外れ値度](machinelearning/outlier_detection_knn.ipynb)
 	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
+	* [*winequalityの異常検知](machinelearning/note_wine.ipynb)
 * 計算幾何
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
 	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
