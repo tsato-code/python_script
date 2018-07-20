@@ -44,6 +44,8 @@
 	- 特徴：ネットワークフローの問題と異常検知を同時に考えている。
 	- データ：北京市タクシーGPS。
 	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
+1. [Cudney, E. A., Drain, D., Paryani, K., & Sharma, N. (2009). A comparison of the Mahalanobis-Taguchi system to a standard statistical method for defect detection. Journal of Industrial and Systems Engineering, 2, 250--258.](http://www.jise.ir/article_3992_d103181416ac8e3da5438f99d373ef41.pdf)
+	- MT法。
 1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
 	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
