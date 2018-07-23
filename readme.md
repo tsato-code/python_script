@@ -53,7 +53,7 @@
 	* [*カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
 	* [*kNNによる局所外れ値度](machinelearning/outlier_detection_knn.ipynb)
 	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
-	* [MT法 (iris, breast cancer, breast cancer coimbra)](machinelearning/note_MTS.ipynb)
+	* [MT法 (iris, breast cancer, breast cancer coimbra, digits)](machinelearning/note_MTS.ipynb)
 	* [*winequalityの異常検知](machinelearning/note_wine.ipynb)
 	* [*Road Accident Deaths in US Statesの異常検知](machinelearning/note_road.ipynb)
 * 計算幾何
