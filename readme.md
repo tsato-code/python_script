@@ -54,7 +54,7 @@
 	* [*kNNによる局所外れ値度](machinelearning/outlier_detection_knn.ipynb)
 	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
 	* [MT法 (iris, breast cancer, breast cancer coimbra, digits)](machinelearning/note_MTS.ipynb)
-	* [混合正規分布による外れ値検出 (iris, breast cancer, brest cancer coimbra, digits)](machinelearning/note_gmm_anom.ipynb)
+	* [混合正規分布による外れ値検出 (iris, breast cancer, brest cancer coimbra, digits, winequality)](machinelearning/note_gmm_anom.ipynb)
 	* [*winequalityの異常検知](machinelearning/note_wine.ipynb)
 	* [*Road Accident Deaths in US Statesの異常検知](machinelearning/note_road.ipynb)
 * 計算幾何
