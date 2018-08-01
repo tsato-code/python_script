@@ -46,6 +46,9 @@
 	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
 1. [Cudney, E. A., Drain, D., Paryani, K., & Sharma, N. (2009). A comparison of the Mahalanobis-Taguchi system to a standard statistical method for defect detection. Journal of Industrial and Systems Engineering, 2, 250--258.](http://www.jise.ir/article_3992_d103181416ac8e3da5438f99d373ef41.pdf)
 	- MT法。
+1. [Dasgupta, T. (2009). Integrating the improvement and the control phase of Six Sigma for categorical responses through application of Mahalanobis-Taguchi system (MTS). International Journal of Industrial and Systems Engineering, 4, 615-630.](http://www.stat.harvard.edu/Faculty_Content/dasgupta/IJISE_MTS_Dasgupta.pdf)
+	- MT法。
+	- 直交表を用いたSN比による変数選択あり。
 1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
 	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
@@ -53,6 +56,8 @@
 	- テキストデータの外れ値検出。
 1. [Kim, J., & Grauman, K. (2009). Observe locally, infer globally: a space-time MRF for detecting abnormal activities with incremental updates. In CVPR 2009. 2921--2928E.](http://www.cs.utexas.edu/users/ai-lab/pubs/kim_grauman_cvpr2009.pdf)
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
+1. [Kumar, S., Sotiris, V., & Pecht, M. (2008). Mahalanobis distance and projection pursuit analysis for health assessment of electronic systems. In Aerospace Conference, 2008 IEEE, 1--9.](https://www.prognostics.umd.edu/calcepapers/08_Sachin_mahabolisDistance_IEEBigSky.pdf)
+	- MT法によるProjection Pursuit Analysis.
 1. [Laxhammar, R., Falkman, G., & Sviestins, E. (2009). Anomaly detection in sea traffic-a comparison of the gaussian mixture model and the kernel density estimator. In Information Fusion, 2009. 756--763.](http://fusion.isif.org/proceedings/fusion09CD/data/papers/0327.pdf)
 	- タスク：海上交通データに対する異常検知手法の比較。
 	- 手法：混合正規分布、カーネル密度推定（Parzen Windows method）。
@@ -144,6 +149,10 @@
 	- 特徴：流行に関して4つの状態を定義し、各状態の顧客数の関数を微分方程式で記述。
 	- データ：1変量データ。即席めん消費データ、焼酎消費データ、J1の平均観客動員数データ、ビリヤード参加人口データ、犬種別頭数データ、特定単語が新聞記事中に出現する数。
 	- 感想：微分方程式のモデル表現力と解析が気になる。実は、これよりもモデル表現力が高く、解析しやすいモデル枠組みが存在するのではないだろうか。
+
+## 最適化
+1. [Correa, J. R., Fernandes, C. G., & Wakabayashi, Y. (2010). Approximating a class of combinatorial problems with rational objective function. Mathematical programming, 124, 255--269.](https://www.dii.uchile.cl/~jcorrea/papers/Journals/CFW2010.pdf)
+	- 整数制約付き分数関数最小化。
 
 ## 木構造モデル
 1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
