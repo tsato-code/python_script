@@ -2,13 +2,14 @@
 # モジュールインポート
 # ------------------
 import numpy as np
+import scipy.linalg as la
 import time
 
 # ------------------
 # 定数パラメータ設定
 # ------------------
 N = 10**4	# 半正定値行列 AA^T を生成するときのAの行数
-M = 10**2	# 半正定値行列 AA^T を生成するときのAの列数
+M = 10**3	# 半正定値行列 AA^T を生成するときのAの列数
 
 
 # ------------------
@@ -17,8 +18,8 @@ M = 10**2	# 半正定値行列 AA^T を生成するときのAの列数
 def solve_chol(A, b):
 	""" Cholesky分解による方法 """
 	L = np.linalg.cholesky(A)
-	y = np.linalg.solve(L, b)	# 前進消去
-	x = np.linalg.solve(L.T, y)	# 後退代入
+	y = la.solve_triangular(L, b, lower=True)		# 前進消去
+	x = la.solve_triangular(L.T, y, lower=False)	# 後退代入
 	return x
 
 
@@ -29,9 +30,9 @@ def solve_inv(A, b):
 	return x
 
 
-# -------------------------------
+# ------------------
 #  メイン処理
-# -------------------------------
+# ------------------
 def main():
 	A = np.random.random(size=(N, M))
 	A = np.dot(A, A.T)
@@ -64,8 +65,8 @@ if __name__ == '__main__':
 
 """
 $ python test_cholesky.py
-Cholesky Time : 12.5312 [s]
-Inverse Time  : 15.0697 [s]
-x_chol: [-0.30867453 -0.02976903  1.37483804]
-x_inv : [-0.30867453 -0.02976903  1.37483804]
+Cholesky Time : 5.9865 [s]
+Inverse Time  : 14.9241 [s]
+x_chol: [-3.60632519 -1.85840444 -0.57360909]
+x_inv : [ 0.79361087  1.26388808 -0.53272068]
 """
