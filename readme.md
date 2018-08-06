@@ -86,3 +86,4 @@
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
 	* [複数画像を1枚の画像に収める](misc/plot_subplot.ipynb)
+	* [irisデータで複数の画像を生成して画像を保存](misc/plot_iris.py)
