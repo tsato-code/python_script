@@ -199,7 +199,7 @@ def main():
 	if not os.path.exists(OUT_DIR):
 		os.makedirs(OUT_DIR)
 
-    # 図の作成
+	# 図の作成
 	make_figure(df)
 
 
