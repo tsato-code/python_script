@@ -47,7 +47,7 @@
 1. [Cudney, E. A., Drain, D., Paryani, K., & Sharma, N. (2009). A comparison of the Mahalanobis-Taguchi system to a standard statistical method for defect detection. Journal of Industrial and Systems Engineering, 2, 250--258.](http://www.jise.ir/article_3992_d103181416ac8e3da5438f99d373ef41.pdf)
 	- MT法。
 1. [Dasgupta, T. (2009). Integrating the improvement and the control phase of Six Sigma for categorical responses through application of Mahalanobis-Taguchi system (MTS). International Journal of Industrial and Systems Engineering, 4, 615-630.](http://www.stat.harvard.edu/Faculty_Content/dasgupta/IJISE_MTS_Dasgupta.pdf)
-	- MT法。
+	- MTシステムの改善フェーズと制御フェーズの統一的手法を提案。
 	- 直交表を用いたSN比による変数選択あり。
 1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
@@ -57,7 +57,11 @@
 1. [Kim, J., & Grauman, K. (2009). Observe locally, infer globally: a space-time MRF for detecting abnormal activities with incremental updates. In CVPR 2009. 2921--2928E.](http://www.cs.utexas.edu/users/ai-lab/pubs/kim_grauman_cvpr2009.pdf)
 1. [Kinoshita, A., Takasu, A., & Adachi, J. (2015). Real-time traffic incident detection using a probabilistic topic model. Information Systems, 54, 169--188.](https://www.sciencedirect.com/science/article/pii/S0306437915001301)
 1. [Kumar, S., Sotiris, V., & Pecht, M. (2008). Mahalanobis distance and projection pursuit analysis for health assessment of electronic systems. In Aerospace Conference, 2008 IEEE, 1--9.](https://www.prognostics.umd.edu/calcepapers/08_Sachin_mahabolisDistance_IEEBigSky.pdf)
-	- MT法によるProjection Pursuit Analysis.
+	- タスク：電子機器の異常診断。
+	- 手法：マハラノビス距離と「射影追跡 (projection pursuit)」。
+	- 特徴：射影追跡法は、低次元空間にデータを圧縮する方法らしい。
+	- データ：ノートPC（ファンの回転速度、CPU温度、マザーボード温度、ビデオカード温度、などなど）。
+	- 感想：マハラノビス距離で異常度をみることが妥当かどうかの議論がなされているのがよい。
 1. [Laxhammar, R., Falkman, G., & Sviestins, E. (2009). Anomaly detection in sea traffic-a comparison of the gaussian mixture model and the kernel density estimator. In Information Fusion, 2009. 756--763.](http://fusion.isif.org/proceedings/fusion09CD/data/papers/0327.pdf)
 	- タスク：海上交通データに対する異常検知手法の比較。
 	- 手法：混合正規分布、カーネル密度推定（Parzen Windows method）。
@@ -116,6 +120,11 @@
 	- データ：たとえば、人間に取り付けた複数の加速度センサ情報。
 	- 感想：複数のデータセットで実験してほしい。加えて、アイデアがシンプルなだけに、似たものが提案されていそうな気がする。。
 1. [山本敬介. (2013). 混合分布による道路状態推定. 東京大学大学院情報理工学系研究科修士論文, 2013.](http://repository-old.dl.itc.u-tokyo.ac.jp/dspace/bitstream/2261/54210/1/48116445.pdf)
+	- タスク：車両走行情報の圧縮のため、時間、道路区間ごとに混合分布で特徴量を表現。
+	- 手法：混合正規分布推定にEMアルゴリズム。
+	- 特徴：平均と分散は各道路区間で共通、混合比が道路区間ごとに異なる。KL-divergenceを使って適切な混合数を決定。
+	- データ：千代田区内の車両走行データ（速度のみ利用）。
+	- 感想：東京大学大学院の手堅い修士論文という感じがする。平均と分散が同じ、混合比が異なるというアイデアは、LDAに由来するらしい。
 1. [横山大作，伊藤正彦，豊田正史 (2015)．ドライブレコーダを利用した運転者ごとの挙動傾向把握の試み．DEIM Forum 2015 D2-3.](http://db-event.jpn.org/deim2015/paper/308.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポートベクターマシン。
