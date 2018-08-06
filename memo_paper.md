@@ -45,7 +45,7 @@
 	- データ：北京市タクシーGPS。
 	- 感想：ネットワークフローと異常検知の組み合わせが面白い。
 1. [Cudney, E. A., Drain, D., Paryani, K., & Sharma, N. (2009). A comparison of the Mahalanobis-Taguchi system to a standard statistical method for defect detection. Journal of Industrial and Systems Engineering, 2, 250--258.](http://www.jise.ir/article_3992_d103181416ac8e3da5438f99d373ef41.pdf)
-	- MT法。
+	- タスク：MT法と統計技法による第一種の過誤、第二種の過誤を比較。
 1. [Dasgupta, T. (2009). Integrating the improvement and the control phase of Six Sigma for categorical responses through application of Mahalanobis-Taguchi system (MTS). International Journal of Industrial and Systems Engineering, 4, 615-630.](http://www.stat.harvard.edu/Faculty_Content/dasgupta/IJISE_MTS_Dasgupta.pdf)
 	- MTシステムの改善フェーズと制御フェーズの統一的手法を提案。
 	- 直交表を用いたSN比による変数選択あり。
