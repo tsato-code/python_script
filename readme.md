@@ -54,7 +54,7 @@
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [*カーネル密度推定による外れ値検出](machinelearning/ide3_kernel_density.ipynb)
 	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
-	* [MT法 (iris, breast cancer, breast cancer coimbra, digits)](machinelearning/note_MTS.ipynb)
+	* [MT法 (iris, breast cancer, breast cancer coimbra, digits, urban land cover, online news popularity)](machinelearning/note_MTS.ipynb)
 	* [混合正規分布による外れ値検出 (iris, breast cancer, brest cancer coimbra, digits, winequality)](machinelearning/note_gmm_anom.ipynb)
 	* [局所外れ値度 (Davis)](machinelearning/note_local_outlier_factor.ipynb)
 	* [*winequalityの異常検知](machinelearning/note_wine.ipynb)
