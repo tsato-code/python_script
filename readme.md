@@ -54,7 +54,7 @@
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [*avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
 	* [Mahalanobis距離に基づく外れ値検出 (iris, breast cancer, breast cancer coimbra, digits, urban land cover, online news popularity)](machinelearning/note_MTS.ipynb)
-	* MT法 (online news popularlity)[Mahalanobis距離](machinelearning/MTS.py), [項目選択](machinelearning/orthogonal_array.py)
+	* MT法 (online news popularlity) [Mahalanobis距離](machinelearning/MTS.py), [項目選択](machinelearning/orthogonal_array.py)
 	* [混合正規分布による外れ値検出 (iris, breast cancer, brest cancer coimbra, digits, winequality)](machinelearning/note_gmm_anom.ipynb)
 	* [局所外れ値度 (Davis)](machinelearning/note_local_outlier_factor.ipynb)
 	* [カーネル密度推定による外れ値検出 (iris, online news popularity)](machinelearning/note_kde.ipynb)
