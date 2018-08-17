@@ -10,10 +10,10 @@
 - Julia for Mathematical Optimization => SCIP with JuMPの調査
 - Jupyter NotebookからJuMP
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
+- 制約なし連続最適化のアルゴリズム一般
 
 ## 統計・機械学習関連
 - 尤度比検定
-- カーネル密度推定 `kernel_density`
 - BallTreeの `DeprecationWarning`
 - LDAのnotebook修正 + トピック可視化
 - entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
@@ -22,6 +22,7 @@
 - ベイズ推論 + pymc
 - 二値分類手法の比較
 - スピングラス法の調査
+- 系列データの異常検知
 
 ## データ構造関連
 - 空間データ構造の調査
@@ -35,5 +36,7 @@
 ## その他
 - 3階層多変量状態空間モデル
 - カーネルの気分
+- MT法資料
 - functools.lru_cacheがhashableでない引数を扱えない件
+- Google Cloud Platformの操作関連
 - [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)でオブジェクト指向
