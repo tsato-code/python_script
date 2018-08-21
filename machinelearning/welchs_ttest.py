@@ -44,7 +44,7 @@ def main():
 	print('統計量t={}'.format(s))
 	print('p値={}'.format(p)) # 統計量tがt分布の両側裾にいる確率p -> 有意水準alpha>pで帰無仮説を棄却 -> 対立仮説を採択
 
-	# 自前実装
+	# 自前実装のウェルチのt検定
 	alpha = 0.1
 	t, x, r = welch_ttest(X1, X2, alpha)
 	print('統計量t={}'.format(t))
