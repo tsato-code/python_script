@@ -37,6 +37,7 @@
 	* [pulpによるナップサック問題の求解](optimization/test_pulp.py)
 * 統計+機械学習
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
+	* [ウェルチのt検定](machinelearning/welch_ttest.py)
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
 	* [pandasのDataFrameでcolormap（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
