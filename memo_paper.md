@@ -20,6 +20,11 @@
 	- データ：アジア圏の路側データ。
 	- 感想：データの出典が不明。関連研究のVARMA（ベクトル自己回帰移動平均モデル）が気になる。
 
+# 解釈可能性
+1. [Ribeiro, M. T., Singh, S., & Guestrin, C. (2016, August). Why should i trust you?: Explaining the predictions of any classifier. In Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining (pp. 1135-1144). ACM.](http://www.kdd.org/kdd2016/papers/files/rfp0573-ribeiroA.pdf)
+	- LIME.
+	- [Qiita: LIMEで機械学習の予測結果を解釈してみる](https://qiita.com/fufufukakaka/items/d0081cd38251d22ffebf)
+
 ## 時系列分析
 1. [Aghabozorgi, S., Shirkhorshidi, A. S., & Wah, T. Y. (2015). Time-series clustering–A decade review. Information Systems 53, 16--38.](http://repository.um.edu.my/101412/1/ali-1.pdf)
 	- 系列データのクラスタリングサーベイ。
@@ -162,6 +167,8 @@
 ## 最適化
 1. [Correa, J. R., Fernandes, C. G., & Wakabayashi, Y. (2010). Approximating a class of combinatorial problems with rational objective function. Mathematical programming, 124, 255--269.](https://www.dii.uchile.cl/~jcorrea/papers/Journals/CFW2010.pdf)
 	- 整数制約付き分数関数最小化。
+1. [Feldman, J., Malkin, T., Servedio, R. A., Stein, C., & Wainwright, M. J. (2007). LP decoding corrects a constant fraction of errors. IEEE Transactions on Information Theory, 53(1), 82-89.](http://people.csail.mit.edu/jonfeld/pubs/lpexpand_corc_tech.pdf)
+	- LPを使う端数誤差修正。
 
 ## 木構造モデル
 1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
