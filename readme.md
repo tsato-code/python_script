@@ -49,6 +49,7 @@
 	* [scikit-learnのランダムフォレスト（分類）](machinelearning/test_randomforest.ipynb)
 	* [scikit-learnの混合正規分布の推定1（正規分布の合成データ）](machinelearning/test_gmm1.ipynb)
 	* [scikit-learnの混合正規分布の推定2（分類用データセット）](machinelearning/test_gmm2.ipynb)
+	* [scilit-learnの混合正規分布の推定3 (iris)](machinelearning/sklearn_gmm.py)
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
 	* [*gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
