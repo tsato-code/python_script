@@ -91,4 +91,4 @@
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
 	* [複数画像を1枚の画像に収める](misc/plot_subplot.ipynb)
 	* [irisデータで複数の画像を生成して画像を保存](misc/plot_iris.py)
-	* contourで等高線[note](misc/plot_contour.ipynb)[script](misc/plot_contour.py)
+	* contourで等高線[note](misc/plot_contour.ipynb), [script](misc/plot_contour.py)
