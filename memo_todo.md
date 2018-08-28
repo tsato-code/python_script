@@ -7,10 +7,9 @@
 
 ## 最適化関連
 - ナップサック問題に対する分枝限定法を実装
-- Julia for Mathematical Optimization => SCIP with JuMPの調査
-- Jupyter NotebookからJuMP
 - multinomial logitのパラメータ推定 + 数値勾配numpy.gradient
 - 制約なし連続最適化のアルゴリズム一般
+- pulpの調査
 
 ## 統計・機械学習関連
 - 尤度比検定
