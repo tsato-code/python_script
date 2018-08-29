@@ -89,6 +89,7 @@
 	* [連立方程式の求解を比較 (逆行列とCholesky分解)](misc/test_cholesky.py)
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
+	* [還元スライド用画像](misc/plot_slide_reduction.ipynb)
 	* [複数画像を1枚の画像に収める](misc/plot_subplot.ipynb)
 	* [irisデータで複数の画像を生成して画像を保存](misc/plot_iris.py)
 	* contourで等高線[note](misc/plot_contour.ipynb), [script](misc/plot_contour.py)
