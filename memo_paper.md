@@ -54,6 +54,8 @@
 1. [Dasgupta, T. (2009). Integrating the improvement and the control phase of Six Sigma for categorical responses through application of Mahalanobis-Taguchi system (MTS). International Journal of Industrial and Systems Engineering, 4, 615-630.](http://www.stat.harvard.edu/Faculty_Content/dasgupta/IJISE_MTS_Dasgupta.pdf)
 	- MTシステムの改善フェーズと制御フェーズの統一的手法を提案。
 	- 直交表を用いたSN比による変数選択あり。
+1. [Goldstein, M., & Uchida, S. (2016). A comparative evaluation of unsupervised anomaly detection algorithms for multivariate data. PloS one, 11(4), e0152173.](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0152173)
+	- 異常検知手法の比較など。
 1. [Gupta, M. Gao, Jing. Aggarwal, C., & Han, J. (2013). Outlier Detection for Temporal Data. SDM 2013.](https://archive.siam.org/meetings/sdm13/gupta.pdf)
 	- 外れ値検出のスライド資料。
 	- 特に、系列データ、ストリームデータ、空間系列データ、ネットワークデータについて。
