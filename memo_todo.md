@@ -15,12 +15,12 @@
 - 尤度比検定
 - BallTreeの `DeprecationWarning`
 - LDAのnotebook修正 + トピック可視化
-- entropy（いわゆる平均情報量）KL-divergence（いわゆる相対エントロピー）の応用事例の調査
 - scikit-learnの `feature_extraction` と `feature_selection`
 - 部分空間法とスペクトル変換法の調査
 - ベイズ推論 + pymc
 - スピングラス法の調査
 - 系列データの異常検知
+- 局所外れ値度の分岐点精度の計算と、その他の精度指標実装
 
 ## データ構造関連
 - 空間データ構造の調査
