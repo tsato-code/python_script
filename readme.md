@@ -44,6 +44,7 @@
 	* [pandasのDataFrameでcolormap（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認](machinelearning/sklearn_load_data.ipynb)
 	* [scikit-learnの分類用データ生成](machinelearning/test_make_classification.ipynb)
+	* [scikit-learnの変数選択](machinelearning/sklearn_feature_selection.py)
 	* [scikit-learnのk-means](machinelearning/sklearn_kmeans.ipynb)
 	* [scikit-learnの決定木（回帰）](machinelearning/test_decisiontreeregressor.ipynb)
 	* [scikit-learnのランダムフォレスト（分類）](machinelearning/test_randomforest.ipynb)
