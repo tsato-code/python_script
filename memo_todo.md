@@ -17,6 +17,7 @@
 - LDAのnotebook修正 + トピック可視化
 - scikit-learnの `feature_extraction` と `feature_selection`
 - 部分空間法とスペクトル変換法の調査
+- カーネル法
 - ベイズ推論 + pymc
 - スピングラス法の調査
 - 系列データの異常検知
@@ -32,8 +33,8 @@
 - ボロノイ図のデータ構造
 
 ## その他
+- マイutils (save_img, save_df, save_array, ...)
 - 3階層多変量状態空間モデル
-- カーネルの気分
 - functools.lru_cacheがhashableでない引数を扱えない件
 - Google Cloud Platformの操作関連
 - [Python in Practice](https://doc.lagout.org/programmation/python/Python%20in%20Practice_%20Create%20Better%20Programs%20using%20Concurrency%2C%20Libraries%2C%20and%20Patterns%20%5BSummerfield%202013-08-29%5D.pdf)でオブジェクト指向
