@@ -166,6 +166,11 @@
 	- データ：1変量データ。即席めん消費データ、焼酎消費データ、J1の平均観客動員数データ、ビリヤード参加人口データ、犬種別頭数データ、特定単語が新聞記事中に出現する数。
 	- 感想：微分方程式のモデル表現力と解析が気になる。実は、これよりもモデル表現力が高く、解析しやすいモデル枠組みが存在するのではないだろうか。
 
+## 機械学習
+1. [Cunningham, J. P., & Ghahramani, Z. (2015). Linear dimensionality reduction: Survey, insights, and generalizations. The Journal of Machine Learning Research, 16(1), 2859-2900.](http://www.jmlr.org/papers/volume16/cunningham15a/cunningham15a.pdf)
+	- 線形次元削減のサーベイ。
+	- 主成分分析、因子分析、多次元尺度法、Fischerの判別分析、正準相関分析、最大自己相関因子、slow feature analysis, sufficient dimension reduction,  undercomplete independent component analysis, 線形回帰、距離尺度の学習など。
+
 ## 最適化
 1. [Correa, J. R., Fernandes, C. G., & Wakabayashi, Y. (2010). Approximating a class of combinatorial problems with rational objective function. Mathematical programming, 124, 255--269.](https://www.dii.uchile.cl/~jcorrea/papers/Journals/CFW2010.pdf)
 	- 整数制約付き分数関数最小化。
