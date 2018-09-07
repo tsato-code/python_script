@@ -33,7 +33,9 @@
 - ボロノイ図のデータ構造
 
 ## その他
-- マイutils (save_img, save_df, save_array, ...)
+- マイutils (save_img, save_df, save_array, ...) 作成
+- 分析環境のコンテナ管理
+- Kubernetes によるコナテナ管理
 - 3階層多変量状態空間モデル
 - functools.lru_cacheがhashableでない引数を扱えない件
 - Google Cloud Platformの操作関連
