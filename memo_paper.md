@@ -77,12 +77,20 @@
 	- 感想：前処理を丁寧に書いている。たとえば、時々刻々と採取される船舶位置と速度のデータについて、情報量を損なうことなくサンプリングするなどの工夫がある。
 1. [Liu, H., Shah, S., & Jiang, W. (2004). On-line outlier detection and data cleaning. Computers & chemical engineering, 28, 1635--1647.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.605.6319&rep=rep1&type=pdf)
 	- 前処理、外れ値検出、時系列データ。
+1. [Matsubara, Y., Li, L., Papalexakis, E., Lo, D., Sakurai, Y., & Faloutsos, C. (2013). F-trail: Finding patterns in taxi trajectories. In Pacific-Asia Conference on Knowledge Discovery and Data Mining (pp. 86-98). Springer, Berlin, Heidelberg.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.380.2505&rep=rep1&type=pdf)
+	- タクシーの追跡データからデータマイニング。
 1. [Pang, L. X., Chawla, S., Liu, W., & Zheng, Y. (2011). On mining anomalous patterns in road traffic streams. ICADMA 2011, 237--251.](https://link.springer.com/chapter/10.1007%2F978-3-642-25856-5_18)
 	- タスク：タクシーGPSデータから北京市の恒常的な外れ値と新規出現の外れ値を検出。
 	- 手法：尤度比検定。
 	- 特徴：upper-bounding strategyとやらを使って限定操作を行い、異常度の高い上位k個の領域を計算している。
 	- データ：人工データ、北京市タクシーのGPSデータ。
 	- シンプルだがおもしろい。[関連スライド](https://pdfs.semanticscholar.org/db55/8e1bfb8feaae50919a2952979a894669e486.pdf)もある。
+1. [Ruff, L., Goernitz, N., Deecke, L., Siddiqui, S. A., Vandermeulen, R., Binder, A., ... & Kloft, M. (2018). Deep One-Class Classification. In International Conference on Machine Learning (pp. 4390-4399).](http://proceedings.mlr.press/v80/ruff18a/ruff18a.pdf)
+	- タスク：画像の異常検出。
+	- 手法：Deep neural support data description.
+	- 特徴：One-class classificationにneural netの利用。
+	- データ：MNIST, CIFAR-10.
+	- 感想：異常検知×深層学習の中でも主要な文献。
 1. [Yamanishi, K., Takeuchi, J. I., Williams, G., & Milne, P. (2004). On-line unsupervised outlier detection using finite mixtures with discounting learning algorithms. Data Mining and Knowledge Discovery, 8(3), 275--300.](ftp://ftp.cse.buffalo.edu/users/azhang/disc/disc01/cd1/out/papers/kdd/p320-yamanishi.pdf)
 1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
@@ -170,12 +178,17 @@
 1. [Cunningham, J. P., & Ghahramani, Z. (2015). Linear dimensionality reduction: Survey, insights, and generalizations. The Journal of Machine Learning Research, 16(1), 2859-2900.](http://www.jmlr.org/papers/volume16/cunningham15a/cunningham15a.pdf)
 	- 線形次元削減のサーベイ。
 	- 主成分分析、因子分析、多次元尺度法、Fischerの判別分析、正準相関分析、最大自己相関因子、slow feature analysis, sufficient dimension reduction,  undercomplete independent component analysis, 線形回帰、距離尺度の学習など。
+1. [Hastie, T., Tibshirani, R., & Tibshirani, R. J. (2017). Extended Comparisons of Best Subset Selection, Forward Stepwise Selection, and the Lasso. arXiv preprint arXiv:1707.08692.](https://arxiv.org/pdf/1707.08692.pdf)
+	- 変数選択とLassoの関係を、Lassoの開発者たちが議論。
 
 ## 最適化
 1. [Correa, J. R., Fernandes, C. G., & Wakabayashi, Y. (2010). Approximating a class of combinatorial problems with rational objective function. Mathematical programming, 124, 255--269.](https://www.dii.uchile.cl/~jcorrea/papers/Journals/CFW2010.pdf)
 	- 整数制約付き分数関数最小化。
 1. [Feldman, J., Malkin, T., Servedio, R. A., Stein, C., & Wainwright, M. J. (2007). LP decoding corrects a constant fraction of errors. IEEE Transactions on Information Theory, 53(1), 82-89.](http://people.csail.mit.edu/jonfeld/pubs/lpexpand_corc_tech.pdf)
 	- LPを使う端数誤差修正。
+1. [GÓMEZ, A., & PROKOPYEV, O. A. (2018). A mixed-integer fractional optimization approach to best subset selection. optimization online ](http://www.optimization-online.org/DB_FILE/2018/09/6795.pdf)
+	- 混合整数分数最適化問題による変数選択。
+	- 
 
 ## 木構造モデル
 1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
