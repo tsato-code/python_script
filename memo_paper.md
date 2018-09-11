@@ -43,6 +43,8 @@
 	- 感想：提案された分析手法は空間データの性質を使っていないように感じる。
 
 ## 異常検知
+1. [Anantharam, P., Thirunarayan, K., Marupudi, S., Sheth, A. P., & Banerjee, T. (2016, February). Understanding City Traffic Dynamics Utilizing Sensor and Textual Observations. In AAAI (pp. 3793-3799).](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12047/12162)
+	- 線形動的システムの利用。SNSデータの利用。
 1. [Chawla, S., Zheng, Y., & Hu, J. (2012). Inferring the root cause in road traffic anomalies. ICDM 2012. 141--150.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.711.7560&rep=rep1&type=pdf)
 	- タスク：北京市の交通データから道路リンクの異常を検出、潜在的なOD流を予測。
 	- 手法：主成分分析、線形計画法。
@@ -91,7 +93,11 @@
 	- 特徴：One-class classificationにneural netの利用。
 	- データ：MNIST, CIFAR-10.
 	- 感想：異常検知×深層学習の中でも主要な文献。
+1. [Sunderrajan, A., Viswanathan, V., Cai, W., & Knoll, A. (2016). Traffic State Estimation Using Floating Car Data. Procedia Computer Science, 80, 2008-2018.](http://mediatum.ub.tum.de/doc/1426777/999289.pdf)
+	- floating car dataを利用して現在のトラフィック状態を推定。
+	- キーワード：traffic state estimation
 1. [Yamanishi, K., Takeuchi, J. I., Williams, G., & Milne, P. (2004). On-line unsupervised outlier detection using finite mixtures with discounting learning algorithms. Data Mining and Knowledge Discovery, 8(3), 275--300.](ftp://ftp.cse.buffalo.edu/users/azhang/disc/disc01/cd1/out/papers/kdd/p320-yamanishi.pdf)
+1. [Yang, S., Kalpakis, K., & Biem, A. (2013, October). Spatio-temporal coupled bayesian robust principal component analysis for road traffic event detection. In Intelligent Transportation Systems-(ITSC), 2013 16th International IEEE Conference on (pp. 392-398). IEEE.](https://www.researchgate.net/profile/Shiming_Yang2/publication/278034667_main_conf_ITS13/links/557ae52d08ae8d0481931dcb.pdf)
 1. [Yokoyama, D. & Toyoda, M. (2016). Do Drivers' Behavior Reflect Their Past Driving Histories? -Large Scale Examination of Vehicle Recorder Data-. In 2016 IEEE International Congress on Big Data, 361--368.](https://pdfs.semanticscholar.org/3451/ff02e000f1f5f45f088ada50e904e8e60001.pdf)
 	- タスク：ドラレコデータから事故歴ありドライバの判別。
 	- 手法：サポールベクターマシン。
@@ -192,6 +198,8 @@
 	- 手法：定式化の変形にポリマトロイド。
 	- データ：UCI Machine Learning Repositoryと、乱数生成。
 	- 感想：ストーリーが追いにくい部分がある。特に、定式化が等価変形なのか、緩和なのか、いずれでもないのか、わかりにくい。
+1. [Murty, K. G., & Kabadi, S. N. (1987). Some NP-complete problems in quadratic and nonlinear programming. Mathematical programming, 39(2), 117-129.](https://deepblue.lib.umich.edu/bitstream/handle/2027.42/6740/bam7058.0001.001.pdf?sequence=5&isAllowed=y)
+	- 非線形計画とNP完全。
 
 ## 木構造モデル
 1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
