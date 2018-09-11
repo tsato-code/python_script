@@ -187,7 +187,11 @@
 1. [Feldman, J., Malkin, T., Servedio, R. A., Stein, C., & Wainwright, M. J. (2007). LP decoding corrects a constant fraction of errors. IEEE Transactions on Information Theory, 53(1), 82-89.](http://people.csail.mit.edu/jonfeld/pubs/lpexpand_corc_tech.pdf)
 	- LPを使う端数誤差修正。
 1. [GÓMEZ, A., & PROKOPYEV, O. A. (2018). A mixed-integer fractional optimization approach to best subset selection. Optimization Online, 2018.](http://www.optimization-online.org/DB_FILE/2018/09/6795.pdf)
-	- 混合整数分数最適化問題による変数選択。
+	- タスク：混合整数分数最適化問題による変数選択。
+	- 特徴：変数セットのサイズを固定して何回も解くよりも高速、MISOCPよりも高速。実装楽。
+	- 手法：定式化の変形にポリマトロイド。
+	- データ：UCI Machine Learning Repositoryと、乱数生成。
+	- 感想：ストーリーが追いにくい部分がある。特に、定式化が等価変形なのか、緩和なのか、いずれでもないのか、わかりにくい。
 
 ## 木構造モデル
 1. [Belov, G., Esler, S., Fernando, D., Le Bodic, P., & Nemhauser, G. L. (2017). Estimating the size of search trees by sampling with domain knowledge. In IJICAI 2017, 473--479.](http://static.ijcai.org/proceedings-2017/0067.pdf)
