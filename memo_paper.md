@@ -8,9 +8,15 @@
 	- 緯度経度のヒートマップ作成。
 
 ## 都市計算
+1. [Altintasi, O., Tuydes-Yaman, H., & Tuncay, K. (2017). Detection of urban traffic patterns from Floating Car Data (FCD). Transportation Research Procedia, 22, 382-391.](file:///C:/Users/tsk_sato/Downloads/Altintasietal.2017TransportationResearchProcedia.pdf)
+	- 交通パターンの計算。
+1. [Ramezani, M., & Geroliminis, N. (2015). Queue profile estimation in congested urban networks with probe data. Computer‐Aided Civil and Infrastructure Engineering, 30(6), 414-432.](https://infoscience.epfl.ch/record/202147/files/MR_NG_2014.pdf)
+	- 混雑予測。
 1. [Urban Computing | Microsoft](https://www.microsoft.com/en-us/research/project/urban-computing/)
 	- 都市データの解析。主に北京。
 	- たとえば、gps trajectoryなど。
+1. [Zhang, K., & Xue, G. (2010). A Real-time urban traffic detection algorithm based on spatio-temporal OD matrix in vehicular sensor network. Wireless Sensor Network, 2(09), 668.](http://file.scirp.org/pdf/WSN20100900003_96027105.pdf)
+	- ODデータで何かする。
 
 ## ルールベース
 1. [芦田優太, 西岡到. (2015). 路側データから生成した交通流モデルによる高速道路の交通状況予測. 研究報告高度交通システムとスマートコミュニティ (ITS), 16, 1--6.](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=146271&item_no=1&page_id=13&block_id=8)
