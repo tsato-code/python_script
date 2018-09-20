@@ -54,6 +54,7 @@
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
+	* [lightgbmのテスト](machinelearning/test_lgbm.py)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
