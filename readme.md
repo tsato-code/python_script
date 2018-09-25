@@ -28,6 +28,7 @@
 	* [係り受け解析器CaboChaのテスト](pythonscript/test_cabocha.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](pythonscript/test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](pythonscript/test_folium.ipynb)
+	* [LINE_notifyのテスト]
 * Shell
 	* [Windows用バッチファイルのテスト](shellscript/test_bat.bat)
 * 最適化関連
