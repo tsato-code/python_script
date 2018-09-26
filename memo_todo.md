@@ -38,7 +38,7 @@
 - 階層ベイズによる隣接地区のSMR推定
 
 ## その他
-- LINE notifyのcron運用
+- LINE notifyのcron運用、画面ボタン
 - マイutils (save_img, save_df, save_array, ...) 作成
 - 分析環境のコンテナ管理
 - Kubernetes によるコナテナ管理
