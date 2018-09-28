@@ -54,6 +54,7 @@
 	* [scilit-learnの混合正規分布の推定3 (iris)](machinelearning/sklearn_gmm.py)
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
+	* [hmmlearnの隠れマルコフモデル](machinelearning/hmm.py)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [lightgbmのテスト](machinelearning/test_lgbm.py)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
