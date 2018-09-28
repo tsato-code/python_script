@@ -28,7 +28,7 @@
 	* [係り受け解析器CaboChaのテスト](pythonscript/test_cabocha.py)
 	* [自然言語処理ツールStanford CoreNLPのテスト](pythonscript/test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](pythonscript/test_folium.ipynb)
-	* [LINE_notifyのテスト]
+	* [LINE_notifyのテスト](pythonscript/line_send.py)
 * Shell
 	* [Windows用バッチファイルのテスト](shellscript/test_bat.bat)
 * 最適化関連
@@ -55,6 +55,7 @@
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
 	* [hmmlearnの隠れマルコフモデル](machinelearning/hmm.py)
+	* [PyMC3による線形回帰のMCMC](machinelearning/pymc3_linear_reg.ipynb)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [lightgbmのテスト](machinelearning/test_lgbm.py)
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
