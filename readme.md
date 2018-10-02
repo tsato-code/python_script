@@ -61,6 +61,7 @@
 	* [久保先生のみどり本8章のPython化](machinelearning/kubo8.ipynb)
 	* [1次元ホテリング法](machinelearning/ide2_Hotellings_T-squared.ipynb)
 	* [avocadoの探索的データ解析](machinelearning/note_avocado.ipynb)
+	* [avocadoの隠れマルコフモデル](machinelearning/avocado_hmm.ipynb)
 	* MT法 (online news popularlity) [Mahalanobis距離](machinelearning/MTS.py), [項目選択](machinelearning/orthogonal_array.py)
 	* MT法の交差検証 ([SkillCraft1](machinelearning/MTS_SkillCraft1.ipynb), [OnlineNewsPopularity](machinelearning/MTS_OnlineNewsPopularity.ipynb))
 	* [混合正規分布による外れ値検出 (iris, breast cancer, brest cancer coimbra, digits, winequality)](machinelearning/note_gmm_anom.ipynb)
