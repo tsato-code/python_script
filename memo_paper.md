@@ -186,12 +186,20 @@
 	- データ：1変量データ。即席めん消費データ、焼酎消費データ、J1の平均観客動員数データ、ビリヤード参加人口データ、犬種別頭数データ、特定単語が新聞記事中に出現する数。
 	- 感想：微分方程式のモデル表現力と解析が気になる。実は、これよりもモデル表現力が高く、解析しやすいモデル枠組みが存在するのではないだろうか。
 
-## 機械学習
+## 次元削減
 1. [Cunningham, J. P., & Ghahramani, Z. (2015). Linear dimensionality reduction: Survey, insights, and generalizations. The Journal of Machine Learning Research, 16(1), 2859-2900.](http://www.jmlr.org/papers/volume16/cunningham15a/cunningham15a.pdf)
 	- 線形次元削減のサーベイ。
 	- 主成分分析、因子分析、多次元尺度法、Fischerの判別分析、正準相関分析、最大自己相関因子、slow feature analysis, sufficient dimension reduction,  undercomplete independent component analysis, 線形回帰、距離尺度の学習など。
 1. [Hastie, T., Tibshirani, R., & Tibshirani, R. J. (2017). Extended Comparisons of Best Subset Selection, Forward Stepwise Selection, and the Lasso. arXiv preprint arXiv:1707.08692.](https://arxiv.org/pdf/1707.08692.pdf)
 	- 変数選択とLassoの関係を、Lassoの開発者たちが議論。
+
+## 確率モデル
+1. [佐野夏樹 (2017). 隠れマルコフモデルによる顧客店舗内行動の推定, オペレーションズ・リサーチ 62, 801--806.](http://www.orsj.or.jp/archive2/or62-12/or62_12_801.pdf)
+	- タスク：店舗内の顧客動線のモデル化。
+	- 手法：隠れマルコフモデルの定常モデルと非定常モデル。
+	- 特徴：隠れ変数に意味付け、Dharらの「ショッピングモーメンタム」の検証。
+	- データ：RFIDとPOS。
+	- 感想：隠れマルコフモデルの適用例としておもしろい。
 
 ## 最適化
 1. [Correa, J. R., Fernandes, C. G., & Wakabayashi, Y. (2010). Approximating a class of combinatorial problems with rational objective function. Mathematical programming, 124, 255--269.](https://www.dii.uchile.cl/~jcorrea/papers/Journals/CFW2010.pdf)
