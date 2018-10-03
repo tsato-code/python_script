@@ -93,6 +93,7 @@
 	* [pandasのDataFrame列に対する距離計算(2): 変数に値を保存しながら計算したときの処理時間](misc/compare_pandas_var_use.py)
 	* [pandasのDataFrame列に対する距離計算(3): numpyのnorm関数の処理時間](misc/compare_pandas_dist_numpy.py)
 	* [連立方程式の求解を比較 (逆行列とCholesky分解)](misc/test_cholesky.py)
+	* [一般化固有値問題の計算](misc/gen_eig_prob.py)
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
 	* [還元スライド用画像](misc/plot_slide_reduction.ipynb)
