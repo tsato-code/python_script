@@ -53,6 +53,7 @@
 	* [scikit-learnの混合正規分布の推定2（分類用データセット）](machinelearning/test_gmm2.ipynb)
 	* [scilit-learnの混合正規分布の推定3 (iris)](machinelearning/sklearn_gmm.py)
 	* [scikit-learnの多次元尺度法 (digits)](machinelearning/sklearn_mds.ipynb)
+	* [scikit-learnの線形判別分析 (digits)](machinelearning/sklearn_lda.ipynb)
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
 	* [hmmlearnの隠れマルコフモデル](machinelearning/hmm.py)
