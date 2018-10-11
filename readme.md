@@ -98,6 +98,7 @@
 	* [一般化固有値問題の計算](misc/gen_eig_prob.py)
 	* [緯度経度を平面座標に変換](misc/test_latlon2yx.py)
 	* [MT法スライド用画像](misc/plot_slide_MTS.ipynb)
+	* [次元削減スライド用画像](misc/plot_slide_dimension_reducion.ipynb)
 	* [還元スライド用画像](misc/plot_slide_reduction.ipynb)
 	* [matplotlibオブジェクトを関数の引数にする](misc/plot_func.ipynb)
 	* [複数画像を1枚の画像に収める](misc/plot_subplot.ipynb)
