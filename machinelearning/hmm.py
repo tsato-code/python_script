@@ -46,6 +46,7 @@ covars = .1 * np.tile(np.identity(2), (5, 1, 1))
 # 関数の定義
 # ------------------
 def next_obs(model, z):
+	"""学習済みモデルmodelを用いて前時刻の状態zから(次の状態と次の観測値)を返す"""
 	transmat_cdf = np.cumsum(model.transmat_, axis=1)
 	random_state = check_random_state(model.random_state)
 	next_state = (transmat_cdf[z] > random_state.rand()).argmax()
@@ -65,6 +66,7 @@ def main():
 	model.means_ = means
 	model.covars_ = covars
 
+	# 観測値の系列Xと状態の系列Zを生成
 	X, Z = model.sample(10)
 	print("X\n", X)
 	print("Z\n", Z)
