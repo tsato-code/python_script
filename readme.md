@@ -71,6 +71,8 @@
 	* [カーネル密度推定による外れ値検出 (iris, online news popularity)](machinelearning/note_kde.ipynb)
 	* [winequalityの異常検知](machinelearning/note_wine.ipynb)
 	* [Road Accident Deaths in US Statesの異常検知](machinelearning/note_road.ipynb)
+	* [Kalman Filter](machinelearning/kalman_filter.py)
+	* [ローカルモデル](machinelearning/local_level_model.ipynb)
 * 計算幾何
 	* [平面上の点を線に射影](computationalgeometry/proj_point_to_line.ipynb)
 	* [scipyのspatialを用いたボロノイ図とドロネー図](computationalgeometry/test_scipy_spatial.ipynb)
