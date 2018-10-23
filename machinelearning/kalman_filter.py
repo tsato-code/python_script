@@ -33,6 +33,7 @@ def output(kf):
 	print("observation_offsets: {}".format(kf.observation_offsets))
 	print("observation_covariance: {}".format(kf.observation_covariance))
 
+
 # ------------------
 # メイン処理
 # ------------------
@@ -75,10 +76,6 @@ def main():
 	plt.show()
 	plt.close()
 	"""
-
-
-
-
 
 
 if __name__=="__main__":
