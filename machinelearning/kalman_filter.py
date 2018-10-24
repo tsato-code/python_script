@@ -2,6 +2,7 @@
 pykalmanのインストール
 pip install pykalman
 以下のページから観測系列に未観測値を含む場合の図が書ける
+https://stackoverflow.com/questions/49662567/pykalman-default-handling-of-missing-values
 """
 # ------------------
 # モジュールインポート
