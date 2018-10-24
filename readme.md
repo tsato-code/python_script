@@ -29,8 +29,11 @@
 	* [自然言語処理ツールStanford CoreNLPのテスト](pythonscript/test_corenlp.py)
 	* [マップクライアントライブラリfoliumのテスト（GitHubからは画像が確認できない）](pythonscript/test_folium.ipynb)
 	* [LINE_notifyのテスト](pythonscript/line_send.py)
+	* [メール送信のテスト](pythonscript/mail_send.py)
 * Shell
 	* [Windows用バッチファイルのテスト](shellscript/test_bat.bat)
+* QGIS3関連
+	* [QGIS3操作メモ](memo_QGIS3.md)
 * 最適化関連
 	* [Prim法クラス](optimization/test_prim.py)
 	* [ナップサック問題に対する動的計画のテスト](optimization/test_functools_lru_cache_knapsack.py)
