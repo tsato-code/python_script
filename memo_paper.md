@@ -6,6 +6,12 @@
 1. [Shubham BarudwaleWEST NILE- ML+ Data Visualisation + Data Analysis](https://www.kaggle.com/barudwale20/west-nile-ml-data-visualisation-data-analysis)
 	- Kaggle のカーネル。
 	- 緯度経度のヒートマップ作成。
+1. [金月寛彰, 服部宏充. (2015). プローブカーデータを利用したタクシードライバーの個人特性の分析とモデル化. JSAI 2015. 1N4-4.](http://www.ai-gakkai.or.jp/jsai2015/webprogram/2015/pdf/1N4-4.pdf)
+	- タスク：タクシーの運転行動を可視化。
+	- 手法：独自ビューワによる可視化、ヒートマップ、有限状態遷移機械。
+	- 特徴：カウントと閾値による主観評価。タクシーが顧客獲得の際に付け待ち営業か、流し営業か、判定。
+	- データ：京都市内のタクシープローブデータ。
+	- 感想：泥臭い作業が多そう。
 
 ## 都市計算
 1. [Altintasi, O., Tuydes-Yaman, H., & Tuncay, K. (2017). Detection of urban traffic patterns from Floating Car Data (FCD). Transportation Research Procedia, 22, 382-391.](file:///C:/Users/tsk_sato/Downloads/Altintasietal.2017TransportationResearchProcedia.pdf)
