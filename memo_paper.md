@@ -23,6 +23,12 @@
 	- たとえば、gps trajectoryなど。
 1. [Zhang, K., & Xue, G. (2010). A Real-time urban traffic detection algorithm based on spatio-temporal OD matrix in vehicular sensor network. Wireless Sensor Network, 2(09), 668.](http://file.scirp.org/pdf/WSN20100900003_96027105.pdf)
 	- ODデータで何かする。
+1. [谷直樹, 風間一洋, 榊剛史, 吉田光男. (2015). 位置情報付きツイートから抽出した交通路の評価. JSAI 2015, 1H3-4.](http://www.ai-gakkai.or.jp/jsai2015/webprogram/2015/pdf/1H3-4in.pdf)
+	- タスク：ジオタグ付きツイートから公共交通機関の交通路抽出。
+	- 手法：Hough変換、独自アルゴリズム。
+	- 特徴：独自アルゴリズムで近似直線をつくる。
+	- データ：ジオタグ付きツイート。
+	- 感想：参考文献にはないが、交通路抽出に関連する文献が気になる。
 
 ## ルールベース
 1. [芦田優太, 西岡到. (2015). 路側データから生成した交通流モデルによる高速道路の交通状況予測. 研究報告高度交通システムとスマートコミュニティ (ITS), 16, 1--6.](https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=146271&item_no=1&page_id=13&block_id=8)
