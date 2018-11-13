@@ -196,6 +196,14 @@
 1. [Boykov, Y. Y., & Jolly, M. P. (2001). Interactive graph cuts for optimal boundary and region segmentation of objects in ND images. ICCV 2001. 105--112.](http://www.csd.uwo.ca/~yuri/Papers/iccv01.pdf)
 	- 画像の領域分割に対するグラフカット。
 
+## セイバーメトリクス
+1. [西内啓 (2018). 2017年J1リーグ戦データから見る攻撃戦術のトレンド. オペレーションズ・リサーチ 63, 621--627.]
+	- タスク：サッカー攻撃戦術の分析。
+	- 手法：ポアソン回帰のelastic net.
+	- 特徴：100個以上の説明変数を作り込み。
+	- データ：2017年J1の集計済みデータ。
+	- 感想：どのようにデータを集計したのか気になる。人海戦術かどうか。
+
 ## 微分方程式モデル
 1. [中桐裕子, 栗田治. (2002). 狂牛病の微分方程式モデル. オペレーションズ・リサーチ 40, 666--674.](http://orsj.or.jp/~archive/pdf/bul/Vol.47_10_666.pdf)
 	- タスク：「流行」に関する数理モデル構築。
@@ -213,7 +221,7 @@
 ## 次元削減
 1. [Cunningham, J. P., & Ghahramani, Z. (2015). Linear dimensionality reduction: Survey, insights, and generalizations. The Journal of Machine Learning Research, 16(1), 2859-2900.](http://www.jmlr.org/papers/volume16/cunningham15a/cunningham15a.pdf)
 	- 線形次元削減のサーベイ。
-	- 主成分分析、因子分析、多次元尺度法、Fischerの判別分析、正準相関分析、最大自己相関因子、slow feature analysis, sufficient dimension reduction,  undercomplete independent component analysis, 線形回帰、距離尺度の学習など。
+	- 主成分分析、因子分析、多次元尺度法、Fischerの判別分析、正準相関分析、maximum correlation factors, slow feature analysis, sufficient dimension reduction,  undercomplete independent component analysis, 線形回帰、距離尺度の学習など。
 1. [Hastie, T., Tibshirani, R., & Tibshirani, R. J. (2017). Extended Comparisons of Best Subset Selection, Forward Stepwise Selection, and the Lasso. arXiv preprint arXiv:1707.08692.](https://arxiv.org/pdf/1707.08692.pdf)
 	- 変数選択とLassoの関係を、Lassoの開発者たちが議論。
 
