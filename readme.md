@@ -60,6 +60,7 @@
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
 	* [hmmlearnの隠れマルコフモデル](machinelearning/hmm.py)
+	* [statsmodelsのポアソン回帰とelastic net](poisson_reg.py:)
 	* [PyMC3による線形回帰のMCMC](machinelearning/pymc3_linear_reg.ipynb)
 	* [gensimのLDAのテスト](machinelearning/test_gensim_lda.ipynb)
 	* [lightgbmのテスト](machinelearning/test_lgbm.py)
