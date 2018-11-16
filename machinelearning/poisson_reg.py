@@ -61,3 +61,23 @@ def main():
 
 if __name__=="__main__":
 	main()
+
+
+"""
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                Lottery   No. Observations:                   86
+Model:                            GLM   Df Residuals:                       84
+Model Family:                 Poisson   Df Model:                            1
+Link Function:                    log   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -4076.6
+Date:                Fri, 16 Nov 2018   Deviance:                       7694.0
+Time:                        13:49:18   Pearson chi2:                 1.84e+04
+No. Iterations:                     7   Covariance Type:             nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Literacy       0.0449      0.001     58.611      0.000       0.043       0.046
+Pop1831        0.0029   7.56e-05     38.793      0.000       0.003       0.003
+==============================================================================
+"""
