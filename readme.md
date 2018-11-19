@@ -90,6 +90,7 @@
 	* [R-Tree](datastructure/test_rtree.py)
 	* [QuadTree](datastructure/test_quadtree.ipynb)
 * その他
+	* [自作ログ関数](misc/my_logging.py)
 	* [再帰深さ上限の確認](misc/test_recursion.py)
 	* [論理演算の処理速度確認](misc/compare_logical_operator.py)
 	* [pandasのDataFrame複数列に対するソート](misc/test_df_sort.ipynb)
