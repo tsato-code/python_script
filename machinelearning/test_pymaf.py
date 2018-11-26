@@ -38,6 +38,8 @@ def main():
 	plt.show()
 	# MAF
 	mafs = maf(prices)
+	print(len(mafs))
+	print(mafs[-1])
 	first_mafs = np.apply_along_axis(lambda x: (x - np.mean(x)) / np.std(x), arr=mafs[0][:,:N_DIM], axis=0)
 	# 描画
 	labels = ['MAF' + str(s) for s in range(1,1+N_DIM) ]
