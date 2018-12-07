@@ -115,3 +115,4 @@
 	* [irisデータで複数の画像を生成して画像を保存](misc/plot_iris.py)
 	* contourで等高線 ([note](misc/plot_contour.ipynb), [script](misc/plot_contour.py))
 	* vpythonで3Dプロット([note](pythonscript/note_vpython.ipynb), [script](pythonscript/test_vpython.py))
+	* [geohash2でエンコード/デコード](pythonscript/test_geohash2.py)
