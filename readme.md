@@ -116,4 +116,5 @@
 	* contourで等高線 ([note](misc/plot_contour.ipynb), [script](misc/plot_contour.py))
 	* vpythonで3Dプロット([note](pythonscript/note_vpython.ipynb), [script](pythonscript/test_vpython.py))
 	* [geohash2でエンコード/デコード](pythonscript/test_geohash2.py)
+	* [quadkeyでエンコード/デコード](pythonscript/test_mercantile.py)
 	* [パッキングのコード](misc/note_rect_packing.ipynb)
