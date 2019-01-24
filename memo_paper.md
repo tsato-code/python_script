@@ -47,6 +47,12 @@
 1. [Aghabozorgi, S., Shirkhorshidi, A. S., & Wah, T. Y. (2015). Time-series clustering–A decade review. Information Systems 53, 16--38.](http://repository.um.edu.my/101412/1/ali-1.pdf)
 	- 系列データのクラスタリングサーベイ。
 1. [Bacci, S., Pandolfi, S., & Pennoni, F. (2014). A comparison of some criteria for states selection in the latent Markov model for longitudinal data. Advances in Data Analysis and Classification, 8, 125--145.](https://www.researchgate.net/profile/Silvia_Bacci/publication/233815708_A_comparison_of_some_criteria_for_states_selection_in_the_latent_Markovmodel_for_longitudinal_data/links/549042730cf225bf66a827fe/A-comparison-of-some-criteria-for-states-selection-in-the-latent-Markovmodel-for-longitudinal-data.pdf)
+1. [Zhang, J., Zheng, Y., & Qi, D. (2017, February). Deep Spatio-Temporal Residual Networks for Citywide Crowd Flows Prediction. In AAAI (pp. 1655-1661).](http://www.aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14501/13964)
+	- タスク：時空間の流入量と流出量の予測。
+	- 手法：ST-ResNetという深層学習のネットワークを提案。STはSpatio-Temporalの略だと思われる。
+	- 特徴：residual networkと呼ばれるネットワクの枠組みを扱うとともに、時間的な近さ、期間、傾向をそれぞれ扱うようなネットワーク構造を構成。
+	- データ：北京のタクシーGPSデータ、ニューヨークのバイクトリップデータ。
+	- 感想：ネットワークの構造が、仮説に基づいて構成されているよう。コードはGitHubのluckroy/DeepSTで公開されている。
 1. [小川和晃, 田村哲嗣, 速水悟. (2016). 商品レビューにおける時系列情報に着目したクラスタ分析と可視化. JSAI 2016, 1F5-5.](https://kaigi.org/jsai/webprogram/2016/pdf/478.pdf)
 	- タスク：商品レビューの時系列的な変化を解析。
 	- 手法：k-means++、SOM。
