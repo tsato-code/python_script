@@ -78,6 +78,14 @@
 	- データ：慶応大学八神キャンパス屋上の風車。
 	- 感想：時系列データを扱っているので、よく使われる時系列モデル（ARIMAなど）と比較すべき。
 
+## 音響処理
+1. [高橋玄他 (2017). DNN-GMMと連結特徴量を用いた音響シーン識別の検討. 日本音響学会講演論文集2017年3月, 135--138.](http://www.tara.tsukuba.ac.jp/~maki/reprint/Yamada/takahashi17-3asj135-138.pdf)
+	- タスク：音響シーン識別（どんな場所か、どんな状況か）。
+	- 手法：DNN+GMM
+	- 特徴：既存研究のDNN-HMMのHMMをGMMで置き換え。
+	- データ：DCASE2016 challengeという、環境音認識のワークショップで提供されたデータセット。
+	- 感想：アイデアはシンプル。
+
 ## 異常検知
 1. [Anantharam, P., Thirunarayan, K., Marupudi, S., Sheth, A. P., & Banerjee, T. (2016, February). Understanding City Traffic Dynamics Utilizing Sensor and Textual Observations. In AAAI (pp. 3793-3799).](http://www.aaai.org/ocs/index.php/AAAI/AAAI16/paper/download/12047/12162)
 	- 線形動的システムの利用。SNSデータの利用。
