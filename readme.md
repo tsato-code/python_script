@@ -45,6 +45,7 @@
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
 	* [直交表の生成](machinelearning/make_orthogonal_array.py)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
+	* [pandas_profilingのテスト](machinelearning/pandas_profiling.ipynb)
 	* [pandasのDataFrameでcolormap（GitHubでは背後の画像が確認できない）](machinelearning/test_colormap.ipynb)
 	* [scikit-learnのデータセット確認](machinelearning/sklearn_load_data.ipynb)
 	* [scikit-learnの分類用データ生成](machinelearning/test_make_classification.ipynb)
