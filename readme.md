@@ -42,6 +42,7 @@
 * 統計+機械学習
 	* [平均情報量(entropy)と相対エントロピー(Kullback-Leibler divergence)](machinelearning/test_ent_kl.py)
 	* [ウェルチのt検定](machinelearning/welchs_ttest.py)
+	* [コルモゴロフ-スミルノフ検定（2つの分布に差があるか検定）](machinelearning/test_kolmogorov-smirnov.py)
 	* [動的計画法によるLevenshtein距離](machinelearning/test_functools_lru_cache_levenshtein.py)
 	* [直交表の生成](machinelearning/make_orthogonal_array.py)
 	* [pandasのテスト](machinelearning/test_pandas.ipynb)
