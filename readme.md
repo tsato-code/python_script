@@ -62,6 +62,7 @@
 	* [scikit-learnの線形判別分析 (digits)](machinelearning/sklearn_lda.ipynb)
 	* [scikit-learnのk近傍法](machinelearning/test_knn.py)
 	* [scikit-learnのt-SNE](machinelearning/test_tsne.ipynb)
+	* [mcaの多重対応分析](machinelearning/note_mca.ipynb)
 	* [hmmlearnの隠れマルコフモデル](machinelearning/hmm.py)
 	* [statsmodelsのポアソン回帰とelastic net](machinelearning/poisson_reg.py)
 	* [statsmodelsの自己相関係数](machinelearning/note_acf.ipynb)
