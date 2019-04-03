@@ -20,6 +20,7 @@
 	* [tqdmモジュールによるプログレスバーのテスト](pythonscript/test_tqdm.py)
 	* [line_profilerモジュールによるプロファイリングのテスト](pythonscript/test_line_profiler.py)
 	* [yamlモジュールによるYAML読み込みのテスト](pythonscript/test_yaml.py)
+	* [unittestモジュールによる単体テストのテスト](pythonscript/test_unittest.py)
 	* [scipyモジュールによるmatデータの変換](pythonscript/mat_to_csv.py)
 	* [jitコンパイラライブラリNumbaのテスト](pythonscript/test_numba_jit.py)
 	* [日本語形態素解析器MeCabのテスト](pythonscript/test_mecab.py)
