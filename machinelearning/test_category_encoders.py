@@ -7,6 +7,7 @@ conda install -c conda-forge category_encoders -y
 import category_encoders as ce
 import pandas as pd
 
+
 # ------------------
 # 定数パラメータ設定
 # ------------------
@@ -34,7 +35,6 @@ def main():
 	df_ce_onehot = ce_ohe.fit_transform(df)
 	print(df_ce_onehot.head(5))
 	# Helmert contrast coding
-	# 
 	ce_he = ce.helmert.HelmertEncoder(cols=list_cols, drop_invariant=True, handle_unknown="ignore")
 	df_ce_helmert = ce_he.fit_transform(df)
 	print(df_ce_helmert.head(5))

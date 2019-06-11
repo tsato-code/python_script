@@ -8,7 +8,6 @@ df = pd.DataFrame((np.random.random(size=(100000000, 2))), columns=list('ab'))
 
 def calc(func):
     import functools
-    import time
     @functools.wraps(func)
     def wrapper(*args,**kwargs):
         start = time.time()

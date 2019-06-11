@@ -23,21 +23,19 @@ a = {
 # ------------------
 def target_mean_encoding(df, src_col, tgt_col):
 	""" target が数値のときに利用できる """
-	target_mean = df.groupby(src_col)[tgt_col].mean()
+	target_mean = df.groupby(src_col)[tgt_col].mean().astype("float16")
 	target_mean_df = df[src_col].map(target_mean).copy()
 	target_mean_df.name = src_col+"_"+tgt_col+"_target_mean"
 	return target_mean_df
 
 
 def bin_counting(df, src_col, tgt_col):
-	""" target がカテゴリのときに利用できる """
-	cross_df         = pd.crosstab(df[src_col], df[tgt_col]).astype("float16")
-	labels           = [src_col+"_"+tgt_col+"_"+str(col) for col in cross_df.columns]
-	cross_df.columns = labels
-	cross_df_sum     = cross_df.sum(axis=1).astype("float16")
-	cross_df_sum_div = cross_df.div(cross_df_sum, axis=0).astype("float16")
-	bin_counting_df  = pd.merge(df, cross_df_sum_div, left_on=src_col, right_index=True, how="left")
-	return bin_counting_df[labels]
+    """ target がカテゴリのときに利用できる """
+    cross_df         = pd.crosstab(df[src_col], df[tgt_col], normalize="index")
+    labels           = [src_col+"_"+tgt_col+"_"+str(col) for col in cross_df.columns]
+    cross_df.columns = labels
+    bin_counting_df  = pd.merge(df, cross_df, left_on=src_col, right_index=True, how="left")
+    return bin_counting_df[labels]
 
 
 # ------------------
@@ -52,8 +50,10 @@ def main():
 	# target mean encoding
 	target_mean_df = target_mean_encoding(df, src, tgt)
 	df = pd.concat([df, target_mean_df], axis=1)
-	# df = df.assign(**{src+"_"+tgt+"_mean": target_mean_col})
 	# bin counting
+	print("bin counting")
+	print(df.select_dtypes('O').columns.tolist())
+
 	bin_counting_df = bin_counting(df, src, tgt)
 	df = pd.concat([df, bin_counting_df], axis=1)
 	print(df)
